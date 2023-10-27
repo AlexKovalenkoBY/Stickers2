@@ -16,7 +16,6 @@ import java.util.stream.Stream;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 
@@ -47,7 +46,6 @@ public class FileUploadController {
 
 	private final StorageService storageService;
 
-	@Autowired
 	public FileUploadController(StorageService storageService) {
 		this.storageService = storageService;
 	}
@@ -93,7 +91,7 @@ public class FileUploadController {
 	}
 
 	@PostMapping("/")
-	public String handleFileUpload(@RequestParam("file") MultipartFile file,
+	public String handleFileUpload(@RequestParam MultipartFile file,
 			RedirectAttributes redirectAttributes, Model model, HttpServletRequest request)
 			throws IOException, DocumentException, OpenXML4JException, SAXException, ParserConfigurationException {
 		log.info("start POST request from address: " + request.getRemoteAddr());
