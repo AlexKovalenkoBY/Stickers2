@@ -1,0 +1,24 @@
+2023-10-27 08:35:45.388 appender 10916 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 10916 (D:\rpo\java\stickers\uploading-files\target\classes started by 8_kovalenko_351 in D:\rpo\java\stickers\uploading-files)
+2023-10-27 08:35:45.404 appender 10916 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-27 08:35:47.141 appender 10916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-10-27 08:35:47.157 appender 10916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-27 08:35:47.157 appender 10916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-10-27 08:35:47.358 appender 10916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-27 08:35:47.358 appender 10916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1840 ms
+2023-10-27 08:35:48.001 appender 10916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 08:35:48.017 appender 10916 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.646 seconds (JVM running for 4.979)
+2023-10-27 08:36:04.414 appender 10916 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 08:36:04.414 appender 10916 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-27 08:36:04.414 appender 10916 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-27 08:36:04.478 appender 10916 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 08:36:04.480 appender 10916 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-10-27 08:36:10.303 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-10-27 08:36:10.319 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : ******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-10-27 08:36:11.944 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.6266385 сек.
+2023-10-27 08:36:12.620 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 0.6818081 сек.
+2023-10-27 08:36:12.620 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 2.3115388 сек.
+2023-10-27 08:36:12.620 appender 10916 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-10-27 08:36:12.655 appender 10916 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 08:36:12.655 appender 10916 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-10-27 10:37:19.336 appender 11672 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 11672 (D:\rpo\java\stickers\uploading-files\target\classes started by 8_kovalenko_351 in D:\rpo\java\stickers\uploading-files)
+2023-10-27 10:37:19.342 appender 11672 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"

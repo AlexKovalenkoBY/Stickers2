@@ -1,0 +1,26 @@
+
+
+spring:
+        servlet: 
+            multipart: 
+                max-file-size: 10MB
+                max-request-size: 10MB
+                enabled: true
+                location: ${java.io.tmpdir}
+
+logging: 
+    file: 
+        name: ./log/stickers.log
+        path: ./log
+    pattern: 
+        level: appender
+    charset: 
+        file: UTF-8
+    level: 
+        root: info
+
+
+server:         
+    port:  8081
+    
+

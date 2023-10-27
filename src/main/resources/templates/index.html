@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=.8">
+	<title>Stickers.pdf</title>
+	<style>
+		html {
+    font-size: 100% /* or 62.5% or whatever you like, it doesn't matter, it's just a browser fix, however "rem" units will be based on that value, so make it confortable for calculations */
+}
+
+body {
+    font-size: 1.25em; /* That is your text's default font size. Here i chose 12px */
+}
+
+h1 { /* or whatever element you want to change the font size of */
+    font-size: 25px; /* for browsers that don't understand the "rem" unit */
+    /*font-size: 1.25rem; /* which equals to 20px if html's font-size was set to 100% */
+}
+	</style>
+</head>
+
+<body>
+
+	<h3>Сервиc формирования стикеров на основании XLSx файлов</h3>
+<div>
+	<span>Краткая инструкция:</span> <br>
+	<span>1. загрузить справочник (большой файл)</span><br>
+	<span>2. загрузить файл заказа</span><br>
+	<span>3. посмотреть/распечатать файл из списка </span><br>
+</div>
+	<div>
+
+		<form method="POST" enctype="multipart/form-data" action="/">
+			<table>
+				<tr>
+					<td style="width: 420px;">Выберите файл для загрузки:</td>
+					
+					<td style="width: 420px;"><input type="file" name="file" accept=".xlsx"/></td>
+					<td style="width: 420px;"><input type="submit" value="Обработать файл" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<hr size="5" noshade color="#768c8c">
+
+	<div th:if="${referenceFile}">
+		<span>
+
+			<h2 th:text="${referenceFileName}"  style="color: green;" >
+				   можно дальше 
+			</h2>
+
+	</div>
+	<div th:if="${!referenceFile}">
+		<h2 style="color: red;">
+			Не загружен файл - справочник
+			<h2>
+	</div>
+	<div>
+		<ol>
+			<li th:each="file : ${files}">
+				<a th:href="${file}" th:text="${file}" target="_blank"> </a>
+			</li>
+		</ol>
+	</div>
+
+	<script th:src="@{/webjars/jquery/3.7.1/jquery.min.js}"></script>
+	<script th:src="@{/webjars/popper.js/2.11.7/umd/popper.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/5.3.2/js/bootstrap.min.js}"></script>
+
+
+</body>
+
+</html>
