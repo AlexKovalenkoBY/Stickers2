@@ -809,3 +809,28 @@ javax.servlet.ServletException: Could not resolve view with name 'index' in serv
 2023-10-27 19:11:26.758 appender 14552 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
 2023-10-27 19:11:26.777 appender 14552 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
 2023-10-27 19:11:26.779 appender 14552 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-10-27 22:20:16.844 appender 10924 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10924 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-10-27 22:20:16.852 appender 10924 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-27 22:20:19.653 appender 10924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-10-27 22:20:19.674 appender 10924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-27 22:20:19.675 appender 10924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-27 22:20:20.020 appender 10924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-27 22:20:20.022 appender 10924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2949 ms
+2023-10-27 22:20:21.347 appender 10924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 22:20:21.442 appender 10924 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.886 seconds (JVM running for 6.851)
+2023-10-27 22:20:33.423 appender 10924 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 22:20:33.425 appender 10924 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-27 22:20:33.444 appender 10924 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2023-10-27 22:20:33.740 appender 10924 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 22:20:33.748 appender 10924 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-10-27 22:21:15.299 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-10-27 22:21:15.300 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-10-27 22:21:15.302 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-10-27 22:21:20.025 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 4.723057301 сек.
+2023-10-27 22:21:20.027 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-10-27 22:21:21.941 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.910309 сек.
+2023-10-27 22:21:21.951 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-10-27 22:21:22.005 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 6.7053439 сек.
+2023-10-27 22:21:22.011 appender 10924 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-10-27 22:21:22.037 appender 10924 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 22:21:22.039 appender 10924 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
