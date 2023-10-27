@@ -13,7 +13,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.stream.Stream;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -28,7 +27,6 @@ public class FileSystemStorageService implements StorageService {
 	public Path getRootLocation(){
 		return rootLocation;
 	}
-	@Autowired
 	public FileSystemStorageService(StorageProperties properties) {
         
         if(properties.getLocation().trim().length() == 0){
