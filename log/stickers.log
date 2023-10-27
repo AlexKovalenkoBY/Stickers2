@@ -547,3 +547,28 @@ Caused by: java.lang.UnsupportedClassVersionError: jakarta/servlet/ServletContex
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.0.12.jar:6.0.12]
 	... 22 common frames omitted
 
+2023-10-27 12:18:08.640 appender 19724 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 19724 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2023-10-27 12:18:08.644 appender 19724 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-10-27 12:18:10.295 appender 19724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-10-27 12:18:10.304 appender 19724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-27 12:18:10.306 appender 19724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-10-27 12:18:10.467 appender 19724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-27 12:18:10.468 appender 19724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1753 ms
+2023-10-27 12:18:11.089 appender 19724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 12:18:11.102 appender 19724 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.427 seconds (JVM running for 4.815)
+2023-10-27 12:18:27.180 appender 19724 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 12:18:27.181 appender 19724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-27 12:18:27.182 appender 19724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-27 12:18:27.248 appender 19724 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 12:18:27.251 appender 19724 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-10-27 12:18:32.313 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-10-27 12:18:32.314 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-10-27 12:18:32.315 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-10-27 12:18:33.861 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.5461488 сек.
+2023-10-27 12:18:33.862 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-10-27 12:18:34.710 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 0.8460807 сек.
+2023-10-27 12:18:34.713 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-10-27 12:18:34.715 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 2.4013653 сек.
+2023-10-27 12:18:34.725 appender 19724 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-10-27 12:18:34.786 appender 19724 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-10-27 12:18:34.790 appender 19724 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
