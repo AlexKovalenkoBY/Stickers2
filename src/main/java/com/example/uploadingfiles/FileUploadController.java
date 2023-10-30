@@ -96,11 +96,17 @@ public class FileUploadController {
 			throws IOException, DocumentException, OpenXML4JException, SAXException, ParserConfigurationException {
 		log.info("start POST request from address: " + request.getRemoteAddr());
 		if (!file.isEmpty()) {
+			try {
+				
+			
 			Long startTime = System.nanoTime();
-			log.info("1.******* start proceed file: " + file.getOriginalFilename() + "size: " + file.getSize());
+			log.info("1.******* start proceed file: " + file.getOriginalFilename() + " size: " + file.getSize());
 			
 			ExcelReadService ers = new ExcelReadService();
-			if (file.getOriginalFilename().indexOf("_Общие_характеристики_одним_файлом") > -1) {
+			log.info("1.1.******* Service created "  );
+
+			if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1) || (file.getOriginalFilename().indexOf("_Общие_характеристики_одним_файлом") > -1))
+			{
 				log.info("2.******* start Reference file proceed: " + file.getOriginalFilename() + "size: " + file.getSize());
 				
 				HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 0, 4);
@@ -119,6 +125,7 @@ public class FileUploadController {
 						+ " сек.");
 
 				refFileObject.setreferenceFileName(file.getOriginalFilename());
+			
 			} else {
 				if (StickersService.RefereneceReady) {
 					ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
@@ -126,6 +133,10 @@ public class FileUploadController {
 					StickersService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
 				}
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			log.info(e.getLocalizedMessage());
+		}
 		}
 		log.info("end POST request from address: " + request.getRemoteAddr());
 		return "redirect:/";

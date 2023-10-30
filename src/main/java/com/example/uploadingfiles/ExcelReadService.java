@@ -20,7 +20,10 @@ import java.util.List;
 public class ExcelReadService {
     public HashMap<String, String> uploadSelectedCellsAndBuidHasTable(MultipartFile file, Integer numberOfSheet,
             Integer keyColumn,
-            Integer valueColumn) throws IOException {
+            Integer valueColumn) {
+                try {
+                    
+                
         Long startTime = System.nanoTime();
    
         HashMap<String, String> data = new HashMap<>();
@@ -50,7 +53,12 @@ public class ExcelReadService {
        Long estimatedTime = System.nanoTime() - startTime;
         log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за " + estimatedTime / 1_000_000_000.
                 + " сек.");
+                
         return data;
+        } catch (Exception e) {
+               log.info("readee ERROR: " +e.getLocalizedMessage()); 
+                    return new HashMap<>();
+                }
     }
 
     public ArrayList<ArrayList<String>> uploadSelectedCellsAndBuidOrderHasTable(MultipartFile file, Integer numberOfSheet,

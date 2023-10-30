@@ -24,36 +24,33 @@ import java.awt.image.BufferedImage;
 import java.awt.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+
 @Service
 @Slf4j
 
 public class StickersService {
     static final Integer ImageWidth = 0;
     static final Integer ImageHeight = 0;
-    public static List<String> pdfsList= new ArrayList<String>();
-    public static Boolean  RefereneceReady = false;
-    public static final  List<Integer> orderColls = new ArrayList<>();
+    public static List<String> pdfsList = new ArrayList<String>();
+    public static Boolean RefereneceReady = false;
+    public static final List<Integer> orderColls = new ArrayList<>();
 
-
-
-
-    
-    public static void  buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,MultipartFile filename)
+    public static void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
+            MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
-        
+
         HashMap<String, String> refFile = referenceInstance.getBarCodeHashMap();
         HashMap<String, String> brandHash = referenceInstance.getbrandHash();
         StorageProperties storeProps = new StorageProperties();
         storeProps.getLocation();
 
-
-
         com.itextpdf.text.Document document = new Document();
         com.itextpdf.text.Font stickerFont = new com.itextpdf.text.Font();
         stickerFont.setSize(4f);
-        
-        String newFileName = ".\\"+storeProps.getLocation()+"\\"+filename.getOriginalFilename().substring(0, filename.getOriginalFilename().indexOf(".xls"))+ ".pdf";
+
+        String newFileName = ".\\" + storeProps.getLocation() + "\\"
+                + filename.getOriginalFilename().substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
         PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream(newFileName));
         document.open();
         com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
@@ -66,43 +63,49 @@ public class StickersService {
         orderList.forEach(order -> {
             String hashResult = refFile.get(order.get(2));
             String brandhashResult = brandHash.get(order.get(2));
-            Matcher matcher = pattern.matcher(hashResult);
- 
-            if ((hashResult != null) && (matcher.find())){
+            if (hashResult != null) {
 
-                try {
-                    BufferedImage image = StickersService.generateCode128BarcodeImage(hashResult);
-                    document.newPage();
-                    document.setPageSize(stickerPageSizeRectangle);
-                    // добавляем картинку
-                    com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image,
-                            null);
-                    document.add(pdfImage);
-                    XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
-                    String htmlString = "<html><head>"
-                            + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
-                            + "</head><body style=\"text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;\">"
-                            + fontHeaderStr // начало тега
-                            + hashResult + "</p>"// бар-код
-                            + fontHeaderStr // начало тега
-                            + order.get(0) + "</p>"// ООО кама маркет
-                            + fontHeaderStr // начало тега
-                            + order.get(1) + "</p>";// наименование;
-                    htmlString = htmlString + fontHeaderStrHalf // начало тега
-                            + "Артикул: " + order.get(2) + "</p>";// артикул
-                    htmlString = htmlString + fontHeaderStr // начало тега
-                            + "Бренд: " + brandhashResult + "</p>"// бренд
-                            + "</body></html>";
-                    worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
-                } catch (Exception e) {
-                    e.printStackTrace();
+                Matcher matcher = pattern.matcher(hashResult);
+
+                if ((hashResult != null) && (matcher.find())) {
+
+                    try {
+                        BufferedImage image = StickersService.generateCode128BarcodeImage(hashResult);
+                        document.newPage();
+                        document.setPageSize(stickerPageSizeRectangle);
+                        // добавляем картинку
+                        com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image,
+                                null);
+                        document.add(pdfImage);
+                        XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
+                        String htmlString = "<html><head>"
+                                + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
+                                + "</head><body style=\"text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;\">"
+                                + fontHeaderStr // начало тега
+                                + hashResult + "</p>"// бар-код
+                                + fontHeaderStr // начало тега
+                                + order.get(0) + "</p>"// ООО кама маркет
+                                + fontHeaderStr // начало тега
+                                + order.get(1) + "</p>";// наименование;
+                        htmlString = htmlString + fontHeaderStrHalf // начало тега
+                                + "Артикул: " + order.get(2) + "</p>";// артикул
+                        htmlString = htmlString + fontHeaderStr // начало тега
+                                + "Бренд: " + brandhashResult + "</p>"// бренд
+                                + "</body></html>";
+                        worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
+            } else {
+                log.info("error for order: " + order.toString());
             }
+
         });
-        
+
         document.close();
         pdfWriter.close();
-        
+
         Long estimatedTime = System.nanoTime() - startTime;
         log.info("Сформирован PDF файл " + newFileName + " за " + estimatedTime / 1_000_000_000. + " сек.");
     }
