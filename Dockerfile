@@ -11,6 +11,6 @@
 
 FROM openjdk:8-jdk-alpine
 RUN addgroup -S spring && adduser -S spring -G spring
-USER spring:spring
+USER 01564700:01564702qDocker
 COPY --from=build /home/app/target/stickers-0.0.1.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
