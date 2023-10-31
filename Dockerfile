@@ -28,7 +28,7 @@ FROM openjdk:18
 WORKDIR /app
 
 # Copy the jar file into our app
-COPY ./target/Stickers-0.0.1.jar /app
+COPY ./target/stickers-0.0.1.jar /app
 
 # Exposing port 8080
 EXPOSE 8081
