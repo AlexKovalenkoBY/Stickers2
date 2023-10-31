@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag Stickers-0.0.1.jar:$(date +%s)
+      run: docker build . --file Dockerfile --tag stickers-0.0.1.jar:$(date +%s)
