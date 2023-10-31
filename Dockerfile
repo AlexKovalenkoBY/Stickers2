@@ -9,8 +9,15 @@
 # EXPOSE 8081
 # ENTRYPOINT ["java", "-jar", "/app.jar"]
 
-FROM openjdk:8-jdk-alpine
-RUN addgroup -S spring && adduser -S spring -G spring
-USER 01564700:01564702qDocker
-COPY --from=build /home/app/target/stickers-0.0.1.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# FROM openjdk:8-jdk-alpine
+# COPY --from=build /home/app/target/stickers-0.0.1.jar app.jar
+# ENTRYPOINT ["java","-jar","/app.jar"]
+FROM maven:3.8.3-openjdk-11-slim AS build
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
+
+FROM openjdk:11-jre-slim
+COPY --from=build /app/target/myapp.jar /myapp.jar
+EXPOSE 8081
+CMD ["java", "-jar", "/myapp.jar"]
