@@ -18,6 +18,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:11-jre-slim
-COPY --from=build /app/target/myapp.jar /myapp.jar
+COPY --from=build /app/target/stickers-0.0.1.jar /myapp.jar
 EXPOSE 8081
 CMD ["java", "-jar", "/myapp.jar"]
