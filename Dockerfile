@@ -22,16 +22,25 @@
 # EXPOSE 8081
 # CMD ["java", "-jar", "/myapp.jar"]
 # Fetching latest version of Java
-FROM openjdk:18
+# FROM openjdk:18
  
-# Setting up work directory
+# # Setting up work directory
+# WORKDIR /app
+
+# # Copy the jar file into our app
+# COPY ./target/stickers-0.0.1.jar /app
+
+# # Exposing port 8080
+# EXPOSE 8081
+
+# # Starting the application
+# CMD ["java", "-jar", "spring-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:11
+
 WORKDIR /app
 
-# Copy the jar file into our app
-COPY ./target/stickers-0.0.1.jar /app
+COPY target/stickers-0.0.1.jar /app
 
-# Exposing port 8080
 EXPOSE 8081
 
-# Starting the application
-CMD ["java", "-jar", "spring-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "stickers-0.0.1.jar"]
