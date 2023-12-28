@@ -953,3 +953,554 @@ javax.servlet.ServletException: Could not resolve view with name 'index' in serv
 2023-10-30 18:51:05.440 appender 16304 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
 2023-10-30 18:51:05.456 appender 16304 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
 2023-10-30 18:51:05.457 appender 16304 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 20:55:11.334 appender 16660 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 16660 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28 20:55:11.342 appender 16660 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28 20:55:14.039 appender 16660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-28 20:55:14.056 appender 16660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28 20:55:14.058 appender 16660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-28 20:55:14.383 appender 16660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28 20:55:14.384 appender 16660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2898 ms
+2023-12-28 20:55:15.531 appender 16660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-28 20:55:15.557 appender 16660 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.124 seconds (JVM running for 5.785)
+2023-12-28 20:55:46.860 appender 16660 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 20:55:46.861 appender 16660 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28 20:55:46.863 appender 16660 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-28 20:55:46.927 appender 16660 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 20:55:46.930 appender 16660 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 20:55:55.301 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 20:55:55.302 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsx size: 1194188
+2023-12-28 20:55:55.303 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 20:55:55.304 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-12-28 20:55:58.471 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 3.1648832 сек.
+2023-12-28 20:55:58.472 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-12-28 20:55:59.602 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.1284918 сек.
+2023-12-28 20:55:59.604 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-12-28 20:55:59.607 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 4.3051733 сек.
+2023-12-28 20:55:59.634 appender 16660 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 20:55:59.664 appender 16660 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 20:55:59.666 appender 16660 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 20:56:10.631 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 20:56:10.632 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: новый.xlsx size: 16938
+2023-12-28 20:56:10.633 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 20:56:10.707 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : null
+2023-12-28 20:56:10.713 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 20:56:10.723 appender 16660 --- [http-nio-8081-exec-7] s.w.m.s.StandardServletMultipartResolver : Failed to perform cleanup of multipart items
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_c75c1c4e_c9e5_42a8_a3e9_88414726fde7_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_c75c1c4e_c9e5_42a8_a3e9_88414726fde7_00000001.tmp
+	... 36 common frames omitted
+
+2023-12-28 20:56:10.735 appender 16660 --- [http-nio-8081-exec-7] org.apache.catalina.connector.Request    : Failed to deleted temporary file used for part [file]
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_c75c1c4e_c9e5_42a8_a3e9_88414726fde7_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.Request.recycle(Request.java:475) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:420) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_c75c1c4e_c9e5_42a8_a3e9_88414726fde7_00000001.tmp
+	... 13 common frames omitted
+
+2023-12-28 20:56:10.741 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 20:56:10.742 appender 16660 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 20:56:52.871 appender 6080 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 6080 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28 20:56:52.877 appender 6080 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28 20:56:55.466 appender 6080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-28 20:56:55.481 appender 6080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28 20:56:55.483 appender 6080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-28 20:56:55.783 appender 6080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28 20:56:55.788 appender 6080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2756 ms
+2023-12-28 20:56:57.675 appender 6080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-28 20:56:57.709 appender 6080 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.996 seconds (JVM running for 6.984)
+2023-12-28 21:17:42.004 appender 3260 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 3260 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28 21:17:42.010 appender 3260 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28 21:17:44.978 appender 3260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-28 21:17:45.031 appender 3260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28 21:17:45.032 appender 3260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-28 21:17:45.372 appender 3260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28 21:17:45.374 appender 3260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3210 ms
+2023-12-28 21:17:46.497 appender 3260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-28 21:17:46.550 appender 3260 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.501 seconds (JVM running for 6.393)
+2023-12-28 21:18:10.757 appender 3260 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 21:18:10.758 appender 3260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28 21:18:10.760 appender 3260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-28 21:18:10.842 appender 3260 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:18:10.847 appender 3260 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:18:44.191 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:18:44.192 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsx size: 1194188
+2023-12-28 21:18:44.194 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:18:44.195 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-12-28 21:18:47.185 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 2.9894192 сек.
+2023-12-28 21:18:47.187 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-12-28 21:18:48.623 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.4342514 сек.
+2023-12-28 21:18:48.625 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-12-28 21:18:48.647 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 4.4551381 сек.
+2023-12-28 21:18:48.670 appender 3260 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:18:48.717 appender 3260 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:18:48.719 appender 3260 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:18:54.656 appender 3260 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:18:54.658 appender 3260 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: new!!!Order.xlsx size: 16938
+2023-12-28 21:18:54.659 appender 3260 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:18:54.748 appender 3260 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : null
+2023-12-28 21:18:54.750 appender 3260 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:18:54.763 appender 3260 --- [http-nio-8081-exec-5] s.w.m.s.StandardServletMultipartResolver : Failed to perform cleanup of multipart items
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_fea87ec5_e3dd_44f0_b88f_9b177d980472_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_fea87ec5_e3dd_44f0_b88f_9b177d980472_00000001.tmp
+	... 36 common frames omitted
+
+2023-12-28 21:18:54.776 appender 3260 --- [http-nio-8081-exec-5] org.apache.catalina.connector.Request    : Failed to deleted temporary file used for part [file]
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_fea87ec5_e3dd_44f0_b88f_9b177d980472_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.Request.recycle(Request.java:475) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:420) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_fea87ec5_e3dd_44f0_b88f_9b177d980472_00000001.tmp
+	... 13 common frames omitted
+
+2023-12-28 21:18:54.787 appender 3260 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:18:54.788 appender 3260 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:30:11.605 appender 10856 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10856 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28 21:30:11.636 appender 10856 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28 21:30:15.613 appender 10856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-28 21:30:15.649 appender 10856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28 21:30:15.651 appender 10856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-28 21:30:16.054 appender 10856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28 21:30:16.056 appender 10856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4261 ms
+2023-12-28 21:30:17.176 appender 10856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-28 21:30:17.201 appender 10856 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.998 seconds (JVM running for 23.016)
+2023-12-28 21:31:10.038 appender 10856 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 21:31:10.039 appender 10856 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28 21:31:10.042 appender 10856 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-28 21:31:10.120 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:31:10.125 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:31:17.338 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:31:17.340 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsx size: 1194188
+2023-12-28 21:31:17.343 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:31:17.348 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-12-28 21:31:21.021 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 3.6706534 сек.
+2023-12-28 21:31:21.023 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-12-28 21:31:22.558 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.5333891 сек.
+2023-12-28 21:31:22.560 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-12-28 21:31:22.562 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 5.2217801 сек.
+2023-12-28 21:31:22.609 appender 10856 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:31:22.694 appender 10856 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:31:22.695 appender 10856 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:31:36.416 appender 10856 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:31:36.418 appender 10856 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: new!!!Order.xlsx size: 16938
+2023-12-28 21:31:36.419 appender 10856 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:31:36.501 appender 10856 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : null
+2023-12-28 21:31:36.503 appender 10856 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:31:36.516 appender 10856 --- [http-nio-8081-exec-5] s.w.m.s.StandardServletMultipartResolver : Failed to perform cleanup of multipart items
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000001.tmp
+	... 36 common frames omitted
+
+2023-12-28 21:31:36.530 appender 10856 --- [http-nio-8081-exec-5] org.apache.catalina.connector.Request    : Failed to deleted temporary file used for part [file]
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.Request.recycle(Request.java:475) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:420) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000001.tmp
+	... 13 common frames omitted
+
+2023-12-28 21:31:36.542 appender 10856 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:31:36.544 appender 10856 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:32:01.201 appender 10856 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:32:01.203 appender 10856 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:32:03.265 appender 10856 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:32:03.267 appender 10856 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:32:10.710 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:32:10.711 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-60494109.xlsx size: 20760
+2023-12-28 21:32:10.712 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:32:10.785 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : null
+2023-12-28 21:32:10.787 appender 10856 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:32:10.794 appender 10856 --- [http-nio-8081-exec-2] s.w.m.s.StandardServletMultipartResolver : Failed to perform cleanup of multipart items
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134) ~[spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.30.jar:5.3.30]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.30.jar:5.3.30]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) [tomcat-embed-core-9.0.82.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.30.jar:5.3.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.30.jar:5.3.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000002.tmp
+	... 36 common frames omitted
+
+2023-12-28 21:32:10.811 appender 10856 --- [http-nio-8081-exec-2] org.apache.catalina.connector.Request    : Failed to deleted temporary file used for part [file]
+
+java.io.UncheckedIOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:428) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.Request.recycle(Request.java:475) ~[tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:420) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.82.jar:9.0.82]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_333]
+Caused by: java.io.IOException: Cannot delete C:\Users\user\AppData\Local\Temp\upload_02db2a06_face_4228_9440_dd91775abd83_00000002.tmp
+	... 13 common frames omitted
+
+2023-12-28 21:32:10.823 appender 10856 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:32:10.828 appender 10856 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28T21:36:36.113+03:00 appender 12800 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 17.0.2 with PID 12800 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28T21:36:36.121+03:00 appender 12800 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28T21:36:39.340+03:00 appender 12800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2023-12-28T21:36:39.407+03:00 appender 12800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28T21:36:39.426+03:00 appender 12800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-28T21:36:39.801+03:00 appender 12800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28T21:36:39.803+03:00 appender 12800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3509 ms
+2023-12-28T21:36:41.379+03:00 appender 12800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2023-12-28T21:36:41.414+03:00 appender 12800 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.2 seconds (process running for 7.621)
+2023-12-28T21:36:52.516+03:00 appender 12800 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28T21:36:52.518+03:00 appender 12800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28T21:36:52.522+03:00 appender 12800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-28T21:36:52.653+03:00 appender 12800 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:267) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:112) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-12-28T21:37:38.928+03:00 appender 7064 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 17.0.2 with PID 7064 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28T21:37:38.946+03:00 appender 7064 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28T21:37:41.818+03:00 appender 7064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2023-12-28T21:37:41.840+03:00 appender 7064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28T21:37:41.841+03:00 appender 7064 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-28T21:37:42.088+03:00 appender 7064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28T21:37:42.091+03:00 appender 7064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2965 ms
+2023-12-28T21:37:43.276+03:00 appender 7064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2023-12-28T21:37:43.301+03:00 appender 7064 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.309 seconds (process running for 6.517)
+2023-12-28T21:37:51.835+03:00 appender 7064 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28T21:37:51.836+03:00 appender 7064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28T21:37:51.839+03:00 appender 7064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-28T21:37:51.920+03:00 appender 7064 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:267) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:112) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-12-28 21:39:37.917 appender 2992 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 17.0.2 on DESKTOP-PATD4L7 with PID 2992 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2023-12-28 21:39:37.923 appender 2992 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-28 21:39:40.505 appender 2992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-28 21:39:40.538 appender 2992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-28 21:39:40.540 appender 2992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-28 21:39:40.845 appender 2992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-28 21:39:40.846 appender 2992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2663 ms
+2023-12-28 21:39:41.823 appender 2992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-28 21:39:41.847 appender 2992 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.752 seconds (JVM running for 5.68)
+2023-12-28 21:39:48.554 appender 2992 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 21:39:48.555 appender 2992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-28 21:39:48.557 appender 2992 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-28 21:39:48.610 appender 2992 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:39:48.614 appender 2992 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:39:56.838 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:39:56.840 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 16_10_2023_Общие_характеристики_одним_файлом.xlsx size: 1194188
+2023-12-28 21:39:56.842 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:39:56.843 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 16_10_2023_Общие_характеристики_одним_файлом.xlsxsize: 1194188
+2023-12-28 21:40:00.257 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 3.4122898 сек.
+2023-12-28 21:40:00.259 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2023-12-28 21:40:01.958 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 1.6980326 сек.
+2023-12-28 21:40:01.960 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2023-12-28 21:40:01.961 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 16_10_2023_Общие_характеристики_одним_файлом.xlsx за 5.1217133 сек.
+2023-12-28 21:40:02.024 appender 2992 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:40:02.054 appender 2992 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:40:02.059 appender 2992 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:40:11.563 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:40:11.564 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: new!!!Order.xlsx size: 16938
+2023-12-28 21:40:11.565 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:40:11.661 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа new!!!Order.xlsx за 0.0947666 сек.
+2023-12-28 21:40:13.469 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, AM 462 S щетки стеклоочистителя бескаркасные 600/475 мм, 3397007462]
+2023-12-28 21:40:13.470 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, AR 604 S щетки стеклоочистителя бескаркасные 600/450 мм, 3397118908]
+2023-12-28 21:40:13.472 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, AR 813 S щетки стеклоочистителя бескаркасные 650/450 мм, 3397118912]
+2023-12-28 21:40:13.473 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, ATF TYPE T-IV масло трансмиссионное синтетическое 4 л, 20204]
+2023-12-28 21:40:13.475 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, ATF TYPE T-IV масло трансмиссионное синтетическое 4 л, 20204]
+2023-12-28 21:40:14.045 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, BRAKE FLUID жидкость тормозная DOT 4 946 мл, HG7045RартHG7045R]
+2023-12-28 21:40:15.977 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, OLD CARS & TAXI присадка в моторное масло 444 мл, HG2250]
+2023-12-28 21:40:15.979 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, OLD CARS & TAXI присадка в моторное масло 444 мл, HG2250]
+2023-12-28 21:40:15.980 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, OLD CARS & TAXI присадка в моторное масло 444 мл, HG2250]
+2023-12-28 21:40:15.981 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, OLD CARS & TAXI присадка в моторное масло 444 мл, HG2250]
+2023-12-28 21:40:17.111 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Rear щетка стеклоочистителя каркасная 260 мм, 3397004801]
+2023-12-28 21:40:17.113 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Rear щетка стеклоочистителя каркасная 300 мм, 3397011678]
+2023-12-28 21:40:17.114 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, SILVER Акриловая аэрозольная краска 400 мл, BS36]
+2023-12-28 21:40:18.729 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 200P компрессор автомобильный от прикуривателя 100W, A80740S]
+2023-12-28 21:40:18.730 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 200P компрессор автомобильный от прикуривателя 100W, A80740S]
+2023-12-28 21:40:18.731 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 350L компрессор автомобильный от прикуривателя 150W, 80506]
+2023-12-28 21:40:18.733 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 600 компрессор автомобильный от клемм АКБ 250W, 80503]
+2023-12-28 21:40:18.734 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 750D компрессор автомобильный от клемм АКБ 300W, 80505]
+2023-12-28 21:40:18.736 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 750D компрессор автомобильный от клемм АКБ 300W, 80505]
+2023-12-28 21:40:18.737 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Turbo KS 900 компрессор автомобильный от клемм АКБ 350W, 80504]
+2023-12-28 21:40:18.738 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Twin щетки стеклоочистителя каркасные 500/450 мм, 3397118563]
+2023-12-28 21:40:18.741 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Twin щетки стеклоочистителя каркасные 650/400 мм, 3397118324]
+2023-12-28 21:40:19.733 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Аэрозольная краска HI-HEAT SILVER 400 мл., BS0300]
+2023-12-28 21:40:19.734 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : error for order: [ООО "КАМА МАРКЕТ" Бетонный проезд, Аэрозольная краска HI-HEAT WHITE 400 мл., BS0040]
+2023-12-28 21:40:20.172 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\new!!!Order.pdf за 8.5091935 сек.
+2023-12-28 21:40:20.175 appender 2992 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:40:20.187 appender 2992 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:40:20.217 appender 2992 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2023-12-28 21:41:31.189 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2023-12-28 21:41:31.192 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: NEW_wb-gi-59404003.xlsx size: 18992
+2023-12-28 21:41:31.192 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2023-12-28 21:41:31.313 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа NEW_wb-gi-59404003.xlsx за 0.1199429 сек.
+2023-12-28 21:41:41.261 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\NEW_wb-gi-59404003.pdf за 9.9458294 сек.
+2023-12-28 21:41:41.263 appender 2992 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2023-12-28 21:41:41.272 appender 2992 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2023-12-28 21:41:41.276 appender 2992 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
