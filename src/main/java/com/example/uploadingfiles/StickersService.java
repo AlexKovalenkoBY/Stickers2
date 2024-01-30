@@ -3,6 +3,8 @@ package com.example.uploadingfiles;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
+
+import com.example.uploadingfiles.storage.StorageException;
 import com.example.uploadingfiles.storage.StorageProperties;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
@@ -18,6 +20,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.awt.image.BufferedImage;
@@ -25,17 +29,25 @@ import java.awt.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+import com.itextpdf.io.image.ImageData;
+import com.itextpdf.io.image.ImageDataFactory;
+
+import com.itextpdf.layout.element.Image;
+
 @Service
 @Slf4j
 
-public class StickersService {
+public class StickersService implements StickersServiceInterface {
+
+    private Image eac;
+
     static final Integer ImageWidth = 0;
     static final Integer ImageHeight = 0;
     public static List<String> pdfsList = new ArrayList<String>();
     public static Boolean RefereneceReady = false;
     public static final List<Integer> orderColls = new ArrayList<>();
 
-    public static void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
+    public void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
             MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
@@ -76,7 +88,12 @@ public class StickersService {
                         // добавляем картинку
                         com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image,
                                 null);
+                        // com.itextpdf.text.Image eacImage = com.itextpdf.text.Image.getInstance(eac,
+                        //         null);
+
                         document.add(pdfImage);
+                        
+                        
                         XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
                         String htmlString = "<html><head>"
                                 + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
@@ -86,12 +103,14 @@ public class StickersService {
                                 + fontHeaderStr // начало тега
                                 + order.get(0) + "</p>"// ООО кама маркет
                                 + fontHeaderStr // начало тега
-                                + order.get(1) + "</p>";// наименование;
+                                + order.get(1) + "</p>";// наименование
                         htmlString = htmlString + fontHeaderStrHalf // начало тега
                                 + "Артикул: " + order.get(2) + "</p>";// артикул
                         htmlString = htmlString + fontHeaderStr // начало тега
                                 + "Бренд: " + brandhashResult + "</p>"// бренд
                                 + "</body></html>";
+    
+                      
                         worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -186,6 +205,27 @@ public class StickersService {
         return MatrixToImageWriter.toBufferedImage(bitMatrix);
     }
 
+    @Override
+    public void init() {
+        try {
+        String path = this.getClass().getResource("/static").getFile();
+        java.io.File f = new java.io.File(path + "/EAC.png");
+
+        // Creating an ImageData object
+        
+        ImageData imageData = ImageDataFactory.create(f.toString());
+            // Creating an Image object
+            this.eac = new Image(imageData);
+    
+            // Setting the position of the image to the center of the page
+            this.eac.setFixedPosition(150, 100);
+         
+        } catch (MalformedURLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
     // private static void drawRectangle(BufferedImage image) {// рисует рамку
     // Graphics2D g = (Graphics2D) image.getGraphics();
     // g.setStroke(new BasicStroke(1));

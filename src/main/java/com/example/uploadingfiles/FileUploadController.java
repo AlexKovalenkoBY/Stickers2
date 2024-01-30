@@ -16,6 +16,7 @@ import java.util.stream.Stream;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 
@@ -42,8 +43,9 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
-public class FileUploadController {
 
+public class FileUploadController {
+@Autowired StickersService stService;
 	private final StorageService storageService;
 
 	public FileUploadController(StorageService storageService) {
@@ -130,7 +132,7 @@ public class FileUploadController {
 				if (StickersService.RefereneceReady) {
 					ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
 							ReferenceFileColumnsSingleton.colls);
-					StickersService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
+							stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
 				}
 			}
 		} catch (Exception e) {

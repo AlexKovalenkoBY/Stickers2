@@ -19,10 +19,11 @@ public class StickersCreateApplication {
 
 	@Bean
 	CommandLineRunner init(
-			StorageService storageService) {
+			StorageService storageService, StickersService stService) {
 		return (args) -> {
 			storageService.deleteAll();
 			storageService.init();
+			stService.init();
 		};
 	}
 }
