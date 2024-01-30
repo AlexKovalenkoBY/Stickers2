@@ -21,6 +21,8 @@ import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.properties.HorizontalAlignment;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
 
@@ -32,7 +34,7 @@ class UploadingFilesApplicationTests {
 		try {
 
 			// String path = this.getClass().getResource("/static").getFile();
-			String fileName = "src/main/resources/static/EAC.png";
+			String fileName = "src/main/resources/static/eac.png";
 			java.io.File f = new java.io.File(fileName);
 
 			// Creating an ImageData object
@@ -61,13 +63,19 @@ class UploadingFilesApplicationTests {
 			document.newPage();
 			document.setPageSize(stickerPageSizeRectangle);
 			PdfImageXObject xObject = new PdfImageXObject(imageData);
-			Image image = new Image(xObject, 100).setHorizontalAlignment(HorizontalAlignment.LEFT);
-			com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(byArray, false);
-			// com.itextpdf.text.Image eacImage = com.itextpdf.text.Image.getInstance(eac,
-			// null);
+			// Image image = new Image(xObject, 100).setHorizontalAlignment(HorizontalAlignment.LEFT);
+			// com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(byArray, false);
+			
+            com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(fileName);
+            // image2.scaleAbsolute(20f, 20f);
 
-			document.add(pdfImage);
-			// document.add(xObject);
+			image2.scalePercent(1f);
+			float newX = stickerPageSizeRectangle.getRight()-image2.getWidth()/100-2;
+			float newY = image2.getHeight()/100;
+			image2.setAbsolutePosition(newX, newY);
+
+			document.add(image2);
+			// document.add(pdfImage);
 			XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
 
 			worker.parseXHtml(pdfWriter, document, new StringReader(""));

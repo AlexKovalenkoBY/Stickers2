@@ -15,6 +15,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
     
     registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     registry.addResourceHandler("/favicon.ico").addResourceLocations("classpath:/static/favicon.ico");
+    registry.addResourceHandler("/static/eac.png").addResourceLocations("classpath:/static/eac.png");
     registry.addResourceHandler("/pdf/**").addResourceLocations("classpath:/static/pdf/");
 
     

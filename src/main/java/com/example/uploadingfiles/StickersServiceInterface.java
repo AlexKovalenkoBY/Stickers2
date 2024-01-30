@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 
 public interface StickersServiceInterface {
 
+	void getEACFile();
 	void init();
 
 	void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,

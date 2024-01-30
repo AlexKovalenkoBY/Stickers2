@@ -435,3 +435,1113 @@ Caused by: java.lang.NullPointerException: null
 2024-01-30 21:51:16.983 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 6648 (started by user in D:\java\Stickers2)
 2024-01-30 21:51:16.986 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
 2024-01-30 21:51:20.932 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.642 seconds (JVM running for 7.227)
+2024-01-30 21:57:24.467 appender 18344 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18344 (started by user in D:\java\Stickers2)
+2024-01-30 21:57:24.476 appender 18344 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 21:57:29.346 appender 18344 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 6.044 seconds (JVM running for 9.669)
+2024-01-30 21:59:02.021 appender 13388 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 13388 (started by user in D:\java\Stickers2)
+2024-01-30 21:59:02.028 appender 13388 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 21:59:08.036 appender 13388 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 6.916 seconds (JVM running for 9.605)
+2024-01-30 21:59:51.032 appender 16572 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 16572 (started by user in D:\java\Stickers2)
+2024-01-30 21:59:51.037 appender 16572 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 21:59:54.842 appender 16572 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.622 seconds (JVM running for 6.637)
+2024-01-30 22:00:27.022 appender 9788 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 9788 (started by user in D:\java\Stickers2)
+2024-01-30 22:00:27.027 appender 9788 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:00:31.714 appender 9788 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.387 seconds (JVM running for 7.639)
+2024-01-30 22:07:26.883 appender 1040 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 1040 (started by user in D:\java\Stickers2)
+2024-01-30 22:07:26.887 appender 1040 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:07:30.582 appender 1040 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.534 seconds (JVM running for 6.477)
+2024-01-30 22:08:13.875 appender 16568 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 16568 (started by user in D:\java\Stickers2)
+2024-01-30 22:08:13.885 appender 16568 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:08:18.395 appender 16568 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.256 seconds (JVM running for 7.74)
+2024-01-30 22:08:57.588 appender 3696 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 3696 (started by user in D:\java\Stickers2)
+2024-01-30 22:08:57.591 appender 3696 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:09:01.866 appender 3696 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.622 seconds (JVM running for 8.2)
+2024-01-30 22:09:50.579 appender 13976 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 13976 (started by user in D:\java\Stickers2)
+2024-01-30 22:09:50.583 appender 13976 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:09:54.618 appender 13976 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.726 seconds (JVM running for 6.747)
+2024-01-30 22:12:36.889 appender 18224 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18224 (started by user in D:\java\Stickers2)
+2024-01-30 22:12:36.892 appender 18224 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:12:41.361 appender 18224 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.381 seconds (JVM running for 8.154)
+2024-01-30 22:14:40.574 appender 6944 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 6944 (started by user in D:\java\Stickers2)
+2024-01-30 22:14:40.577 appender 6944 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:14:44.543 appender 6944 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.637 seconds (JVM running for 6.641)
+2024-01-30 22:15:29.640 appender 18240 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18240 (started by user in D:\java\Stickers2)
+2024-01-30 22:15:29.644 appender 18240 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:15:33.762 appender 18240 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.975 seconds (JVM running for 7.39)
+2024-01-30 22:17:12.888 appender 14028 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 14028 (started by user in D:\java\Stickers2)
+2024-01-30 22:17:12.892 appender 14028 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:17:17.202 appender 14028 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.125 seconds (JVM running for 7.369)
+2024-01-30 22:17:49.262 appender 12344 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 12344 (started by user in D:\java\Stickers2)
+2024-01-30 22:17:49.266 appender 12344 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:17:53.168 appender 12344 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.601 seconds (JVM running for 6.794)
+2024-01-30 22:19:29.226 appender 15960 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 15960 (started by user in D:\java\Stickers2)
+2024-01-30 22:19:29.229 appender 15960 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:19:33.561 appender 15960 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.016 seconds (JVM running for 7.26)
+2024-01-30 22:21:09.553 appender 5524 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 5524 (started by user in D:\java\Stickers2)
+2024-01-30 22:21:09.557 appender 5524 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:21:14.111 appender 5524 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.349 seconds (JVM running for 8.015)
+2024-01-30 22:23:23.536 appender 11924 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 11924 (started by user in D:\java\Stickers2)
+2024-01-30 22:23:23.540 appender 11924 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:23:27.424 appender 11924 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.689 seconds (JVM running for 6.954)
+2024-01-30 22:23:53.087 appender 10000 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10000 (started by user in D:\java\Stickers2)
+2024-01-30 22:23:53.093 appender 10000 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:23:57.630 appender 10000 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.362 seconds (JVM running for 8.636)
+2024-01-30 22:25:07.790 appender 10040 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10040 (started by user in D:\java\Stickers2)
+2024-01-30 22:25:07.793 appender 10040 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:25:11.765 appender 10040 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.657 seconds (JVM running for 6.746)
+2024-01-30 22:25:43.450 appender 17508 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 17508 (started by user in D:\java\Stickers2)
+2024-01-30 22:25:43.454 appender 17508 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:25:47.866 appender 17508 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.197 seconds (JVM running for 7.671)
+2024-01-30 22:31:56.938 appender 9720 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 9720 (started by user in D:\java\Stickers2)
+2024-01-30 22:31:56.941 appender 9720 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:32:00.800 appender 9720 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.551 seconds (JVM running for 6.875)
+2024-01-30 22:32:48.872 appender 6712 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 6712 (started by user in D:\java\Stickers2)
+2024-01-30 22:32:48.876 appender 6712 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:32:52.784 appender 6712 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.629 seconds (JVM running for 6.849)
+2024-01-30 22:33:29.977 appender 11936 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 11936 (started by user in D:\java\Stickers2)
+2024-01-30 22:33:29.981 appender 11936 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:33:33.533 appender 11936 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.443 seconds (JVM running for 6.657)
+2024-01-30 22:33:57.764 appender 13700 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 13700 (started by user in D:\java\Stickers2)
+2024-01-30 22:33:57.769 appender 13700 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:34:01.728 appender 13700 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.71 seconds (JVM running for 6.71)
+2024-01-30 22:34:41.246 appender 11836 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 11836 (started by user in D:\java\Stickers2)
+2024-01-30 22:34:41.251 appender 11836 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:34:46.006 appender 11836 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.503 seconds (JVM running for 7.736)
+2024-01-30 22:35:07.255 appender 9436 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 9436 (started by user in D:\java\Stickers2)
+2024-01-30 22:35:07.259 appender 9436 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:35:11.107 appender 9436 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.546 seconds (JVM running for 6.981)
+2024-01-30 22:35:37.852 appender 18376 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18376 (started by user in D:\java\Stickers2)
+2024-01-30 22:35:37.856 appender 18376 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:35:41.796 appender 18376 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.637 seconds (JVM running for 6.622)
+2024-01-30 22:36:07.871 appender 4216 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 4216 (started by user in D:\java\Stickers2)
+2024-01-30 22:36:07.874 appender 4216 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:36:11.786 appender 4216 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.59 seconds (JVM running for 6.662)
+2024-01-30 22:36:43.977 appender 13784 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 13784 (started by user in D:\java\Stickers2)
+2024-01-30 22:36:43.980 appender 13784 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:36:47.895 appender 13784 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.584 seconds (JVM running for 6.986)
+2024-01-30 22:40:55.124 appender 14848 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 14848 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:40:55.134 appender 14848 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:40:58.588 appender 14848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:40:58.619 appender 14848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:40:58.620 appender 14848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:40:59.038 appender 14848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:40:59.039 appender 14848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3694 ms
+2024-01-30 22:41:00.226 appender 14848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:41:00.325 appender 14848 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.339 seconds (JVM running for 7.394)
+2024-01-30 22:41:07.692 appender 14848 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:41:07.694 appender 14848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:41:07.697 appender 14848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 22:41:07.770 appender 14848 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:41:07.778 appender 14848 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:41:12.939 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:41:12.941 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:41:12.942 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:41:12.943 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:41:16.575 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.6314537 сек.
+2024-01-30 22:41:16.577 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:41:18.216 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.6374482 сек.
+2024-01-30 22:41:18.218 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:41:18.220 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.2789853 сек.
+2024-01-30 22:41:18.233 appender 14848 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:41:18.276 appender 14848 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:41:18.278 appender 14848 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:41:30.183 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:41:30.186 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:41:30.188 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:41:30.324 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1337098 сек.
+2024-01-30 22:41:45.111 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 14.7563812 сек.
+2024-01-30 22:41:45.112 appender 14848 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:41:45.123 appender 14848 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:41:45.158 appender 14848 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:42:56.186 appender 7288 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 7288 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:42:56.195 appender 7288 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:42:58.999 appender 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:42:59.029 appender 7288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:42:59.032 appender 7288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:42:59.577 appender 7288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:42:59.608 appender 7288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3272 ms
+2024-01-30 22:43:01.491 appender 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:43:01.521 appender 7288 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.64 seconds (JVM running for 8.007)
+2024-01-30 22:43:16.997 appender 7288 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:43:17.000 appender 7288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:43:17.002 appender 7288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 22:43:17.057 appender 7288 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:43:17.063 appender 7288 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:43:23.705 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:43:23.706 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:43:23.707 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:43:23.708 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:43:27.311 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.6019413 сек.
+2024-01-30 22:43:27.313 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:43:29.009 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.6937344 сек.
+2024-01-30 22:43:29.010 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:43:29.011 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.3058202 сек.
+2024-01-30 22:43:29.030 appender 7288 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:43:29.078 appender 7288 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:43:29.080 appender 7288 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:43:36.760 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:43:36.761 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:43:36.762 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:43:36.870 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1056835 сек.
+2024-01-30 22:43:41.050 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.1791384 сек.
+2024-01-30 22:43:41.051 appender 7288 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:43:41.060 appender 7288 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:43:41.095 appender 7288 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:44:36.129 appender 16772 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 16772 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:44:36.139 appender 16772 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:44:38.931 appender 16772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:44:39.003 appender 16772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:44:39.011 appender 16772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:44:39.493 appender 16772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:44:39.608 appender 16772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3281 ms
+2024-01-30 22:44:41.655 appender 16772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:44:41.700 appender 16772 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.754 seconds (JVM running for 8.258)
+2024-01-30 22:44:57.231 appender 16772 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:44:57.233 appender 16772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:44:57.236 appender 16772 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 22:44:57.307 appender 16772 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:44:57.314 appender 16772 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:45:03.379 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:45:03.380 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:45:03.381 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:45:03.382 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:45:06.749 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.3656391 сек.
+2024-01-30 22:45:06.751 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:45:08.268 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.5155225 сек.
+2024-01-30 22:45:08.270 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:45:08.285 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.9051527 сек.
+2024-01-30 22:45:08.294 appender 16772 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:45:08.340 appender 16772 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:45:08.342 appender 16772 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:45:14.920 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:45:14.921 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:45:14.922 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:45:15.014 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.0895379 сек.
+2024-01-30 22:45:19.511 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.4952389 сек.
+2024-01-30 22:45:19.512 appender 16772 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:45:19.521 appender 16772 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:45:19.553 appender 16772 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:46:27.112 appender 16680 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 16680 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:46:27.121 appender 16680 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:46:30.504 appender 16680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:46:30.534 appender 16680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:46:30.536 appender 16680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:46:31.027 appender 16680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:46:31.031 appender 16680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3745 ms
+2024-01-30 22:46:33.454 appender 16680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:46:33.484 appender 16680 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 7.734 seconds (JVM running for 9.309)
+2024-01-30 22:46:40.026 appender 16680 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:46:40.027 appender 16680 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:46:40.030 appender 16680 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 22:46:40.092 appender 16680 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:46:40.098 appender 16680 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:46:44.940 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:46:44.941 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:46:44.943 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:46:44.943 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:46:48.377 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.4325124 сек.
+2024-01-30 22:46:48.378 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:46:49.556 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.1768134 сек.
+2024-01-30 22:46:49.558 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:46:49.559 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.6179212 сек.
+2024-01-30 22:46:49.560 appender 16680 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:46:49.617 appender 16680 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:46:49.619 appender 16680 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:46:55.429 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:46:55.430 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:46:55.431 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:46:55.533 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.0960145 сек.
+2024-01-30 22:47:00.115 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.5796451 сек.
+2024-01-30 22:47:00.116 appender 16680 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:47:00.126 appender 16680 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:47:00.160 appender 16680 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:47:32.572 appender 14156 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 14156 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:47:32.583 appender 14156 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:47:35.327 appender 14156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:47:35.360 appender 14156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:47:35.362 appender 14156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:47:35.785 appender 14156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:47:35.787 appender 14156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3050 ms
+2024-01-30 22:47:37.397 appender 14156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:47:37.422 appender 14156 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.868 seconds (JVM running for 7.675)
+2024-01-30 22:49:47.253 appender 1500 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 1500 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:49:47.271 appender 1500 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:49:50.037 appender 1500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:49:50.062 appender 1500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:49:50.064 appender 1500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:49:50.519 appender 1500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:49:50.521 appender 1500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3091 ms
+2024-01-30 22:49:52.606 appender 1500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:49:52.638 appender 1500 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.691 seconds (JVM running for 8.278)
+2024-01-30 22:50:06.422 appender 1500 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:50:06.423 appender 1500 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:50:06.426 appender 1500 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 22:50:06.499 appender 1500 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:50:06.506 appender 1500 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:50:15.936 appender 1500 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:50:15.937 appender 1500 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:50:15.938 appender 1500 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:50:15.939 appender 1500 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:50:15.965 appender 1500 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:50:15.966 appender 1500 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:50:22.647 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:50:22.648 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:50:22.649 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:50:22.650 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:50:25.818 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.1664258 сек.
+2024-01-30 22:50:25.819 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:50:27.714 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.8927025 сек.
+2024-01-30 22:50:27.716 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:50:27.717 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.068582 сек.
+2024-01-30 22:50:27.718 appender 1500 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:50:27.748 appender 1500 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:50:27.750 appender 1500 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:50:35.133 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:50:35.134 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:50:35.135 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:50:35.243 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1059242 сек.
+2024-01-30 22:50:39.993 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.7481036 сек.
+2024-01-30 22:50:39.994 appender 1500 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:50:40.003 appender 1500 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:50:40.032 appender 1500 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:51:14.536 appender 3548 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 3548 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:51:14.547 appender 3548 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:51:18.423 appender 3548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:51:18.446 appender 3548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:51:18.448 appender 3548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:51:18.846 appender 3548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:51:18.848 appender 3548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4062 ms
+2024-01-30 22:51:20.594 appender 3548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:51:20.624 appender 3548 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 7.09 seconds (JVM running for 9.331)
+2024-01-30 22:51:53.466 appender 3548 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:51:53.468 appender 3548 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:51:53.470 appender 3548 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 22:51:53.564 appender 3548 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:51:53.571 appender 3548 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:52:00.956 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:52:00.957 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:52:00.958 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:52:00.958 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:52:04.469 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.5096286 сек.
+2024-01-30 22:52:04.470 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:52:06.087 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.615585 сек.
+2024-01-30 22:52:06.089 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:52:06.090 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.1334149 сек.
+2024-01-30 22:52:06.091 appender 3548 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:52:06.135 appender 3548 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:52:06.137 appender 3548 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:52:12.291 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:52:12.292 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:52:12.293 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:52:12.387 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.0916092 сек.
+2024-01-30 22:52:16.829 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.4403628 сек.
+2024-01-30 22:52:16.830 appender 3548 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:52:16.843 appender 3548 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:52:16.874 appender 3548 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:52:53.279 appender 14536 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 14536 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:52:53.293 appender 14536 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:52:57.895 appender 14536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:52:57.913 appender 14536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:52:57.914 appender 14536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:52:58.274 appender 14536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:52:58.275 appender 14536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4810 ms
+2024-01-30 22:53:00.417 appender 14536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:53:00.449 appender 14536 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 8.211 seconds (JVM running for 10.221)
+2024-01-30 22:53:04.271 appender 14536 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:53:04.272 appender 14536 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:53:04.275 appender 14536 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 22:53:04.345 appender 14536 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:53:04.351 appender 14536 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:53:15.737 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:53:15.739 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:53:15.740 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:53:15.741 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:53:19.793 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.0506337 сек.
+2024-01-30 22:53:19.794 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:53:21.111 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.3157757 сек.
+2024-01-30 22:53:21.113 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:53:21.115 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.3761558 сек.
+2024-01-30 22:53:21.135 appender 14536 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:53:21.171 appender 14536 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:53:21.172 appender 14536 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:53:26.565 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:53:26.568 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:53:26.569 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:53:26.675 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1005336 сек.
+2024-01-30 22:53:31.341 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.66388 сек.
+2024-01-30 22:53:31.342 appender 14536 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:53:31.355 appender 14536 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:53:31.405 appender 14536 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:54:10.525 appender 8364 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 8364 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:54:10.533 appender 8364 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:54:13.671 appender 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:54:13.701 appender 8364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:54:13.705 appender 8364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:54:14.091 appender 8364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:54:14.092 appender 8364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3395 ms
+2024-01-30 22:54:15.156 appender 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:54:15.189 appender 8364 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.672 seconds (JVM running for 7.255)
+2024-01-30 22:55:24.275 appender 8364 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 22:55:24.278 appender 8364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 22:55:24.282 appender 8364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-30 22:55:24.365 appender 8364 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:55:24.371 appender 8364 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:55:30.859 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:55:30.860 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 22:55:30.861 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:55:30.862 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 22:55:34.172 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.3081678 сек.
+2024-01-30 22:55:34.174 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 22:55:35.682 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.5069029 сек.
+2024-01-30 22:55:35.684 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 22:55:35.685 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.8247011 сек.
+2024-01-30 22:55:35.698 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:55:35.743 appender 8364 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:55:35.745 appender 8364 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:55:42.508 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 22:55:42.510 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 22:55:42.510 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 22:55:42.622 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1098122 сек.
+2024-01-30 22:55:47.468 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.843439 сек.
+2024-01-30 22:55:47.469 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 22:55:47.479 appender 8364 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 22:55:47.506 appender 8364 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 22:56:44.858 appender 2036 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 2036 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:56:44.868 appender 2036 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:56:47.980 appender 2036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:56:48.002 appender 2036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:56:48.004 appender 2036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:56:48.356 appender 2036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:56:48.357 appender 2036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3321 ms
+2024-01-30 22:56:49.779 appender 2036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:56:49.831 appender 2036 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.066 seconds (JVM running for 7.616)
+2024-01-30 22:58:07.872 appender 18008 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18008 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 22:58:07.881 appender 18008 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 22:58:10.591 appender 18008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 22:58:10.617 appender 18008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 22:58:10.619 appender 18008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 22:58:11.273 appender 18008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 22:58:11.292 appender 18008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3263 ms
+2024-01-30 22:58:12.653 appender 18008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 22:58:12.696 appender 18008 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.01 seconds (JVM running for 7.289)
+2024-01-30 23:03:24.472 appender 1748 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 1748 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:03:24.482 appender 1748 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:03:27.226 appender 1748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:03:27.253 appender 1748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:03:27.255 appender 1748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:03:27.852 appender 1748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:03:27.854 appender 1748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3224 ms
+2024-01-30 23:03:29.614 appender 1748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:03:29.653 appender 1748 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.166 seconds (JVM running for 8.166)
+2024-01-30 23:03:59.351 appender 1748 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:03:59.352 appender 1748 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:03:59.354 appender 1748 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 23:03:59.415 appender 1748 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:03:59.418 appender 1748 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:04:06.308 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:04:06.309 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:04:06.310 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:04:06.311 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:04:09.580 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.2679615 сек.
+2024-01-30 23:04:09.581 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:04:11.065 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.4824935 сек.
+2024-01-30 23:04:11.067 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:04:11.069 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.7598098 сек.
+2024-01-30 23:04:11.094 appender 1748 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:04:11.142 appender 1748 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:04:11.144 appender 1748 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:04:17.056 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:04:17.059 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:04:17.060 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:04:17.167 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1045992 сек.
+2024-01-30 23:04:21.332 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.1634844 сек.
+2024-01-30 23:04:21.333 appender 1748 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:04:21.344 appender 1748 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:04:21.371 appender 1748 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:04:39.352 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:04:39.354 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73487928-166.xlsx size: 28167
+2024-01-30 23:04:39.354 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:04:39.449 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73487928-166.xlsx за 0.09247 сек.
+2024-01-30 23:04:55.318 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73487928-166.pdf за 15.8685196 сек.
+2024-01-30 23:04:55.321 appender 1748 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:04:55.340 appender 1748 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:04:55.344 appender 1748 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:07:44.352 appender 13636 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 21.0.1 on DESKTOP-PATD4L7 with PID 13636 (started by user in d:\java\Stickers2)
+2024-01-30 23:07:44.356 appender 13636 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:07:48.392 appender 13636 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 5.156 seconds (JVM running for 7.704)
+2024-01-30 23:10:16.203 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 21.0.1 on DESKTOP-PATD4L7 with PID 6648 (started by user in d:\java\Stickers2)
+2024-01-30 23:10:16.208 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:10:19.858 appender 6648 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.433 seconds (JVM running for 7.11)
+2024-01-30 23:16:22.688 appender 4268 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 21.0.1 on DESKTOP-PATD4L7 with PID 4268 (started by user in d:\java\Stickers2)
+2024-01-30 23:16:22.691 appender 4268 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:16:26.405 appender 4268 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.717 seconds (JVM running for 7.569)
+2024-01-30 23:16:26.433 appender 4268 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-30 23:16:26.519 appender 4268 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) ~[spring-boot-2.7.17.jar:2.7.17]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.17.jar:2.7.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getFile()" because the return value of "java.lang.Class.getResource(String)" is null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:213) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) ~[spring-boot-2.7.17.jar:2.7.17]
+	... 81 common frames omitted
+
+2024-01-30 23:16:26.535 appender 4268 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4ebff610] to prepare test instance [com.example.uploadingfiles.UploadingFilesApplicationTests@30839e44]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) ~[spring-boot-2.7.17.jar:2.7.17]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.17.jar:2.7.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.30.jar:5.3.30]
+	... 67 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getFile()" because the return value of "java.lang.Class.getResource(String)" is null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:213) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) ~[spring-boot-2.7.17.jar:2.7.17]
+	... 81 common frames omitted
+
+2024-01-30 23:16:53.322 appender 14036 --- [main] c.e.u.UploadingFilesApplicationTests     : Starting UploadingFilesApplicationTests using Java 21.0.1 on DESKTOP-PATD4L7 with PID 14036 (started by user in d:\java\Stickers2)
+2024-01-30 23:16:53.331 appender 14036 --- [main] c.e.u.UploadingFilesApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:16:57.066 appender 14036 --- [main] c.e.u.UploadingFilesApplicationTests     : Started UploadingFilesApplicationTests in 4.764 seconds (JVM running for 7.476)
+2024-01-30 23:16:57.092 appender 14036 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-30 23:16:57.194 appender 14036 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) ~[spring-boot-2.7.17.jar:2.7.17]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.17.jar:2.7.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getFile()" because the return value of "java.lang.Class.getResource(String)" is null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:213) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) ~[spring-boot-2.7.17.jar:2.7.17]
+	... 81 common frames omitted
+
+2024-01-30 23:16:57.209 appender 14036 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@20ca951f] to prepare test instance [com.example.uploadingfiles.UploadingFilesApplicationTests@13dbed9e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) ~[spring-boot-2.7.17.jar:2.7.17]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.17.jar:2.7.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.30.jar:5.3.30]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.30.jar:5.3.30]
+	... 67 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getFile()" because the return value of "java.lang.Class.getResource(String)" is null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:213) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) ~[spring-boot-2.7.17.jar:2.7.17]
+	... 81 common frames omitted
+
+2024-01-30 23:29:45.654 appender 7596 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 7596 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:29:45.669 appender 7596 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:29:48.461 appender 7596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:29:48.495 appender 7596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:29:48.497 appender 7596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:29:49.094 appender 7596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:29:49.130 appender 7596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3249 ms
+2024-01-30 23:29:51.066 appender 7596 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2024-01-30 23:29:51.084 appender 7596 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-01-30 23:29:51.153 appender 7596 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-30 23:29:51.246 appender 7596 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2024-01-30 23:30:05.032 appender 18168 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 18168 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:30:05.039 appender 18168 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:30:07.807 appender 18168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:30:07.823 appender 18168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:30:07.824 appender 18168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:30:08.130 appender 18168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:30:08.131 appender 18168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2956 ms
+2024-01-30 23:30:09.230 appender 18168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:30:09.268 appender 18168 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.182 seconds (JVM running for 6.147)
+2024-01-30 23:30:17.105 appender 18168 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:30:17.106 appender 18168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:30:17.109 appender 18168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 23:30:17.181 appender 18168 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:30:17.186 appender 18168 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:30:22.987 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:30:22.988 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:30:22.989 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:30:22.990 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:30:25.958 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 2.9670217 сек.
+2024-01-30 23:30:25.961 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:30:27.216 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.2535749 сек.
+2024-01-30 23:30:27.218 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:30:27.219 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.2313288 сек.
+2024-01-30 23:30:27.223 appender 18168 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:30:27.267 appender 18168 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:30:27.269 appender 18168 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:30:32.866 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:30:32.868 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:30:32.869 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:30:32.967 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.0960445 сек.
+2024-01-30 23:30:32.970 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : null
+2024-01-30 23:30:32.971 appender 18168 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:30:32.988 appender 18168 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:30:32.990 appender 18168 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:30:55.440 appender 18168 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:30:55.442 appender 18168 --- [http-nio-8081-exec-10] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:31:34.166 appender 10184 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10184 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:31:34.178 appender 10184 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:31:37.225 appender 10184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:31:37.252 appender 10184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:31:37.254 appender 10184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:31:37.765 appender 10184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:31:37.766 appender 10184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3422 ms
+2024-01-30 23:31:38.807 appender 10184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:31:38.857 appender 10184 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.912 seconds (JVM running for 7.091)
+2024-01-30 23:31:52.122 appender 10184 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:31:52.123 appender 10184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:31:52.125 appender 10184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 23:31:52.197 appender 10184 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:31:52.333 appender 10184 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:32:00.606 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:32:00.609 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:32:00.610 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:32:00.612 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:32:04.514 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.9000489 сек.
+2024-01-30 23:32:04.515 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:32:05.807 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.2918561 сек.
+2024-01-30 23:32:05.830 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:32:05.842 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.2342196 сек.
+2024-01-30 23:32:05.869 appender 10184 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:32:06.000 appender 10184 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:32:06.004 appender 10184 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:32:13.819 appender 10184 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:32:13.821 appender 10184 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:32:13.822 appender 10184 --- [http-nio-8081-exec-7] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:32:13.919 appender 10184 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.0954944 сек.
+2024-01-30 23:33:30.085 appender 2636 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 2636 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:33:30.099 appender 2636 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:33:33.616 appender 2636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:33:33.642 appender 2636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:33:33.643 appender 2636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:33:33.993 appender 2636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:33:33.994 appender 2636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3737 ms
+2024-01-30 23:33:35.714 appender 2636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:33:35.747 appender 2636 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.683 seconds (JVM running for 8.178)
+2024-01-30 23:33:37.768 appender 2636 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:33:37.772 appender 2636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:33:37.775 appender 2636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 23:33:38.003 appender 2636 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:33:38.004 appender 2636 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:33:38.011 appender 2636 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:33:38.014 appender 2636 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:33:38.048 appender 2636 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:33:38.052 appender 2636 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:33:44.072 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:33:44.073 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:33:44.074 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:33:44.075 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:33:47.567 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.4907961 сек.
+2024-01-30 23:33:47.569 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:33:48.750 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.1800281 сек.
+2024-01-30 23:33:48.752 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:33:48.753 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.6795029 сек.
+2024-01-30 23:33:48.754 appender 2636 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:33:48.766 appender 2636 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:33:48.768 appender 2636 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:33:54.474 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:33:54.476 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:33:54.477 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:33:54.563 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.084936 сек.
+2024-01-30 23:34:12.592 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : Unimplemented method 'getEACFile'
+2024-01-30 23:34:12.594 appender 2636 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:34:12.623 appender 2636 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:34:12.635 appender 2636 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:39:26.014 appender 9220 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 9220 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:39:26.020 appender 9220 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:39:28.771 appender 9220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:39:28.788 appender 9220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:39:28.789 appender 9220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:39:29.083 appender 9220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:39:29.084 appender 9220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2911 ms
+2024-01-30 23:39:30.211 appender 9220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:39:30.254 appender 9220 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.221 seconds (JVM running for 6.267)
+2024-01-30 23:39:49.129 appender 17376 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 17376 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:39:49.137 appender 17376 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:39:52.461 appender 17376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:39:52.478 appender 17376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:39:52.480 appender 17376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:39:53.061 appender 17376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:39:53.108 appender 17376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3838 ms
+2024-01-30 23:39:54.561 appender 17376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:39:54.588 appender 17376 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.432 seconds (JVM running for 7.455)
+2024-01-30 23:40:36.295 appender 8364 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 8364 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:40:36.303 appender 8364 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:40:39.220 appender 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:40:39.247 appender 8364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:40:39.249 appender 8364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:40:39.618 appender 8364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:40:39.619 appender 8364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3150 ms
+2024-01-30 23:40:41.358 appender 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:40:41.382 appender 8364 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.089 seconds (JVM running for 7.565)
+2024-01-30 23:40:49.690 appender 8364 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:40:49.692 appender 8364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:40:49.695 appender 8364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-30 23:40:49.838 appender 8364 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:40:49.844 appender 8364 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:40:58.095 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:40:58.096 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:40:58.097 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:40:58.098 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:41:01.688 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 3.5887493 сек.
+2024-01-30 23:41:01.691 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:41:03.133 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.4378614 сек.
+2024-01-30 23:41:03.135 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:41:03.137 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 5.0406631 сек.
+2024-01-30 23:41:03.139 appender 8364 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:41:03.194 appender 8364 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:41:03.196 appender 8364 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:41:09.350 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:41:09.352 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:41:09.352 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:41:09.468 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1138955 сек.
+2024-01-30 23:41:14.083 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.6128703 сек.
+2024-01-30 23:41:14.083 appender 8364 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:41:14.092 appender 8364 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:41:14.126 appender 8364 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:45:40.446 appender 9548 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 9548 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:45:40.454 appender 9548 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:45:44.046 appender 9548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:45:44.064 appender 9548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:45:44.065 appender 9548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:45:44.386 appender 9548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:45:44.387 appender 9548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3755 ms
+2024-01-30 23:45:45.569 appender 9548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:45:45.606 appender 9548 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.315 seconds (JVM running for 7.308)
+2024-01-30 23:46:34.552 appender 13888 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 13888 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:46:34.559 appender 13888 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:46:37.020 appender 13888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:46:37.036 appender 13888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:46:37.037 appender 13888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:46:37.364 appender 13888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:46:37.366 appender 13888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2679 ms
+2024-01-30 23:46:38.946 appender 13888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:46:38.983 appender 13888 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.303 seconds (JVM running for 6.273)
+2024-01-30 23:46:51.915 appender 13888 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:46:51.916 appender 13888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:46:51.918 appender 13888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 23:46:52.060 appender 13888 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:46:52.067 appender 13888 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:46:59.287 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:46:59.288 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:46:59.289 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:46:59.290 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:47:02.218 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 2.926795 сек.
+2024-01-30 23:47:02.226 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:47:03.667 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.4405664 сек.
+2024-01-30 23:47:03.670 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:47:03.672 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.3842531 сек.
+2024-01-30 23:47:03.689 appender 13888 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:47:03.734 appender 13888 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:47:03.735 appender 13888 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:47:08.797 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:47:08.798 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:47:08.799 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:47:08.902 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.1008379 сек.
+2024-01-30 23:47:13.373 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.4689946 сек.
+2024-01-30 23:47:13.375 appender 13888 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:47:13.387 appender 13888 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:47:13.663 appender 13888 --- [http-nio-8081-exec-6] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:50:27.716 appender 11244 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 11244 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:50:27.730 appender 11244 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:50:30.950 appender 11244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:50:30.970 appender 11244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:50:30.971 appender 11244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:50:31.248 appender 11244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:50:31.249 appender 11244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3350 ms
+2024-01-30 23:50:32.362 appender 11244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:50:32.408 appender 11244 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.047 seconds (JVM running for 7.363)
+2024-01-30 23:50:44.142 appender 11244 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:50:44.143 appender 11244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:50:44.145 appender 11244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 23:50:44.301 appender 11244 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:50:44.306 appender 11244 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:51:23.610 appender 10452 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 10452 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:51:23.618 appender 10452 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:51:26.310 appender 10452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:51:26.325 appender 10452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:51:26.326 appender 10452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:51:26.646 appender 10452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:51:26.648 appender 10452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2879 ms
+2024-01-30 23:51:27.764 appender 10452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:51:27.808 appender 10452 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.281 seconds (JVM running for 6.388)
+2024-01-30 23:51:35.748 appender 10452 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 23:51:35.749 appender 10452 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-30 23:51:35.752 appender 10452 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-30 23:51:35.900 appender 10452 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:51:35.905 appender 10452 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:51:41.822 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:51:41.824 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 30_1_2024_Общие_характеристики_одним_файлом.xlsx size: 1206371
+2024-01-30 23:51:41.825 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:51:41.826 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 30_1_2024_Общие_характеристики_одним_файлом.xlsxsize: 1206371
+2024-01-30 23:51:44.778 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 2.9502175 сек.
+2024-01-30 23:51:44.779 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build: 
+2024-01-30 23:51:46.018 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 1.2370551 сек.
+2024-01-30 23:51:46.020 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build: 
+2024-01-30 23:51:46.021 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 30_1_2024_Общие_характеристики_одним_файлом.xlsx за 4.1972737 сек.
+2024-01-30 23:51:46.022 appender 10452 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:51:46.045 appender 10452 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:51:46.047 appender 10452 --- [http-nio-8081-exec-3] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:51:52.436 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start POST request from address: 127.0.0.1
+2024-01-30 23:51:52.437 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-73513252-32.xlsx size: 12120
+2024-01-30 23:51:52.439 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created 
+2024-01-30 23:51:52.530 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-73513252-32.xlsx за 0.088384 сек.
+2024-01-30 23:51:57.192 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-73513252-32.pdf за 4.6604349 сек.
+2024-01-30 23:51:57.193 appender 10452 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end POST request from address: 127.0.0.1
+2024-01-30 23:51:57.206 appender 10452 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-30 23:51:57.236 appender 10452 --- [http-nio-8081-exec-5] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
+2024-01-30 23:53:31.664 appender 14544 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 14544 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:53:31.674 appender 14544 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:53:34.352 appender 14544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:53:34.368 appender 14544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:53:34.369 appender 14544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:53:34.639 appender 14544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:53:34.641 appender 14544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2839 ms
+2024-01-30 23:53:35.903 appender 14544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:53:35.941 appender 14544 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.153 seconds (JVM running for 6.246)
+2024-01-30 23:53:45.447 appender 15740 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_333 on DESKTOP-PATD4L7 with PID 15740 (D:\java\Stickers2\target\classes started by user in D:\java\Stickers2)
+2024-01-30 23:53:45.457 appender 15740 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-30 23:53:48.245 appender 15740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-30 23:53:48.274 appender 15740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-30 23:53:48.275 appender 15740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-30 23:53:48.718 appender 15740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-30 23:53:48.720 appender 15740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3124 ms
+2024-01-30 23:53:49.848 appender 15740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 23:53:49.872 appender 15740 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.276 seconds (JVM running for 6.061)

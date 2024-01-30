@@ -10,6 +10,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.oned.Code128Writer;
+import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -39,19 +40,20 @@ import com.itextpdf.layout.element.Image;
 
 public class StickersService implements StickersServiceInterface {
 
-    private Image eac;
+    private com.itextpdf.text.Image eac;
 
     static final Integer ImageWidth = 0;
     static final Integer ImageHeight = 0;
     public static List<String> pdfsList = new ArrayList<String>();
     public static Boolean RefereneceReady = false;
     public static final List<Integer> orderColls = new ArrayList<>();
+    private com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
 
     public void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
             MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
-
+                // this.getEACFile();
         HashMap<String, String> refFile = referenceInstance.getBarCodeHashMap();
         HashMap<String, String> brandHash = referenceInstance.getbrandHash();
         StorageProperties storeProps = new StorageProperties();
@@ -65,7 +67,7 @@ public class StickersService implements StickersServiceInterface {
                 + filename.getOriginalFilename().substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
         PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream(newFileName));
         document.open();
-        com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
+
         document.setPageSize(stickerPageSizeRectangle);
         document.setMargins(5, 5, 5, 5);
         String fontHeaderStr = "<p style=\"font-family:arial; font-size:10; align-content:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
@@ -89,11 +91,11 @@ public class StickersService implements StickersServiceInterface {
                         com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image,
                                 null);
                         // com.itextpdf.text.Image eacImage = com.itextpdf.text.Image.getInstance(eac,
-                        //         null);
+                        // null);
 
                         document.add(pdfImage);
-                        
-                        
+                        document.add(eac);
+
                         XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
                         String htmlString = "<html><head>"
                                 + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
@@ -109,8 +111,7 @@ public class StickersService implements StickersServiceInterface {
                         htmlString = htmlString + fontHeaderStr // начало тега
                                 + "Бренд: " + brandhashResult + "</p>"// бренд
                                 + "</body></html>";
-    
-                      
+
                         worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -208,23 +209,31 @@ public class StickersService implements StickersServiceInterface {
     @Override
     public void init() {
         try {
-        String path = this.getClass().getResource("/static").getFile();
-        java.io.File f = new java.io.File(path + "/EAC.png");
+            //  String path = this.getClass().getResource("/static/eac.png").getFile();
+            java.io.File f = new java.io.File("eac.png");
+            com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
+            // image2.scaleAbsolute(20f, 20f);
+            float scalePercent = 95f;
+            image2.scalePercent(100f - scalePercent);
+            float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
+                    - 5;
+            float newY = image2.getHeight() / scalePercent;
+            image2.setAbsolutePosition(newX, newY);
+            // Creating an ImageData object
 
-        // Creating an ImageData object
-        
-        ImageData imageData = ImageDataFactory.create(f.toString());
             // Creating an Image object
-            this.eac = new Image(imageData);
-    
-            // Setting the position of the image to the center of the page
-            this.eac.setFixedPosition(150, 100);
-         
+            this.eac = image2;
+
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } catch (BadElementException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-
     }
     // private static void drawRectangle(BufferedImage image) {// рисует рамку
     // Graphics2D g = (Graphics2D) image.getGraphics();
@@ -232,5 +241,39 @@ public class StickersService implements StickersServiceInterface {
     // g.setColor(Color.yellow);
     // g.drawRect(0, 0, image.getWidth(), image.getHeight());
     // }
+
+    @Override
+    public void getEACFile() {
+        if (this.eac == null) {
+            try {
+                String path = this.getClass().getResource("/static").getFile();
+                java.io.File f = new java.io.File(path + "/eac.png");
+                com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
+                // image2.scaleAbsolute(20f, 20f);
+                float scalePercent = 95f;
+                image2.scalePercent(100f - scalePercent);
+                float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
+                        - 5;
+                float newY = image2.getHeight() / scalePercent;
+                image2.setAbsolutePosition(newX, newY);
+                // Creating an ImageData object
+
+                // Creating an Image object
+                this.eac = image2;
+
+            } catch (MalformedURLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (BadElementException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'getEACFile'");
+        }
+    }
 
 }
