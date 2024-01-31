@@ -1,5 +1,6 @@
 package com.example.uploadingfiles;
 
+import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
@@ -15,14 +16,23 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
+
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileOutputStream;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.awt.image.BufferedImage;
@@ -53,7 +63,7 @@ public class StickersService implements StickersServiceInterface {
             MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
-                // this.getEACFile();
+        // this.getEACFile();
         HashMap<String, String> refFile = referenceInstance.getBarCodeHashMap();
         HashMap<String, String> brandHash = referenceInstance.getbrandHash();
         StorageProperties storeProps = new StorageProperties();
@@ -208,70 +218,84 @@ public class StickersService implements StickersServiceInterface {
 
     @Override
     public void init() {
+
+        // System.out.println(this.getClass().getResource(".").getFile() +
+        // "*************************************");
+        // System.out.println(this.getClass().getResource(".").getFile());
+        // String path = this.getClass().getResource("/static").getFile();
+
+        // java.io.File f = new java.io.File("eac.png");
+        InputStream inputStream = this.getClass().getResourceAsStream("/static/eac.png");
+        // Use resource
+        byte[] bytes;
+
         try {
-            //  String path = this.getClass().getResource("/static/eac.png").getFile();
-            java.io.File f = new java.io.File("eac.png");
-            com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
-            // image2.scaleAbsolute(20f, 20f);
-            float scalePercent = 95f;
-            image2.scalePercent(100f - scalePercent);
-            float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
-                    - 5;
-            float newY = image2.getHeight() / scalePercent;
-            image2.setAbsolutePosition(newX, newY);
-            // Creating an ImageData object
+            bytes = inputStream.readAllBytes();
+        
+        com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(bytes);
+        // Image image2 = new Image(ImageDataFactory.create(bytes));
+        // com.itextpdf.text.Image image2;
 
-            // Creating an Image object
-            this.eac = image2;
-
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (BadElementException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        // image2.scaleAbsolute(20f, 20f);
+        float scalePercent = 95f;
+        image2.scalePercent(100f - scalePercent);
+        float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
+                - 5;
+        float newY = image2.getHeight() / scalePercent;
+        image2.setAbsolutePosition(newX, newY);
+        this.eac = image2;
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
     }
-    // private static void drawRectangle(BufferedImage image) {// рисует рамку
-    // Graphics2D g = (Graphics2D) image.getGraphics();
-    // g.setStroke(new BasicStroke(1));
-    // g.setColor(Color.yellow);
-    // g.drawRect(0, 0, image.getWidth(), image.getHeight());
-    // }
+        // private static void drawRectangle(BufferedImage image) {// рисует рамку
+        // Graphics2D g = (Graphics2D) image.getGraphics();
+        // g.setStroke(new BasicStroke(1));
+        // g.setColor(Color.yellow);
+        // g.drawRect(0, 0, image.getWidth(), image.getHeight());
+ catch (BadElementException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+    }
 
     @Override
     public void getEACFile() {
         if (this.eac == null) {
             try {
                 String path = this.getClass().getResource("/static").getFile();
-                java.io.File f = new java.io.File(path + "/eac.png");
-                com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
-                // image2.scaleAbsolute(20f, 20f);
-                float scalePercent = 95f;
-                image2.scalePercent(100f - scalePercent);
-                float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
-                        - 5;
-                float newY = image2.getHeight() / scalePercent;
-                image2.setAbsolutePosition(newX, newY);
-                // Creating an ImageData object
+                // java.io.File f = new java.io.File(path + "/eac.png");
+                java.io.File f;
+                try {
+                    f = Paths.get(this.getClass().getResource("/static/eac.png").toURI()).toFile();
+                    com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
+                    // image2.scaleAbsolute(20f, 20f);
+                    float scalePercent = 95f;
+                    image2.scalePercent(100f - scalePercent);
+                    float newX = stickerPageSizeRectangle.getRight()
+                            - image2.getWidth() * ((100f - scalePercent) / 100f)
+                            - 5;
+                    float newY = image2.getHeight() / scalePercent;
+                    image2.setAbsolutePosition(newX, newY);
+                    // Creating an ImageData object
 
-                // Creating an Image object
-                this.eac = image2;
+                    // Creating an Image object
+                    this.eac = image2;
+
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }
 
             } catch (MalformedURLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (BadElementException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
-            // TODO Auto-generated method stub
+
             throw new UnsupportedOperationException("Unimplemented method 'getEACFile'");
         }
     }

@@ -15,7 +15,9 @@
 	<name>Stickers</name>
 	<description>Service for generating Barcodes from xlsx files</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>18</java.version>
+		<start-class>com.example.uploadingfiles.StickersCreateApplication</start-class>
+	
 	</properties>
 	<dependencies>
 		<dependency>
@@ -145,7 +147,14 @@
 
 	</dependencies>
 
+	  
 	<build>
+		<!-- <resources>
+			<resource>
+			  <directory>src/main/resources</directory>
+			  <targetPath>resources</targetPath>
+			</resource>
+		  </resources> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

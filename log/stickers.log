@@ -1545,3 +1545,303 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2024-01-30 23:53:48.720 appender 15740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3124 ms
 2024-01-30 23:53:49.848 appender 15740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2024-01-30 23:53:49.872 appender 15740 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.276 seconds (JVM running for 6.061)
+2024-01-31 10:15:12.997 appender 22576 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 22576 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:15:13.001 appender 22576 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:15:14.448 appender 22576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:15:14.463 appender 22576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:15:14.463 appender 22576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:15:14.781 appender 22576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:15:14.781 appender 22576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1696 ms
+2024-01-31 10:15:15.388 appender 22576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:15:15.409 appender 22576 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.18 seconds (JVM running for 3.686)
+2024-01-31 10:15:56.165 appender 9088 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 9088 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:15:56.168 appender 9088 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:15:57.904 appender 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:15:57.925 appender 9088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:15:57.925 appender 9088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:15:58.055 appender 9088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:15:58.055 appender 9088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1765 ms
+2024-01-31 10:15:58.636 appender 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:15:58.659 appender 9088 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.021 seconds (JVM running for 3.479)
+2024-01-31 10:16:58.586 appender 5872 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 5872 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:16:58.590 appender 5872 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:16:59.854 appender 5872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:16:59.876 appender 5872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:16:59.876 appender 5872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:17:00.070 appender 5872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:17:00.070 appender 5872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2024-01-31 10:17:00.769 appender 5872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:17:00.784 appender 5872 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.74 seconds (JVM running for 3.599)
+2024-01-31 10:26:22.976 appender 26988 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 26988 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:26:22.979 appender 26988 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:26:24.419 appender 26988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:26:24.439 appender 26988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:26:24.439 appender 26988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:26:24.586 appender 26988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:26:24.586 appender 26988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1522 ms
+2024-01-31 10:26:25.101 appender 26988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:26:25.101 appender 26988 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.627 seconds (JVM running for 3.237)
+2024-01-31 10:43:38.969 appender 9996 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 9996 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:43:38.973 appender 9996 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:43:40.474 appender 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:43:40.486 appender 9996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:43:40.486 appender 9996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:43:40.634 appender 9996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:43:40.635 appender 9996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1582 ms
+2024-01-31 10:43:41.202 appender 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:43:41.214 appender 9996 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.793 seconds (JVM running for 3.366)
+2024-01-31 10:43:41.228 appender 9996 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-31 10:43:41.280 appender 9996 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) [spring-boot-2.7.17.jar:2.7.17]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:1.8.0_332]
+	at java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_332]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:1.8.0_332]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_332]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[na:1.8.0_332]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) [spring-boot-2.7.17.jar:2.7.17]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) [classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:212) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) [classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) [spring-boot-2.7.17.jar:2.7.17]
+	... 14 common frames omitted
+
+2024-01-31 10:45:35.957 appender 19652 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 19652 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:45:35.964 appender 19652 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:45:37.515 appender 19652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:45:37.530 appender 19652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:45:37.534 appender 19652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:45:37.720 appender 19652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:45:37.721 appender 19652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1661 ms
+2024-01-31 10:45:38.336 appender 19652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:45:38.354 appender 19652 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.097 seconds (JVM running for 3.597)
+2024-01-31 10:45:38.368 appender 19652 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-31 10:45:38.423 appender 19652 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) [spring-boot-2.7.17.jar:2.7.17]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:1.8.0_332]
+	at java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_332]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:1.8.0_332]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:1.8.0_332]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_332]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[na:1.8.0_332]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) [spring-boot-2.7.17.jar:2.7.17]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) [classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:212) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) [classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) [spring-boot-2.7.17.jar:2.7.17]
+	... 14 common frames omitted
+
+2024-01-31 10:46:00.153 appender 7156 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 7156 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:46:00.157 appender 7156 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:46:01.784 appender 7156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:46:01.799 appender 7156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:46:01.799 appender 7156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:46:01.959 appender 7156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:46:01.959 appender 7156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1725 ms
+2024-01-31 10:46:02.648 appender 7156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:46:02.666 appender 7156 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.179 seconds (JVM running for 4.553)
+2024-01-31 10:53:22.503 appender 28784 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 28784 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:53:22.508 appender 28784 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:53:23.950 appender 28784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:53:23.974 appender 28784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:53:23.975 appender 28784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:53:24.117 appender 28784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:53:24.118 appender 28784 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
+2024-01-31 10:53:24.764 appender 28784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:53:24.775 appender 28784 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.812 seconds (JVM running for 3.682)
+2024-01-31 10:53:24.793 appender 28784 --- [main] c.e.uploadingfiles.StickersService       : /D:/rpo/java/Stickers2/target/classes/com/example/uploadingfiles/
+2024-01-31 10:55:36.907 appender 12160 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 12160 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 10:55:36.911 appender 12160 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 10:55:38.594 appender 12160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 10:55:38.614 appender 12160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 10:55:38.617 appender 12160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 10:55:38.812 appender 12160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 10:55:38.813 appender 12160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1801 ms
+2024-01-31 10:55:39.445 appender 12160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 10:55:39.485 appender 12160 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.238 seconds (JVM running for 4.138)
+2024-01-31 11:01:54.347 appender 8660 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 8660 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 11:01:54.351 appender 8660 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 11:01:56.267 appender 8660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 11:01:56.295 appender 8660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 11:01:56.296 appender 8660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 11:01:56.505 appender 8660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 11:01:56.506 appender 8660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2036 ms
+2024-01-31 11:01:57.286 appender 8660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 11:01:57.308 appender 8660 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.596 seconds (JVM running for 4.377)
+2024-01-31 15:09:40.924 appender 18604 --- [main] c.example.uploadingfiles.EacApplication  : Starting EacApplication using Java 1.8.0_332 on 8-N54612 with PID 18604 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:09:40.927 appender 18604 --- [main] c.example.uploadingfiles.EacApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:09:41.616 appender 18604 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'init' defined in com.example.uploadingfiles.EacApplication: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=eacApplication; factoryMethodName=init; initMethodName=null; destroyMethodName=(inferred); defined in com.example.uploadingfiles.EacApplication] for bean 'init': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=stickersCreateApplication; factoryMethodName=init; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/uploadingfiles/StickersCreateApplication.class]] bound.
+2024-01-31 15:09:41.639 appender 18604 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-31 15:09:41.724 appender 18604 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'init', defined in com.example.uploadingfiles.EacApplication, could not be registered. A bean with that name has already been defined in class path resource [com/example/uploadingfiles/StickersCreateApplication.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2024-01-31 15:10:25.770 appender 28472 --- [main] c.example.uploadingfiles.EacApplication  : Starting EacApplication using Java 1.8.0_332 on 8-N54612 with PID 28472 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:10:25.773 appender 28472 --- [main] c.example.uploadingfiles.EacApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:10:26.422 appender 28472 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'init' defined in com.example.uploadingfiles.EacApplication: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=eacApplication; factoryMethodName=init; initMethodName=null; destroyMethodName=(inferred); defined in com.example.uploadingfiles.EacApplication] for bean 'init': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=stickersCreateApplication; factoryMethodName=init; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/uploadingfiles/StickersCreateApplication.class]] bound.
+2024-01-31 15:10:26.434 appender 28472 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-31 15:10:26.469 appender 28472 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'init', defined in com.example.uploadingfiles.EacApplication, could not be registered. A bean with that name has already been defined in class path resource [com/example/uploadingfiles/StickersCreateApplication.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2024-01-31 15:28:53.833 appender 27940 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 27940 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:28:53.838 appender 27940 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:28:55.290 appender 27940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 15:28:55.308 appender 27940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 15:28:55.309 appender 27940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 15:28:55.841 appender 27940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 15:28:55.842 appender 27940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1907 ms
+2024-01-31 15:28:56.460 appender 27940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 15:28:56.473 appender 27940 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.274 seconds (JVM running for 3.962)
+2024-01-31 15:34:42.640 appender 13168 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 13168 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:34:42.645 appender 13168 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:34:44.278 appender 13168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 15:34:44.299 appender 13168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 15:34:44.299 appender 13168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 15:34:44.502 appender 13168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 15:34:44.504 appender 13168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1744 ms
+2024-01-31 15:34:45.079 appender 13168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 15:34:45.094 appender 13168 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.411 seconds (JVM running for 4.473)
+2024-01-31 15:35:25.950 appender 25356 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 1.8.0_332 on 8-N54612 with PID 25356 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:35:25.956 appender 25356 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:35:27.376 appender 25356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 15:35:27.408 appender 25356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 15:35:27.410 appender 25356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 15:35:27.702 appender 25356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 15:35:27.705 appender 25356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2024-01-31 15:35:28.422 appender 25356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 15:35:28.440 appender 25356 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.013 seconds (JVM running for 3.64)
+2024-01-31 15:35:28.450 appender 25356 --- [main] c.e.uploadingfiles.StickersService       : D:\rpo\java\Stickers2\target\classes\static\eac.png********************
+2024-01-31 15:53:19.374 appender 27464 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 27464 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:53:19.379 appender 27464 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:53:20.799 appender 27464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 15:53:20.819 appender 27464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 15:53:20.820 appender 27464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 15:53:21.090 appender 27464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 15:53:21.091 appender 27464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1585 ms
+2024-01-31 15:53:21.602 appender 27464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 15:53:21.614 appender 27464 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.814 seconds (JVM running for 3.693)
+2024-01-31 15:53:21.620 appender 27464 --- [main] c.e.uploadingfiles.StickersService       : D:\rpo\java\Stickers2\target\classes\static\eac.png********************
+2024-01-31 15:59:50.066 appender 29828 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 29828 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 15:59:50.071 appender 29828 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 15:59:51.641 appender 29828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 15:59:51.654 appender 29828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 15:59:51.655 appender 29828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 15:59:51.923 appender 29828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 15:59:51.924 appender 29828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1726 ms
+2024-01-31 15:59:52.531 appender 29828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 15:59:52.541 appender 29828 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.03 seconds (JVM running for 3.686)
+2024-01-31 16:06:38.417 appender 7144 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 7144 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 16:06:38.423 appender 7144 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 16:06:39.774 appender 7144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 16:06:39.785 appender 7144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 16:06:39.785 appender 7144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 16:06:40.041 appender 7144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 16:06:40.041 appender 7144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1490 ms
+2024-01-31 16:06:40.588 appender 7144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 16:06:40.603 appender 7144 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.716 seconds (JVM running for 3.589)
+2024-01-31 16:07:41.993 appender 21200 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 21200 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 16:07:42.002 appender 21200 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 16:07:43.332 appender 21200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 16:07:43.341 appender 21200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 16:07:43.342 appender 21200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 16:07:43.541 appender 21200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 16:07:43.542 appender 21200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1426 ms
+2024-01-31 16:07:44.076 appender 21200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 16:07:44.088 appender 21200 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.582 seconds (JVM running for 3.35)
+2024-01-31 18:12:08.319 appender 30648 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 30648 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 18:12:08.324 appender 30648 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 18:12:09.858 appender 30648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 18:12:09.875 appender 30648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 18:12:09.876 appender 30648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 18:12:10.147 appender 30648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 18:12:10.148 appender 30648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1717 ms
+2024-01-31 18:12:10.682 appender 30648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 18:12:10.695 appender 30648 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.858 seconds (JVM running for 3.599)
+2024-01-31 18:12:10.707 appender 30648 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-31 18:12:10.775 appender 30648 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749) ~[spring-boot-2.7.17.jar:2.7.17]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.17.jar:2.7.17]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.17.jar:2.7.17]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) ~[classes/:na]
+Caused by: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.readAllBytes()" because "inputStream" is null
+	at com.example.uploadingfiles.StickersService.init(StickersService.java:233) ~[classes/:na]
+	at com.example.uploadingfiles.StickersCreateApplication.lambda$init$0(StickersCreateApplication.java:26) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765) ~[spring-boot-2.7.17.jar:2.7.17]
+	... 14 common frames omitted
+
+2024-01-31 18:14:05.527 appender 18704 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 18.0.1.1 on 8-N54612 with PID 18704 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2024-01-31 18:14:05.533 appender 18704 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-01-31 18:14:07.008 appender 18704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-31 18:14:07.030 appender 18704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 18:14:07.031 appender 18704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-01-31 18:14:07.317 appender 18704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 18:14:07.318 appender 18704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1639 ms
+2024-01-31 18:14:07.979 appender 18704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-31 18:14:07.994 appender 18704 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.059 seconds (JVM running for 3.964)
+2024-01-31 18:14:16.767 appender 18704 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-31 18:14:16.767 appender 18704 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-31 18:14:16.769 appender 18704 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-31 18:14:16.814 appender 18704 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page from address: 127.0.0.1
+2024-01-31 18:14:16.818 appender 18704 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page from address: 127.0.0.1
