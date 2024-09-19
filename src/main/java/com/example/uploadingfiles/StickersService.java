@@ -225,38 +225,38 @@ public class StickersService implements StickersServiceInterface {
         // String path = this.getClass().getResource("/static").getFile();
 
         // java.io.File f = new java.io.File("eac.png");
-        InputStream inputStream = this.getClass().getResourceAsStream("/static/eac.png");
+        InputStream inputStream = this.getClass().getResourceAsStream("/static/EAC.png");
         // Use resource
         byte[] bytes;
 
         try {
             bytes = inputStream.readAllBytes();
-        
-        com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(bytes);
-        // Image image2 = new Image(ImageDataFactory.create(bytes));
-        // com.itextpdf.text.Image image2;
 
-        // image2.scaleAbsolute(20f, 20f);
-        float scalePercent = 95f;
-        image2.scalePercent(100f - scalePercent);
-        float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
-                - 5;
-        float newY = image2.getHeight() / scalePercent;
-        image2.setAbsolutePosition(newX, newY);
-        this.eac = image2;
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+            com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(bytes);
+            // Image image2 = new Image(ImageDataFactory.create(bytes));
+            // com.itextpdf.text.Image image2;
+
+            // image2.scaleAbsolute(20f, 20f);
+            float scalePercent = 95f;
+            image2.scalePercent(100f - scalePercent);
+            float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
+                    - 5;
+            float newY = image2.getHeight() / scalePercent;
+            image2.setAbsolutePosition(newX, newY);
+            this.eac = image2;
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         // private static void drawRectangle(BufferedImage image) {// рисует рамку
         // Graphics2D g = (Graphics2D) image.getGraphics();
         // g.setStroke(new BasicStroke(1));
         // g.setColor(Color.yellow);
         // g.drawRect(0, 0, image.getWidth(), image.getHeight());
- catch (BadElementException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+        catch (BadElementException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     @Override

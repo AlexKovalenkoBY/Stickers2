@@ -111,9 +111,9 @@ public class FileUploadController {
 			{
 				log.info("2.******* start Reference file proceed: " + file.getOriginalFilename() + "size: " + file.getSize());
 				
-				HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 0, 4);
+				HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 11);
 				log.info("3.******* barcodesHash was build: " );
-				HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 0, 3);
+				HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 5);
 				log.info("4.******* brandsHash was build: " );
 				
 				ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
