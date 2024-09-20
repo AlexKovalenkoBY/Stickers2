@@ -32,7 +32,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
           tag_name: v1.0.0  # Замените на нужный тег
           release_name: Release v1.0.0  # Замените на нужное название релиза
@@ -44,7 +44,7 @@ jobs:
       - name: Upload JAR to GitHub Release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: target/*.jar
