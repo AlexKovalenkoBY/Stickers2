@@ -245,7 +245,7 @@ public class StickersService implements StickersServiceInterface {
             image2.setAbsolutePosition(newX, newY);
             this.eac = image2;
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+         
             e.printStackTrace();
         }
         // private static void drawRectangle(BufferedImage image) {// рисует рамку
@@ -254,7 +254,7 @@ public class StickersService implements StickersServiceInterface {
         // g.setColor(Color.yellow);
         // g.drawRect(0, 0, image.getWidth(), image.getHeight());
         catch (BadElementException e) {
-            // TODO Auto-generated catch block
+  
             e.printStackTrace();
         }
     }

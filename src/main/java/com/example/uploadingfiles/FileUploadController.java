@@ -16,6 +16,7 @@ import java.util.stream.Stream;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -38,14 +39,17 @@ import com.example.uploadingfiles.storage.StorageFileNotFoundException;
 import com.example.uploadingfiles.storage.StorageService;
 import com.itextpdf.text.DocumentException;
 
-import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 @Slf4j
 @Controller
 
 public class FileUploadController {
-@Autowired StickersService stService;
+	@Autowired
+	StickersService stService;
 	private final StorageService storageService;
 
 	public FileUploadController(StorageService storageService) {
@@ -54,7 +58,8 @@ public class FileUploadController {
 
 	Comparator<File> comparator = Comparator.comparing(file -> {
 		try {
-			return Files.readAttributes(Paths.get(file.toURI()), BasicFileAttributes.class).creationTime();
+			return Files.readAttributes(Paths.get(file.toURI()), BasicFileAttributes.class)
+					.creationTime();
 		} catch (IOException e) {
 			return null;
 		}
@@ -66,13 +71,14 @@ public class FileUploadController {
 		model.addAttribute("referenceFileName", refFileObject.getreferenceFileName());
 		model.addAttribute("referenceFile", StickersService.RefereneceReady);
 		log.info("start main page");
-		model.addAttribute("files", storageService.loadAll().map(
-				path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
+		model.addAttribute("files", storageService.loadAll()
+				.map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
 						"serveFile", path.getFileName().toString()).build().toUri().toString())
 				.collect(Collectors.toList()));
 		log.info("end  main page");
 		return "index";
 	}
+
 	@GetMapping("/upload-dir/{filename:.+}")
 	@ResponseBody
 	public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
@@ -83,29 +89,50 @@ public class FileUploadController {
 			return ResponseEntity.notFound().build();
 
 		return ResponseEntity.ok()
-				.header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + file.getFilename() + "\"")
+				.header(HttpHeaders.CONTENT_DISPOSITION,
+						"inline; filename=\"" + file.getFilename() + "\"")
 				.header(HttpHeaders.CONTENT_TYPE, "application/pdf").body(file);
 
 	}
 
 	@PostMapping("/")
 	public String handleFileUpload(@RequestParam MultipartFile file,
-			RedirectAttributes redirectAttributes, Model model)
-			throws IOException, DocumentException, OpenXML4JException, SAXException, ParserConfigurationException {
+			RedirectAttributes redirectAttributes, Model model) throws IOException,
+			DocumentException, OpenXML4JException, SAXException, ParserConfigurationException {
 		log.info("start POST request");
 		if (!file.isEmpty()) {
 			try {
 				Long startTime = System.nanoTime();
-				log.info("1.******* start proceed file: " + file.getOriginalFilename() + " size: " + file.getSize());
+				log.info("1.******* start proceed file: " + file.getOriginalFilename() + " size: "
+						+ file.getSize());
 				ExcelReadService ers = new ExcelReadService();
 				log.info("1.1.******* Service created");
-	
-				if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1) || (file.getOriginalFilename().indexOf("_Общие_характеристики_одним_файлом") > -1)) {
-					log.info("2.******* start Reference file proceed: " + file.getOriginalFilename() + "size: " + file.getSize());
-					HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 11);
+
+				if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1)
+						|| (file.getOriginalFilename()
+								.indexOf("_Общие_характеристики_одним_файлом") > -1)) {
+					log.info("2.******* start Reference file proceed: " + file.getOriginalFilename()
+							+ " size: " + file.getSize());
+
+					// Считываем файл один раз
+					Workbook workbook = null;
+					try {
+						workbook = WorkbookFactory.create(file.getInputStream());
+					} catch (IOException e) {
+						e.printStackTrace();
+						// return;
+					}
+
+					// Создаем первый HashMap
+					HashMap<String, String> refFile =
+							ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
 					log.info("3.******* barcodesHash was build:");
-					HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 5);
+
+					// Создаем второй HashMap
+					HashMap<String, String> brandHash =
+							ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
 					log.info("4.******* brandsHash was build:");
+
 					ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
 					refFileObject.setbrandHash(brandHash);
 					refFileObject.setBarCodeHashMap(refFile);
@@ -113,14 +140,15 @@ public class FileUploadController {
 					model.addAttribute("referenceFile", true);
 					Long estimatedTime = System.nanoTime() - startTime;
 					log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за "
-							+ estimatedTime / 1_000_000_000.
-							+ " сек.");
+							+ estimatedTime / 1_000_000_000. + " сек.");
 					refFileObject.setreferenceFileName(file.getOriginalFilename());
 				} else {
 					if (StickersService.RefereneceReady) {
-						ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
-								ReferenceFileColumnsSingleton.colls);
-						stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
+						ArrayList<ArrayList<String>> orderContent =
+								ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+										ReferenceFileColumnsSingleton.colls);
+						stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent,
+								file);
 					}
 				}
 			} catch (Exception e) {
@@ -130,6 +158,7 @@ public class FileUploadController {
 		log.info("end POST request");
 		return "redirect:/";
 	}
+
 	@ExceptionHandler(StorageFileNotFoundException.class)
 	public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
 		return ResponseEntity.notFound().build();
