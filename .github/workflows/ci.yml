@@ -28,12 +28,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
-          tag_name: v1.0.1  # Замените на новый тег
-          release_name: Release v1.0.1  # Замените на новое название релиза
+          tag_name: v1.0.0  # Замените на нужный тег
+          release_name: Release v1.0.0  # Замените на нужное название релиза
           draft: false
           prerelease: false
           body: |
-            Release notes for version 1.0.1
+            Release notes for version 1.0.0
 
       - name: Upload JAR to GitHub Release
         uses: actions/upload-release-asset@v1
@@ -42,16 +42,19 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ github.workspace }}/target/Stickers-0.0.1.jar  # Используйте абсолютный путь
-          asset_name: my-app.jar
+          asset_name: Stickers-0.0.1.jar
           asset_content_type: application/java-archive
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
 
       - name: Delete Source Code Assets
         run: |
           curl -X DELETE -H "Authorization: token ${{ secrets.t2 }}" \
             "https://api.github.com/repos/${{ github.repository }}/releases/assets/$(curl -s -H "Authorization: token ${{ secrets.t2 }}" \
-            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.1" | jq -r '.assets[] | select(.name == "Source code.zip") | .id')"
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.0" | jq -r '.assets[] | select(.name == "Source code.zip") | .id')"
           curl -X DELETE -H "Authorization: token ${{ secrets.t2 }}" \
             "https://api.github.com/repos/${{ github.repository }}/releases/assets/$(curl -s -H "Authorization: token ${{ secrets.t2 }}" \
-            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.1" | jq -r '.assets[] | select(.name == "Source code.tar.gz") | .id')"
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.0" | jq -r '.assets[] | select(.name == "Source code.tar.gz") | .id')"
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
