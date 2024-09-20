@@ -22,11 +22,18 @@ jobs:
       - name: Build with Maven
         run: mvn -B package -DskipTests
 
-      - name: Upload JAR to GitHub Releases
+      - name: Create ZIP archive with JAR file
+        run: |
+          mkdir release
+          cp target/Stickers-0.0.1.jar release/
+          cd release
+          zip -r my-app.zip Stickers-0.0.1.jar
+
+      - name: Upload ZIP archive to GitHub Releases
         uses: actions/upload-artifact@v3
         with:
-          name: my-app-jar
-          path: target/*.jar
+          name: my-app-zip
+          path: release/my-app.zip
 
       - name: Create GitHub Release
         id: create_release
@@ -34,19 +41,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
-          tag_name: v1.0.0  # Замените на нужный тег
-          release_name: Release v1.0.0  # Замените на нужное название релиза
+          tag_name: v1.0.1  # Замените на новый тег
+          release_name: Release v1.0.1  # Замените на новое название релиза
           draft: false
           prerelease: false
           body: |
-            Release notes for version 1.0.0
+            Release notes for version 1.0.1
 
-      - name: Upload JAR to GitHub Release
+      - name: Upload ZIP to GitHub Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ github.workspace }}/target/Stickers-0.0.1.jar  # Используйте абсолютный путь
-          asset_name: Stickers-0.0.1.jar
-          asset_content_type: application/java-archive
+          asset_path: release/my-app.zip
+          asset_name: my-app.zip
+          asset_content_type: application/zip
