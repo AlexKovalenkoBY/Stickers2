@@ -22,19 +22,6 @@ jobs:
       - name: Build with Maven
         run: mvn -B package -DskipTests
 
-      - name: Create ZIP archive with JAR file
-        run: |
-          mkdir release
-          cp target/Stickers-0.0.1.jar release/
-          cd release
-          zip -r my-app.zip Stickers-0.0.1.jar
-
-      - name: Upload ZIP archive to GitHub Releases
-        uses: actions/upload-artifact@v3
-        with:
-          name: my-app-zip
-          path: release/my-app.zip
-
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
@@ -48,12 +35,23 @@ jobs:
           body: |
             Release notes for version 1.0.1
 
-      - name: Upload ZIP to GitHub Release
+      - name: Upload JAR to GitHub Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: release/my-app.zip
-          asset_name: my-app.zip
-          asset_content_type: application/zip
+          asset_path: ${{ github.workspace }}/target/Stickers-0.0.1.jar  # Используйте абсолютный путь
+          asset_name: my-app.jar
+          asset_content_type: application/java-archive
+
+      - name: Delete Source Code Assets
+        run: |
+          curl -X DELETE -H "Authorization: token ${{ secrets.t2 }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/assets/$(curl -s -H "Authorization: token ${{ secrets.t2 }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.1" | jq -r '.assets[] | select(.name == "Source code.zip") | .id')"
+          curl -X DELETE -H "Authorization: token ${{ secrets.t2 }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/assets/$(curl -s -H "Authorization: token ${{ secrets.t2 }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v1.0.1" | jq -r '.assets[] | select(.name == "Source code.tar.gz") | .id')"
+        env:
+          GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
