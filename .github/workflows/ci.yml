@@ -21,3 +21,22 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B package -DskipTests
+
+      - name: Upload JAR to GitHub Releases
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-app-jar
+          path: target/*.jar
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v1.0.0  # Замените на нужный тег
+          release_name: Release v1.0.0  # Замените на нужное название релиза
+          draft: false
+          prerelease: false
+          body: |
+            Release notes for version 1.0.0
+          files: target/*.jar
