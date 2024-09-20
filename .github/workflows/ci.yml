@@ -24,7 +24,7 @@ jobs:
 
       - name: Create GitHub Release
         id: create_release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.1.4  # Обновленная версия
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
@@ -36,7 +36,7 @@ jobs:
             Release notes for version 1.0.0
 
       - name: Upload JAR to GitHub Release
-        uses: actions/upload-release-asset@v1
+        uses: actions/upload-release-asset@v1.0.2  # Обновленная версия
         env:
           GITHUB_TOKEN: ${{ secrets.t2 }}  # Используйте имя вашего токена
         with:
