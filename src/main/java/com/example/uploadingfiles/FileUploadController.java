@@ -61,22 +61,18 @@ public class FileUploadController {
 	});
 
 	@GetMapping("/")
-	public String listUploadedFiles(Model model, HttpServletRequest request) {
+	public String listUploadedFiles(Model model) {
 		ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
 		model.addAttribute("referenceFileName", refFileObject.getreferenceFileName());
 		model.addAttribute("referenceFile", StickersService.RefereneceReady);
-		// Original version
-		// Object[] rr = storageService.loadAll().map( path -> path).toArray();
-
-		log.info("start main page from address: " + request.getRemoteAddr());
+		log.info("start main page");
 		model.addAttribute("files", storageService.loadAll().map(
 				path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
 						"serveFile", path.getFileName().toString()).build().toUri().toString())
 				.collect(Collectors.toList()));
-		log.info("end  main page from address: " + request.getRemoteAddr());
+		log.info("end  main page");
 		return "index";
 	}
-
 	@GetMapping("/upload-dir/{filename:.+}")
 	@ResponseBody
 	public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
@@ -94,56 +90,46 @@ public class FileUploadController {
 
 	@PostMapping("/")
 	public String handleFileUpload(@RequestParam MultipartFile file,
-			RedirectAttributes redirectAttributes, Model model, HttpServletRequest request)
+			RedirectAttributes redirectAttributes, Model model)
 			throws IOException, DocumentException, OpenXML4JException, SAXException, ParserConfigurationException {
-		log.info("start POST request from address: " + request.getRemoteAddr());
+		log.info("start POST request");
 		if (!file.isEmpty()) {
 			try {
-				
-			
-			Long startTime = System.nanoTime();
-			log.info("1.******* start proceed file: " + file.getOriginalFilename() + " size: " + file.getSize());
-			
-			ExcelReadService ers = new ExcelReadService();
-			log.info("1.1.******* Service created "  );
-
-			if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1) || (file.getOriginalFilename().indexOf("_Общие_характеристики_одним_файлом") > -1))
-			{
-				log.info("2.******* start Reference file proceed: " + file.getOriginalFilename() + "size: " + file.getSize());
-				
-				HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 11);
-				log.info("3.******* barcodesHash was build: " );
-				HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 5);
-				log.info("4.******* brandsHash was build: " );
-				
-				ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-				refFileObject.setbrandHash(brandHash);
-				refFileObject.setBarCodeHashMap(refFile);
-				StickersService.RefereneceReady = true;
-				model.addAttribute("referenceFile", true);
-				Long estimatedTime = System.nanoTime() - startTime;
-				log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за "
-						+ estimatedTime / 1_000_000_000.
-						+ " сек.");
-
-				refFileObject.setreferenceFileName(file.getOriginalFilename());
-			
-			} else {
-				if (StickersService.RefereneceReady) {
-					ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
-							ReferenceFileColumnsSingleton.colls);
-							stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
+				Long startTime = System.nanoTime();
+				log.info("1.******* start proceed file: " + file.getOriginalFilename() + " size: " + file.getSize());
+				ExcelReadService ers = new ExcelReadService();
+				log.info("1.1.******* Service created");
+	
+				if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1) || (file.getOriginalFilename().indexOf("_Общие_характеристики_одним_файлом") > -1)) {
+					log.info("2.******* start Reference file proceed: " + file.getOriginalFilename() + "size: " + file.getSize());
+					HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 11);
+					log.info("3.******* barcodesHash was build:");
+					HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(file, 1, 1, 5);
+					log.info("4.******* brandsHash was build:");
+					ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+					refFileObject.setbrandHash(brandHash);
+					refFileObject.setBarCodeHashMap(refFile);
+					StickersService.RefereneceReady = true;
+					model.addAttribute("referenceFile", true);
+					Long estimatedTime = System.nanoTime() - startTime;
+					log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за "
+							+ estimatedTime / 1_000_000_000.
+							+ " сек.");
+					refFileObject.setreferenceFileName(file.getOriginalFilename());
+				} else {
+					if (StickersService.RefereneceReady) {
+						ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+								ReferenceFileColumnsSingleton.colls);
+						stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent, file);
+					}
 				}
+			} catch (Exception e) {
+				log.info(e.getLocalizedMessage());
 			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			log.info(e.getLocalizedMessage());
 		}
-		}
-		log.info("end POST request from address: " + request.getRemoteAddr());
+		log.info("end POST request");
 		return "redirect:/";
 	}
-
 	@ExceptionHandler(StorageFileNotFoundException.class)
 	public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
 		return ResponseEntity.notFound().build();
