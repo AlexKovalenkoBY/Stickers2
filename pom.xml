@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.17</version>
+		<version>3.1.5</version> <!-- Обновленная версия Spring Boot -->
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -15,9 +15,8 @@
 	<name>Stickers</name>
 	<description>Service for generating Barcodes from xlsx files</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>21</java.version>
 		<start-class>com.example.uploadingfiles.StickersCreateApplication</start-class>
-	
 	</properties>
 	<dependencies>
 		<dependency>
@@ -97,10 +96,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>5.3.2</version>
@@ -116,13 +111,11 @@
 			<version>2.11.7</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.webjars.npm</groupId>
 			<artifactId>source-map</artifactId>
 			<version>0.8.0-beta.0</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -134,8 +127,6 @@
 			<groupId>org.jxls</groupId>
 			<artifactId>jxls-jexcel</artifactId>
 			<version>1.0.9</version>
-
-
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-logging</artifactId>
@@ -143,24 +134,23 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
-
 	</dependencies>
 
-	  
 	<build>
-		<!-- <resources>
-			<resource>
-			  <directory>src/main/resources</directory>
-			  <targetPath>resources</targetPath>
-			</resource>
-		  </resources> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <!-- Обновленная версия плагина -->
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-
 </project>
