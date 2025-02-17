@@ -1,228 +1,198 @@
-2024-09-20T11:19:35.584+03:00 appender 25464 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25464 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
-2024-09-20T11:19:35.607+03:00 appender 25464 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2024-09-20T11:19:37.647+03:00 appender 25464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2024-09-20T11:19:37.681+03:00 appender 25464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-20T11:19:37.692+03:00 appender 25464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-20T11:19:38.013+03:00 appender 25464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-20T11:19:38.014+03:00 appender 25464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2094 ms
-2024-09-20T11:19:38.594+03:00 appender 25464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2024-09-20T11:19:38.618+03:00 appender 25464 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.778 seconds (process running for 5.11)
-2024-09-20T11:19:44.909+03:00 appender 25464 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-20T11:19:44.910+03:00 appender 25464 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-20T11:19:44.913+03:00 appender 25464 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-09-20T11:19:44.956+03:00 appender 25464 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /api/admin
-2024-09-20T11:19:44.965+03:00 appender 25464 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /api/admin.
-2024-09-20T11:19:48.551+03:00 appender 25464 --- [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest] with root cause
+2025-02-17T12:20:48.706+03:00 appender 22444 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 22444 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T12:20:48.758+03:00 appender 22444 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T12:20:50.957+03:00 appender 22444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T12:20:50.994+03:00 appender 22444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T12:20:50.996+03:00 appender 22444 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T12:20:51.238+03:00 appender 22444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T12:20:51.240+03:00 appender 22444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2327 ms
+2025-02-17T12:20:52.133+03:00 appender 22444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T12:20:52.133+03:00 appender 22444 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.18 seconds (process running for 4.984)
+2025-02-17T12:21:49.225+03:00 appender 22444 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17T12:21:49.227+03:00 appender 22444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-17T12:21:49.229+03:00 appender 22444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-17T12:21:49.296+03:00 appender 22444 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page
+2025-02-17T12:21:49.303+03:00 appender 22444 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page
+2025-02-17T16:20:50.610+03:00 appender 24572 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 24572 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T16:20:50.614+03:00 appender 24572 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T16:20:52.504+03:00 appender 24572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T16:20:52.527+03:00 appender 24572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T16:20:52.527+03:00 appender 24572 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T16:20:52.682+03:00 appender 24572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T16:20:52.683+03:00 appender 24572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1920 ms
+2025-02-17T16:20:53.379+03:00 appender 24572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T16:20:53.401+03:00 appender 24572 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.691 seconds (process running for 4.873)
+2025-02-17T16:23:17.232+03:00 appender 24572 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-17T16:23:17.234+03:00 appender 24572 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-17T16:23:17.237+03:00 appender 24572 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-17T17:00:45.954+03:00 appender 16396 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 16396 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:00:45.960+03:00 appender 16396 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:00:48.440+03:00 appender 16396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:00:48.502+03:00 appender 16396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:00:48.502+03:00 appender 16396 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:00:48.779+03:00 appender 16396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:00:48.780+03:00 appender 16396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2708 ms
+2025-02-17T17:00:49.550+03:00 appender 16396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:00:49.561+03:00 appender 16396 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.641 seconds (process running for 5.818)
+2025-02-17T17:00:49.566+03:00 appender 16396 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
-java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest
-	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-17T17:00:49.640+03:00 appender 16396 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-2024-09-20T11:20:02.280+03:00 appender 25464 --- [http-nio-8081-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest] with root cause
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.toFile()" because "bigFileName" is null
+	at com.example.uploadingfiles.FileUploadRestController.applicationStarted(FileUploadRestController.java:170) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:365) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:237) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:168) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.context.event.EventPublishingRunListener.started(EventPublishingRunListener.java:103) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) ~[classes/:na]
 
-java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest
-	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+2025-02-17T17:01:22.748+03:00 appender 24012 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 24012 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:01:22.756+03:00 appender 24012 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:01:25.136+03:00 appender 24012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:01:25.185+03:00 appender 24012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:01:25.186+03:00 appender 24012 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:01:25.357+03:00 appender 24012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:01:25.358+03:00 appender 24012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2214 ms
+2025-02-17T17:01:26.062+03:00 appender 24012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:01:26.076+03:00 appender 24012 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.462 seconds (process running for 5.594)
+2025-02-17T17:07:08.282+03:00 appender 25568 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25568 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:07:08.288+03:00 appender 25568 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:07:10.476+03:00 appender 25568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:07:10.499+03:00 appender 25568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:07:10.499+03:00 appender 25568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:07:10.644+03:00 appender 25568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:07:10.645+03:00 appender 25568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2126 ms
+2025-02-17T17:07:11.339+03:00 appender 25568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:07:11.368+03:00 appender 25568 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.738 seconds (process running for 4.728)
+2025-02-17T17:07:11.853+03:00 appender 25568 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
-2024-09-20T11:21:02.937+03:00 appender 26932 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 26932 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
-2024-09-20T11:21:02.941+03:00 appender 26932 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2024-09-20T11:21:04.353+03:00 appender 26932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2024-09-20T11:21:04.371+03:00 appender 26932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-20T11:21:04.376+03:00 appender 26932 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-20T11:21:04.537+03:00 appender 26932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-20T11:21:04.538+03:00 appender 26932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1491 ms
-2024-09-20T11:21:05.107+03:00 appender 26932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2024-09-20T11:21:05.118+03:00 appender 26932 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.124 seconds (process running for 3.888)
-2024-09-20T11:21:10.028+03:00 appender 26932 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-20T11:21:10.028+03:00 appender 26932 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-20T11:21:10.030+03:00 appender 26932 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-09-20T11:21:10.086+03:00 appender 26932 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest] with root cause
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-17T17:07:11.881+03:00 appender 25568 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest
-	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.toFile()" because "bigFileName" is null
+	at com.example.uploadingfiles.FileUploadRestController.applicationStarted(FileUploadRestController.java:170) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:365) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:237) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:168) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.context.event.EventPublishingRunListener.started(EventPublishingRunListener.java:103) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) ~[classes/:na]
 
-2024-09-20T11:25:22.461+03:00 appender 19276 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 19276 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
-2024-09-20T11:25:22.466+03:00 appender 19276 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2024-09-20T11:25:24.095+03:00 appender 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2024-09-20T11:25:24.116+03:00 appender 19276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-20T11:25:24.116+03:00 appender 19276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-20T11:25:24.244+03:00 appender 19276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-20T11:25:24.244+03:00 appender 19276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1623 ms
-2024-09-20T11:25:24.700+03:00 appender 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2024-09-20T11:25:24.735+03:00 appender 19276 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.188 seconds (process running for 3.985)
-2024-09-20T11:25:33.085+03:00 appender 19276 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-20T11:25:33.086+03:00 appender 19276 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-20T11:25:33.088+03:00 appender 19276 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-09-20T11:25:33.182+03:00 appender 19276 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : start main page
-2024-09-20T11:25:33.184+03:00 appender 19276 --- [http-nio-8081-exec-1] c.e.uploadingfiles.FileUploadController  : end  main page
-2024-09-20T11:25:57.364+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : start POST request
-2024-09-20T11:25:57.367+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 1263532
-2024-09-20T11:25:57.368+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created
-2024-09-20T11:25:57.369+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsxsize: 1263532
-2024-09-20T11:25:59.875+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 2.5033182 сек.
-2024-09-20T11:25:59.876+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 3.******* barcodesHash was build:
-2024-09-20T11:26:01.500+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 1.6233017 сек.
-2024-09-20T11:26:01.502+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : 4.******* brandsHash was build:
-2024-09-20T11:26:01.503+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 4.136953599 сек.
-2024-09-20T11:26:01.504+03:00 appender 19276 --- [http-nio-8081-exec-8] c.e.uploadingfiles.FileUploadController  : end POST request
-2024-09-20T11:26:01.552+03:00 appender 19276 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : start main page
-2024-09-20T11:26:01.554+03:00 appender 19276 --- [http-nio-8081-exec-9] c.e.uploadingfiles.FileUploadController  : end  main page
-2024-09-20T11:26:15.091+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : start POST request
-2024-09-20T11:26:15.092+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
-2024-09-20T11:26:15.093+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : 1.1.******* Service created
-2024-09-20T11:26:15.182+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.0883299 сек.
-2024-09-20T11:26:25.864+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
-2024-09-20T11:26:25.867+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
-2024-09-20T11:26:25.868+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
-2024-09-20T11:26:25.868+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
-2024-09-20T11:26:25.869+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
-2024-09-20T11:26:25.869+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
-2024-09-20T11:26:25.870+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
-2024-09-20T11:26:25.870+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.871+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.874+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.875+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.876+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.877+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.878+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
-2024-09-20T11:26:25.879+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
-2024-09-20T11:26:25.881+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
-2024-09-20T11:26:25.882+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
-2024-09-20T11:26:25.883+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
-2024-09-20T11:26:25.883+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
-2024-09-20T11:26:25.885+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
-2024-09-20T11:26:25.886+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
-2024-09-20T11:26:26.191+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 11.0061513 сек.
-2024-09-20T11:26:26.192+03:00 appender 19276 --- [http-nio-8081-exec-2] c.e.uploadingfiles.FileUploadController  : end POST request
-2024-09-20T11:26:26.268+03:00 appender 19276 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : start main page
-2024-09-20T11:26:26.311+03:00 appender 19276 --- [http-nio-8081-exec-4] c.e.uploadingfiles.FileUploadController  : end  main page
+2025-02-17T17:07:35.923+03:00 appender 23280 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 23280 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:07:35.927+03:00 appender 23280 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:07:37.589+03:00 appender 23280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:07:37.607+03:00 appender 23280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:07:37.609+03:00 appender 23280 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:07:37.738+03:00 appender 23280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:07:37.745+03:00 appender 23280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+2025-02-17T17:07:38.270+03:00 appender 23280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:07:38.283+03:00 appender 23280 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.117 seconds (process running for 3.965)
+2025-02-17T17:08:20.576+03:00 appender 24236 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 24236 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:08:20.580+03:00 appender 24236 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:08:22.225+03:00 appender 24236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:08:22.246+03:00 appender 24236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:08:22.247+03:00 appender 24236 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:08:22.378+03:00 appender 24236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:08:22.379+03:00 appender 24236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2025-02-17T17:08:23.164+03:00 appender 24236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:08:23.166+03:00 appender 24236 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.444 seconds (process running for 4.995)
+2025-02-17T17:13:04.628+03:00 appender 16968 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 16968 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:13:04.640+03:00 appender 16968 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:13:06.764+03:00 appender 16968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:13:06.786+03:00 appender 16968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:13:06.788+03:00 appender 16968 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:13:06.937+03:00 appender 16968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:13:06.938+03:00 appender 16968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2197 ms
+2025-02-17T17:13:07.644+03:00 appender 16968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:13:07.657+03:00 appender 16968 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.898 seconds (process running for 4.84)
+2025-02-17T17:14:28.006+03:00 appender 14732 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 14732 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:14:28.008+03:00 appender 14732 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:14:30.033+03:00 appender 14732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:14:30.069+03:00 appender 14732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:14:30.070+03:00 appender 14732 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:14:30.218+03:00 appender 14732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:14:30.219+03:00 appender 14732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2110 ms
+2025-02-17T17:14:30.952+03:00 appender 14732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:14:30.972+03:00 appender 14732 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.664 seconds (process running for 4.644)
+2025-02-17T17:21:47.510+03:00 appender 12980 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 12980 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:21:47.512+03:00 appender 12980 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:21:49.268+03:00 appender 12980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:21:49.293+03:00 appender 12980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:21:49.294+03:00 appender 12980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:21:49.476+03:00 appender 12980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:21:49.477+03:00 appender 12980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1858 ms
+2025-02-17T17:21:50.456+03:00 appender 12980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:21:50.469+03:00 appender 12980 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.626 seconds (process running for 4.629)
+2025-02-17T17:26:26.006+03:00 appender 25624 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25624 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:26:26.012+03:00 appender 25624 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:26:27.738+03:00 appender 25624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:26:27.758+03:00 appender 25624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:26:27.758+03:00 appender 25624 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:26:27.911+03:00 appender 25624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:26:27.912+03:00 appender 25624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1789 ms
+2025-02-17T17:26:28.460+03:00 appender 25624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:26:28.472+03:00 appender 25624 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.061 seconds (process running for 3.963)
+2025-02-17T17:27:06.089+03:00 appender 25160 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25160 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:27:06.094+03:00 appender 25160 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:27:07.789+03:00 appender 25160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:27:07.808+03:00 appender 25160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:27:07.809+03:00 appender 25160 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:27:07.945+03:00 appender 25160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:27:07.946+03:00 appender 25160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1752 ms
+2025-02-17T17:27:08.596+03:00 appender 25160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:27:08.616+03:00 appender 25160 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.138 seconds (process running for 4.236)
+2025-02-17T17:27:39.286+03:00 appender 20976 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 20976 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:27:39.290+03:00 appender 20976 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:27:41.409+03:00 appender 20976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:27:41.438+03:00 appender 20976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:27:41.439+03:00 appender 20976 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:27:41.600+03:00 appender 20976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:27:41.600+03:00 appender 20976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2208 ms
+2025-02-17T17:27:42.240+03:00 appender 20976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:27:42.293+03:00 appender 20976 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.774 seconds (process running for 4.748)
+2025-02-17T17:28:26.011+03:00 appender 25660 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25660 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-17T17:28:26.013+03:00 appender 25660 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-17T17:28:27.936+03:00 appender 25660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-17T17:28:27.960+03:00 appender 25660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-17T17:28:27.961+03:00 appender 25660 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-17T17:28:28.110+03:00 appender 25660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-17T17:28:28.111+03:00 appender 25660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
+2025-02-17T17:28:28.857+03:00 appender 25660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-17T17:28:28.870+03:00 appender 25660 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.016 seconds (process running for 4.959)
+2025-02-17T17:28:33.313+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-17T17:28:33.315+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-17T17:28:33.320+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-17T17:28:36.504+03:00 appender 25660 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1787783 сек.
+2025-02-17T17:28:36.504+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-17T17:28:36.597+03:00 appender 25660 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0920645 сек.
+2025-02-17T17:28:36.604+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-17T17:28:36.606+03:00 appender 25660 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 3.2971495 сек.

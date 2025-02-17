@@ -10,21 +10,23 @@ import org.springframework.web.multipart.MultipartFile;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
+import java.util.Locale;
+import java.util.Optional;
+import java.util.regex.Pattern;
+import java.util.stream.StreamSupport;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.HashMap;
-import java.util.Iterator;
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Arrays;
 @Slf4j
 @org.springframework.stereotype.Service
 public class ExcelReadService {
@@ -96,4 +98,29 @@ try {
                 + " сек.");
         return data;
     }
+   
+    public static File findLatestFile(String directoryPath, String fileMask) {
+        File directory = new File(directoryPath);
+        if (!directory.isDirectory()) {
+            System.out.println("Указанный путь не является директорией.");
+            return null;
+        }
+
+        File[] files = directory.listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File file) {
+                return file.getName().matches(fileMask);
+            }
+        });
+
+        if (files == null || files.length == 0) {
+            return null;
+        }
+
+        return Arrays.stream(files)
+                .max(Comparator.comparingLong(File::lastModified))
+                .orElse(null);
+    }
+
+
 }
