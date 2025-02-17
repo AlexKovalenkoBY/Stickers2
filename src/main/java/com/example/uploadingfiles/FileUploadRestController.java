@@ -1,6 +1,5 @@
 package com.example.uploadingfiles;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map; // Добавлен импорт для Map
 import java.util.stream.Collectors;
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -31,6 +31,7 @@ import org.xml.sax.SAXException;
 import com.example.uploadingfiles.storage.StorageFileNotFoundException;
 import com.example.uploadingfiles.storage.StorageService;
 import com.itextpdf.text.DocumentException;
+
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -39,14 +40,16 @@ import org.apache.poi.ss.usermodel.Workbook;
 @RestController
 @RequestMapping("/api")
 public class FileUploadRestController {
-	@Autowired
-	StickersService stService;
-	private final StorageService storageService;
+    @Autowired
+    StickersService stService;
+    ReferenceFileSingleton referenceFileSingleton;
+    private final StorageService storageService;
     public Long estimatedTime;
     public Long startTime;
 
-    public FileUploadRestController(StorageService storageService) {
+    public FileUploadRestController(StorageService storageService, ReferenceFileSingleton referenceFileSingleton) {
         this.storageService = storageService;
+        this.referenceFileSingleton = referenceFileSingleton;
     }
 
     Comparator<File> comparator = Comparator.comparing(file -> {
@@ -66,7 +69,7 @@ public class FileUploadRestController {
         response.put("referenceFile", StickersService.RefereneceReady);
 
         List<String> files = storageService.loadAll()
-                .map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
+                .map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadRestController.class,
                         "serveFile", path.getFileName().toString()).build().toUri().toString())
                 .collect(Collectors.toList());
 
@@ -86,6 +89,14 @@ public class FileUploadRestController {
                 .header(HttpHeaders.CONTENT_DISPOSITION,
                         "inline; filename=\"" + file.getFilename() + "\"")
                 .header(HttpHeaders.CONTENT_TYPE, "application/pdf").body(file);
+    }
+
+    @GetMapping("/referenceFileStatus")
+    public ResponseEntity<Map<String, Boolean>> referenceFileStatus() {
+        Boolean status = referenceFileSingleton.getReferenceFile();
+        Map<String, Boolean> response = new HashMap<>(); // Явное указание типов для HashMap
+        response.put("status", status);
+        return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, "application/json").body(response);
     }
 
     @PostMapping("/upload")
@@ -166,68 +177,52 @@ public class FileUploadRestController {
     @SneakyThrows
     public void applicationStarted(ApplicationStartedEvent event) {
         this.startTime = System.nanoTime();
-      
-        File bigFileName  = ExcelReadService.findLatestFile(System.getProperty("user.home")+"\\Downloads\\", ".*\\_Общие_характеристики_одним_файлом.xlsx");
 
-        File file  = bigFileName;
+        File bigFileName = ExcelReadService.findLatestFile(System.getProperty("user.home") + "\\Downloads\\", 
+        ".*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\.xlsx");
         try {
-    
             Long startTime = System.nanoTime();
-            log.info("1.******* start proceed file: " + file.getName() + " size: "
-                    + file.getTotalSpace());
+            log.info("1.******* start proceed file: " + bigFileName.getName() + " size: "
+                    + bigFileName.getTotalSpace());
             ExcelReadService ers = new ExcelReadService();
             log.info("1.1.******* Service created");
 
-            if ((file.getName().indexOf("_Общие характеристики одним файлом") > -1)
-                    || (file.getName()
+            if ((bigFileName.getName().indexOf("_Общие характеристики одним файлом") > -1)
+                    || (bigFileName.getName()
                             .indexOf("_Общие_характеристики_одним_файлом") > -1)) {
-                log.info("2.******* start Reference file proceed: " + file.getName()
-                        + " size: " + file.getTotalSpace());
+                log.info("2.******* start Reference file proceed: " + bigFileName.getName()
+                        + " size: " + bigFileName.getTotalSpace());
 
-                // Считываем файл один раз
                 Workbook workbook = null;
                 try {
-                    workbook = WorkbookFactory.create(file);
+                    workbook = WorkbookFactory.create(bigFileName);
                 } catch (IOException e) {
                     e.printStackTrace();
-                    // return;
                 }
 
-                // Создаем первый HashMap
-                HashMap<String, String> refFile =
+                HashMap<String, String> refFileHashTable =
                         ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
                 log.info("3.******* barcodesHash was build:");
 
-                // Создаем второй HashMap
-                HashMap<String, String> brandHash =
+                HashMap<String, String> brandHashTable =
                         ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
                 log.info("4.******* brandsHash was build:");
 
                 ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-                refFileObject.setbrandHash(brandHash);
-                refFileObject.setBarCodeHashMap(refFile);
+                refFileObject.referenceBuild();
+                refFileObject.setbrandHash(brandHashTable);
+                refFileObject.setBarCodeHashMap(refFileHashTable);
                 StickersService.RefereneceReady = true;
-             
+
                 Long estimatedTime = System.nanoTime() - startTime;
-                log.info("Обработан файл-справочник " + file.getName() + " за "
+                log.info("Обработан файл-справочник " + bigFileName.getName() + " за "
                         + estimatedTime / 1_000_000_000. + " сек.");
-                refFileObject.setreferenceFileName(file.getName());
-            } else {
-                if (StickersService.RefereneceReady) {
-                    ArrayList<ArrayList<String>> orderContent =
-                            ers.uploadSelectedCellsAndBuidOrderHasTable((MultipartFile) file, 1,
-                                    ReferenceFileColumnsSingleton.colls);
-                    stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent,
-                            (MultipartFile) file);
-                }
+                refFileObject.setreferenceFileName(bigFileName.getName());
             }
         } catch (Exception e) {
             log.info(e.getLocalizedMessage());
         }
         this.estimatedTime = System.nanoTime() - startTime;
         System.out.println("Общий файл сформирован.");
-      
     }
-
-
 }

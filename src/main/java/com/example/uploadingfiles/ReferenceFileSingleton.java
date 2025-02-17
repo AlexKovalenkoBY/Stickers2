@@ -3,6 +3,8 @@ package com.example.uploadingfiles;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.springframework.stereotype.Component;
+@Component
 public final class ReferenceFileSingleton {
 
     private static ReferenceFileSingleton INSTANCE;
@@ -11,6 +13,7 @@ public final class ReferenceFileSingleton {
     private Boolean referenceBuild = false;
     private HashMap<String, String> barCodeHashMap;
     private HashMap<String, String> brandHash;
+
     private String referenceFileName;
 
     private ReferenceFileSingleton() {
@@ -23,7 +26,9 @@ public final class ReferenceFileSingleton {
 
         return INSTANCE;
     }
-
+    public Boolean getReferenceFile (){
+        return referenceBuild;
+    }
     public void referenceBuild() {
         this.referenceBuild = true;
     }

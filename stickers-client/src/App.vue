@@ -11,19 +11,19 @@
       <div>
         <form @submit.prevent="handleFileUpload" enctype="multipart/form-data">
           <table>
-            <tr>
-              <td style="width: 420px;">Выберите файл для загрузки:</td>
-              <td style="width: 420px;"><input type="file" name="file" accept=".xlsx" @change="onFileChange" /></td>
-              <td style="width: 420px;"><button type="submit" class="btn btn-primary">Обработать файл</button></td>
-            </tr>
+            <tbody>
+              <tr>
+                <td style="width: 420px;">Выберите файл для загрузки:</td>
+                <td style="width: 420px;"><input type="file" name="file" accept=".xlsx" @change="onFileChange" /></td>
+                <td style="width: 420px;"><button type="submit" class="btn btn-primary">Обработать файл</button></td>
+              </tr>
+            </tbody>
           </table>
         </form>
       </div>
       <hr size="5" noshade color="#768c8c">
     </div>
     <div class="container text-left">
-
-
       <div v-if="referenceFile">
         <h2 :style="{ color: 'green' }">{{ referenceFileName }}</h2>
       </div>
@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import axios from 'axios'; // Импортируем axios для HTTP-запросов
+
 export default {
   data() {
     return {
@@ -60,24 +62,51 @@ export default {
         const formData = new FormData();
         formData.append('file', this.selectedFile);
 
-        // Здесь можно добавить логику для отправки файла на сервер
-        // Например, используя axios:
-        // axios.post('/upload', formData)
-        //   .then(response => {
-        //     this.referenceFile = true;
-        //     this.referenceFileName = response.data.fileName;
-        //     this.files = response.data.files;
-        //   })
-        // .catch(error => {
-        //   console.error('Ошибка при загрузке файла:', error);
-        // });
+        // Отправка файла на сервер
+        axios.post('http://127.0.0.1:8081/api/upload', formData)
+          .then(response => {
+            this.referenceFile = true;
+            this.referenceFileName = response.data.fileName;
+            this.files = response.data.files;
 
-        // Для примера, просто устанавливаем значения
-        this.referenceFile = true;
-        this.referenceFileName = this.selectedFile.name;
-        this.files = ['file1.pdf', 'file2.pdf']; // Пример списка файлов
+            // Вызов fetchFiles() после успешной загрузки файла
+            this.fetchFiles();
+          })
+          .catch(error => {
+            console.error('Ошибка при загрузке файла:', error);
+          });
       }
+    },
+    fetchFiles() {
+      // Запрос списка файлов
+      axios.get('http://127.0.0.1:8081/api/files')
+        .then(response => {
+          this.files = response.data.files;
+          this.referenceFile = response.data.referenceFile;
+          this.referenceFileName = response.data.referenceFileName;
+        })
+        .catch(error => {
+          console.error('Ошибка при получении списка файлов:', error);
+        });
+    },
+    fetchReferenceFileStatus() {
+      // Запрос статуса справочника
+      axios.get('http://127.0.0.1:8081/api/referenceFileStatus')
+        .then(response => {
+          this.referenceFile = response.data.status;
+          if (this.referenceFile) {
+            this.referenceFileName = response.data.referenceFileName;
+          }
+        })
+        .catch(error => {
+          console.error('Ошибка при получении статуса справочника:', error);
+        });
     }
+  },
+  mounted() {
+    // Вызов методов при монтировании компонента
+    this.fetchFiles();
+    // this.fetchReferenceFileStatus();
   }
 };
 </script>
