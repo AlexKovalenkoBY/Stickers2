@@ -1,12 +1,13 @@
 package com.example.uploadingfiles;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.resource.EncodedResourceResolver;
-import org.springframework.web.servlet.resource.PathResourceResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
@@ -18,28 +19,16 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/META-INF/resources/webjars/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
-
+    
         // Обработка статических ресурсов
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
-
-        // Обработка favicon
-        registry.addResourceHandler("/favicon.ico")
-                .addResourceLocations("classpath:/static/favicon.ico")
-                .resourceChain(true)
-                .addResolver(new EncodedResourceResolver());
-
-        // Обработка изображения eac.png
-        registry.addResourceHandler("/static/eac.png")
-                .addResourceLocations("classpath:/static/eac.png")
-                .resourceChain(true)
-                .addResolver(new EncodedResourceResolver());
-
-        // Обработка PDF-файлов
-        registry.addResourceHandler("/pdf/**")
-                .addResourceLocations("classpath:/static/pdf/")
+    
+        // Добавляем обработчик для assets
+        registry.addResourceHandler("/assets/**")
+                .addResourceLocations("classpath:/static/assets/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
     }
@@ -63,9 +52,13 @@ public class WebConfig extends WebMvcConfigurationSupport {
     public void addViewControllers(ViewControllerRegistry registry) {
         // Перенаправление всех запросов на index.html
         registry.addViewController("/{path:[a-zA-Z0-9-]+}").setViewName("forward:/index.html");
-        registry.addViewController("/{path1:[a-zA-Z0-9-]+}/{path2:[a-zA-Z0-9-]+}")
-                .setViewName("forward:/index.html");
-        registry.addViewController("/{path1:[a-zA-Z0-9-]+}/{path2:[a-zA-Z0-9-]+}/{path3:[a-zA-Z0-9-]+}")
-                .setViewName("forward:/index.html");
+    }
+
+    @Bean
+    public InternalResourceViewResolver viewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/static/");
+        resolver.setSuffix(".html");
+        return resolver;
     }
 }

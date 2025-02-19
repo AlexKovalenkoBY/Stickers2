@@ -1739,3 +1739,335 @@ jakarta.servlet.ServletException: Could not resolve view with name 'index' in se
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
+2025-02-19T16:02:54.098+03:00 appender 22936 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 22936 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-19T16:02:54.102+03:00 appender 22936 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-19T16:02:55.735+03:00 appender 22936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-19T16:02:55.759+03:00 appender 22936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-19T16:02:55.760+03:00 appender 22936 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-19T16:02:55.872+03:00 appender 22936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-19T16:02:55.873+03:00 appender 22936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1675 ms
+2025-02-19T16:02:56.559+03:00 appender 22936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-19T16:02:56.570+03:00 appender 22936 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.032 seconds (process running for 4.394)
+2025-02-19T16:02:56.637+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:02:56.638+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:02:56.641+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:02:59.257+03:00 appender 22936 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1142703 сек.
+2025-02-19T16:02:59.258+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-19T16:02:59.297+03:00 appender 22936 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0392305 сек.
+2025-02-19T16:02:59.298+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-19T16:02:59.302+03:00 appender 22936 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 2.6674406 сек.
+2025-02-19T16:03:05.248+03:00 appender 22936 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-19T16:03:05.250+03:00 appender 22936 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-19T16:03:05.252+03:00 appender 22936 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-02-19T16:03:08.323+03:00 appender 22936 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Could not resolve view with name 'index' in servlet with name 'dispatcherServlet'] with root cause
+
+jakarta.servlet.ServletException: Could not resolve view with name 'index' in servlet with name 'dispatcherServlet'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1411) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-19T16:05:50.032+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T16:05:50.035+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T16:05:50.037+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:05:50.189+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.1518183 сек.
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:05:59.667+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:05:59.675+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.677+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:05:59.679+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T16:05:59.683+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T16:05:59.960+03:00 appender 22936 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 9.7749074 сек.
+2025-02-19T16:10:43.497+03:00 appender 312 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 312 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-19T16:10:43.501+03:00 appender 312 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-19T16:10:45.608+03:00 appender 312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-19T16:10:45.641+03:00 appender 312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-19T16:10:45.643+03:00 appender 312 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-19T16:10:45.822+03:00 appender 312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-19T16:10:45.824+03:00 appender 312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2191 ms
+2025-02-19T16:10:46.368+03:00 appender 312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-19T16:10:46.381+03:00 appender 312 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.898 seconds (process running for 5.05)
+2025-02-19T16:10:46.442+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:10:46.442+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:10:46.442+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:10:49.100+03:00 appender 312 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0904436 сек.
+2025-02-19T16:10:49.100+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-19T16:10:49.156+03:00 appender 312 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0477979 сек.
+2025-02-19T16:10:49.156+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-19T16:10:49.156+03:00 appender 312 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 2.7178918 сек.
+2025-02-19T16:11:15.940+03:00 appender 312 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-19T16:11:15.942+03:00 appender 312 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-19T16:11:15.942+03:00 appender 312 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-02-19T16:11:16.142+03:00 appender 312 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /assets/index-Bq9qQaoi.js
+2025-02-19T16:11:16.146+03:00 appender 312 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /assets/index-DiNjoW-n.css
+2025-02-19T16:11:16.154+03:00 appender 312 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /assets/index-DiNjoW-n.css.
+2025-02-19T16:11:16.155+03:00 appender 312 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No endpoint GET /assets/index-Bq9qQaoi.js.
+2025-02-19T16:12:43.490+03:00 appender 5340 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 5340 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-19T16:12:43.500+03:00 appender 5340 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-19T16:12:45.610+03:00 appender 5340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-19T16:12:45.620+03:00 appender 5340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-19T16:12:45.620+03:00 appender 5340 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-19T16:12:45.752+03:00 appender 5340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-19T16:12:45.752+03:00 appender 5340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2132 ms
+2025-02-19T16:12:46.270+03:00 appender 5340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-19T16:12:46.287+03:00 appender 5340 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.617 seconds (process running for 4.528)
+2025-02-19T16:12:46.381+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:12:46.383+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:12:46.386+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T16:12:49.671+03:00 appender 5340 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0951914 сек.
+2025-02-19T16:12:49.674+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-19T16:12:49.739+03:00 appender 5340 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0631579 сек.
+2025-02-19T16:12:49.739+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-19T16:12:49.740+03:00 appender 5340 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 3.3616403 сек.
+2025-02-19T16:12:51.545+03:00 appender 5340 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-19T16:12:51.545+03:00 appender 5340 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-19T16:12:51.547+03:00 appender 5340 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-19T16:12:59.083+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T16:12:59.093+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T16:12:59.097+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:12:59.283+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.1728128 сек.
+2025-02-19T16:13:09.673+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:13:09.673+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:13:09.675+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T16:13:09.675+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:13:09.675+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:13:09.675+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:13:09.675+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:13:09.677+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.679+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.679+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.679+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.681+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.681+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.681+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:13:09.684+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T16:13:09.686+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T16:13:09.688+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T16:13:09.690+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:13:09.690+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:13:09.690+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T16:13:09.690+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T16:13:10.046+03:00 appender 5340 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 10.7614743 сек.
+2025-02-19T16:21:54.077+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T16:21:54.077+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T16:21:54.077+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:21:54.128+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.0469257 сек.
+2025-02-19T16:22:02.435+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:22:02.435+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.437+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.440+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.440+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.440+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.440+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:22:02.440+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T16:22:02.443+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T16:22:02.443+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T16:22:02.443+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:22:02.444+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:22:02.454+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T16:22:02.458+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T16:22:03.066+03:00 appender 5340 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 8.9377154 сек.
+2025-02-19T16:32:06.734+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T16:32:06.735+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T16:32:06.736+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:32:06.778+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.0418952 сек.
+2025-02-19T16:32:13.175+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:32:13.176+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:32:13.177+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T16:32:13.178+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:32:13.179+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:32:13.179+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:32:13.180+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:32:13.181+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.183+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.185+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.186+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.193+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.194+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.195+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:32:13.196+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T16:32:13.197+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T16:32:13.198+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T16:32:13.199+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:32:13.200+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:32:13.200+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T16:32:13.201+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T16:32:13.491+03:00 appender 5340 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 6.711021 сек.
+2025-02-19T16:40:59.845+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T16:40:59.845+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T16:40:59.845+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T16:40:59.987+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.1412646 сек.
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T16:41:07.643+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T16:41:07.656+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T16:41:07.657+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:41:07.657+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T16:41:07.660+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T16:41:07.661+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T16:41:07.936+03:00 appender 5340 --- [http-nio-8081-exec-8] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 7.9485744 сек.
+2025-02-19T17:02:25.626+03:00 appender 13100 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 13100 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-19T17:02:25.629+03:00 appender 13100 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-19T17:02:27.942+03:00 appender 13100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-19T17:02:27.969+03:00 appender 13100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-19T17:02:27.970+03:00 appender 13100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-19T17:02:28.100+03:00 appender 13100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-19T17:02:28.101+03:00 appender 13100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2381 ms
+2025-02-19T17:02:28.725+03:00 appender 13100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-19T17:02:28.741+03:00 appender 13100 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.74 seconds (process running for 4.788)
+2025-02-19T17:02:28.829+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : 1.******* start proceed file: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T17:02:28.830+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T17:02:28.832+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx size: 156893167616
+2025-02-19T17:02:31.187+03:00 appender 13100 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0852959 сек.
+2025-02-19T17:02:31.188+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-19T17:02:31.233+03:00 appender 13100 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0439932 сек.
+2025-02-19T17:02:31.235+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-19T17:02:31.237+03:00 appender 13100 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 19_09_2024_18_46_Общие_характеристики_одним_файлом.xlsx за 2.4097828 сек.
+2025-02-19T17:02:37.443+03:00 appender 13100 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-19T17:02:37.444+03:00 appender 13100 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-19T17:02:37.445+03:00 appender 13100 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-19T17:02:38.143+03:00 appender 13100 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /vite.svg
+2025-02-19T17:02:38.150+03:00 appender 13100 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /vite.svg.
+2025-02-19T17:04:42.579+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T17:04:42.581+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T17:04:42.581+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T17:04:42.648+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.0657109 сек.
+2025-02-19T17:04:50.629+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T17:04:50.645+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T17:04:50.990+03:00 appender 13100 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 8.3428263 сек.
+2025-02-19T17:16:08.356+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T17:16:08.366+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T17:16:08.366+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T17:16:08.430+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.06331 сек.
+2025-02-19T17:16:15.827+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:16:15.827+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:16:15.828+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T17:16:15.828+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:16:15.829+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:16:15.829+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:16:15.830+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:16:15.830+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.832+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.832+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.833+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.833+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.835+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.839+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:16:15.840+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T17:16:15.843+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T17:16:15.844+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T17:16:15.844+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:16:15.845+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:16:15.845+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T17:16:15.846+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T17:16:16.169+03:00 appender 13100 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 7.7373194 сек.
+2025-02-19T17:23:32.634+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : start POST request
+2025-02-19T17:23:32.634+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-02-19T17:23:32.637+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-19T17:23:32.816+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.1808408 сек.
+2025-02-19T17:23:43.988+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:23:43.996+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 21121139010 без сетки-фильтра, 21121139010]
+2025-02-19T17:23:44.004+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Бензонасос топливный 621139010 без сетки-фильтра, 621139010]
+2025-02-19T17:23:44.005+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:23:44.009+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:23:44.010+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:23:44.011+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик включения вентилятора 87/82 °C ТМ108380800002, ТМ108380800002]
+2025-02-19T17:23:44.012+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.013+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.014+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.017+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.018+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.019+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.019+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения дроссельной заслонки 21121148200, 21121148200]
+2025-02-19T17:23:44.020+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик положения коленвала 21123847010, 21123847010]
+2025-02-19T17:23:44.026+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Датчик скорости 2111-3843010, 21113843010]
+2025-02-19T17:23:44.027+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Дроссельная заслонка 8 кл 1.6 электропедаль 21116-1148010, 211161148010]
+2025-02-19T17:23:44.035+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:23:44.037+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Комплект тросов ручника TPRT20640 2 шт, TPRT20640]
+2025-02-19T17:23:44.042+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Оси рычага передней подвески MK012904100, 2 шт, MK012904100]
+2025-02-19T17:23:44.042+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : error for order: [РОССИЯ, Трос ручника TPRT20637 комплект 2 шт, TPRT20637]
+2025-02-19T17:23:44.373+03:00 appender 13100 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241511.pdf за 11.5688439 сек.

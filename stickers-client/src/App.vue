@@ -10,15 +10,23 @@
       </div>
       <div>
         <form @submit.prevent="handleFileUpload" enctype="multipart/form-data">
-          <table>
-            <tbody>
-              <tr>
-                <td style="width: 420px;">Выберите файл для загрузки:</td>
-                <td style="width: 420px;"><input type="file" name="file" accept=".xlsx" @change="onFileChange" /></td>
-                <td style="width: 420px;"><button type="submit" class="btn btn-primary">Обработать файл</button></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="form-row">
+            <div class="form-cell" style="width: 640px;">
+              Выберите файл для загрузки:
+              <label class="btn btn-primary custom-file-upload">
+                <input type="file" name="file" accept=".xlsx" @change="onFileChange" /> Выбрать файл
+              </label>
+              <span v-if="selectedFile" style="margin-left:20px;">{{ selectedFile.name }}</span>
+              <span v-else style="margin-left:20px;">Файл не выбран</span>
+            </div>
+            <div class="form-cell">
+              <button type="submit" class="btn btn-primary">Обработать файл</button>
+            </div>
+            <div class="form-cell-right form-check form-switch">
+              <input class="form-check-input" type="checkbox" v-model="processSecondBarcode" id="flexSwitchCheckDefault" style="margin-left: 250px; padding-left:50px" />
+              <label class="form-check-label" for="flexSwitchCheckDefault">Обрабатывать второй баркод</label>
+            </div>
+          </div>
         </form>
       </div>
       <hr size="5" noshade color="#768c8c">
@@ -50,7 +58,8 @@ export default {
       referenceFile: false,
       referenceFileName: '',
       files: [],
-      selectedFile: null
+      selectedFile: null,
+      processSecondBarcode: true // Значение по умолчанию
     };
   },
   methods: {
@@ -119,6 +128,7 @@ export default {
   top: 0;
   background-color: white;
   z-index: 1000;
+  width: 100%; /* На всю ширину экрана */
 }
 
 html {
@@ -134,11 +144,11 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100vh;
+  width: 100%; /* На всю ширину экрана */
 }
 
 .container {
-  width: 100%;
-  max-width: 80%;
+  width: 100%; /* На всю ширину экрана */
   align-items: flex-start;
   margin: 0;
   top: 0%;
@@ -149,12 +159,42 @@ h1 {
   font-size: 25px;
 }
 
-table {
-  margin: 0;
-  padding: 0;
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* На всю ширину экрана */
 }
 
-ol {
-  padding-left: 20px;
+.form-cell {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+.form-cell-right {
+  flex: 1;
+  text-align: right;
+  padding: 10px;
+}
+
+/* Стили для input, чтобы он выглядел как кнопка */
+.custom-file-upload {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
 }
 </style>
