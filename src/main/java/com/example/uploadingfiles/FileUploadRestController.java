@@ -179,7 +179,7 @@ public class FileUploadRestController {
         this.startTime = System.nanoTime();
 
         File bigFileName = ExcelReadService.findLatestFile(System.getProperty("user.home") + "\\Downloads\\", 
-        ".*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\.xlsx");
+        "^(?!~).*(\\\\d{2}[._]\\\\d{2}[._]\\\\d{4}[_ ]\\\\d{2}[._]\\\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\\\.xlsx");
         try {
             Long startTime = System.nanoTime();
             log.info("1.******* start proceed file: " + bigFileName.getName() + " size: "
