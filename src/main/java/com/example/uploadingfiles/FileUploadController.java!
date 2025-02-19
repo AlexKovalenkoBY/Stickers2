@@ -67,15 +67,15 @@ public class FileUploadController {
 
 	@GetMapping("/")
 	public String listUploadedFiles(Model model) {
-		ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-		model.addAttribute("referenceFileName", refFileObject.getreferenceFileName());
-		model.addAttribute("referenceFile", StickersService.RefereneceReady);
-		log.info("start main page");
-		model.addAttribute("files", storageService.loadAll()
-				.map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
-						"serveFile", path.getFileName().toString()).build().toUri().toString())
-				.collect(Collectors.toList()));
-		log.info("end  main page");
+		// ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+		// model.addAttribute("referenceFileName", refFileObject.getreferenceFileName());
+		// model.addAttribute("referenceFile", StickersService.RefereneceReady);
+		// log.info("start main page");
+		// model.addAttribute("files", storageService.loadAll()
+		// 		.map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
+		// 				"serveFile", path.getFileName().toString()).build().toUri().toString())
+		// 		.collect(Collectors.toList()));
+		// log.info("end  main page");
 		return "index";
 	}
 
