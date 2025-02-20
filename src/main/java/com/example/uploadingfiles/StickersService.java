@@ -1,5 +1,5 @@
 package com.example.uploadingfiles;
-
+import java.util.Optional;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -85,7 +85,14 @@ public class StickersService implements StickersServiceInterface {
         final Pattern pattern = Pattern.compile("[0-9]+", Pattern.CASE_INSENSITIVE);
         // Match regex against input
         orderList.forEach(order -> {
-            String hashResult = refFile.get(order.get(2));
+            Optional<String> hashResultOpt = Optional.ofNullable(refFile.get(order.get(2)));
+            String hashResult = hashResultOpt.map(hash -> {
+                if (hash.contains(";")) {
+                    return hash.split(";")[1]; // если есть ; срежи баркодов, то тогда берем второй
+                } else {
+                    return hash;
+                }
+            }).orElse("");
             String brandhashResult = brandHash.get(order.get(2));
             if (hashResult != null) {
 

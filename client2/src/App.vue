@@ -5,7 +5,7 @@
       <div>
         <span>Краткая инструкция:</span> <br>
         <span>1. загрузить справочник (большой файл)</span><br>
-        <span>2. загрузить файл заказа</span><br>
+        <span>2. загрузить файл заказа. После выбора файла обработка начнется автоматически.</span><br>
         <span>3. посмотреть/распечатать файл из списка </span><br>
       </div>
       <div>
@@ -27,10 +27,6 @@
                   Обработка...
                 </span>
               </button>
-            </div>
-            <div class="form-cell-right form-check form-switch">
-              <input class="form-check-input" type="checkbox" v-model="processSecondBarcode" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">Обрабатывать второй баркод</label>
             </div>
           </div>
         </form>
@@ -66,14 +62,14 @@ export default {
       files: [],
       selectedFile: null,
       processSecondBarcode: true,
-      isLoading: false // Добавлено состояние загрузки
+      isLoading: false
     };
   },
   methods: {
-    onFileChange(event) {
+    async onFileChange(event) {
       this.selectedFile = event.target.files[0];
       if (this.selectedFile) {
-        this.handleFileUpload();
+        await this.handleFileUpload(); // Используем await для ожидания завершения handleFileUpload
       }
     },
     async handleFileUpload() {
@@ -86,7 +82,7 @@ export default {
           const response = await axios.post('http://127.0.0.1:8081/api/upload', formData);
           this.referenceFile = true;
           this.referenceFileName = response.data.fileName;
-          await this.fetchFiles();
+          await this.fetchFiles(); // Обновляем список файлов после успешной загрузки
         } catch (error) {
           console.error('Ошибка при загрузке файла:', error);
         } finally {
@@ -215,7 +211,6 @@ h1 {
   display: none;
 }
 
-/* Стили для спиннера */
 .spinner-border {
   vertical-align: middle;
   margin-right: 5px;

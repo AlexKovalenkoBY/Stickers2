@@ -178,8 +178,14 @@ public class FileUploadRestController {
     public void applicationStarted(ApplicationStartedEvent event) {
         this.startTime = System.nanoTime();
 
-        File bigFileName = ExcelReadService.findLatestFile(System.getProperty("user.home") + "\\Downloads\\", 
-        "^(?!~).*(\\\\d{2}[._]\\\\d{2}[._]\\\\d{4}[_ ]\\\\d{2}[._]\\\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\\\.xlsx");
+        String downloadsPath = System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
+        String regex = "^(?!~).*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\.xlsx";
+        File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
+    
+        if (bigFileName == null) {
+            log.error("Файл-справочник не найден в папке Downloads");
+            return;
+        }
         try {
             Long startTime = System.nanoTime();
             log.info("1.******* start proceed file: " + bigFileName.getName() + " size: "
@@ -225,4 +231,5 @@ public class FileUploadRestController {
         this.estimatedTime = System.nanoTime() - startTime;
         System.out.println("Общий файл сформирован.");
     }
+
 }
