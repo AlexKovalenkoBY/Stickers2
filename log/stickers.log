@@ -2978,3 +2978,47 @@ jakarta.servlet.ServletException: Could not resolve view with name 'index' in se
 2025-02-20T11:46:11.282+03:00 appender 19988 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.1.******* Service created
 2025-02-20T11:46:11.352+03:00 appender 19988 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241566.xlsx за 0.0653214 сек.
 2025-02-20T11:46:17.653+03:00 appender 19988 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241566.pdf за 6.3086302 сек.
+2025-02-20T19:59:59.890+03:00 appender 17584 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.5 with PID 17584 (D:\rpo\java\Stickers2\target\classes started by kovalenko in D:\rpo\java\Stickers2)
+2025-02-20T19:59:59.893+03:00 appender 17584 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-20T20:00:01.303+03:00 appender 17584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-20T20:00:01.334+03:00 appender 17584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-20T20:00:01.335+03:00 appender 17584 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-20T20:00:01.454+03:00 appender 17584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-20T20:00:01.455+03:00 appender 17584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1494 ms
+2025-02-20T20:00:01.988+03:00 appender 17584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-20T20:00:01.998+03:00 appender 17584 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 2.555 seconds (process running for 2.964)
+2025-02-20T20:00:02.037+03:00 appender 17584 --- [main] c.e.u.FileUploadRestController           : Файл-справочник не найден в папке Downloads
+2025-02-20T20:00:21.900+03:00 appender 17140 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.5 with PID 17140 (D:\rpo\java\Stickers2\target\classes started by kovalenko in D:\rpo\java\Stickers2)
+2025-02-20T20:00:21.904+03:00 appender 17140 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-20T20:00:23.674+03:00 appender 17140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-20T20:00:23.692+03:00 appender 17140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-20T20:00:23.693+03:00 appender 17140 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-20T20:00:23.763+03:00 appender 17140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-20T20:00:23.764+03:00 appender 17140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1797 ms
+2025-02-20T20:00:24.681+03:00 appender 17140 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-20T20:00:24.814+03:00 appender 17140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-20T20:00:24.837+03:00 appender 17140 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.425 seconds (process running for 4.101)
+2025-02-20T20:00:24.892+03:00 appender 17140 --- [main] c.e.u.FileUploadRestController           : Файл-справочник не найден в папке Downloads
+2025-02-20T20:00:27.765+03:00 appender 17140 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-20T20:00:27.766+03:00 appender 17140 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-20T20:00:27.767+03:00 appender 17140 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-20T20:00:52.431+03:00 appender 17140 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-02-20T20:00:52.435+03:00 appender 17140 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-02-20T20:00:59.101+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : start POST request
+2025-02-20T20:00:59.102+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.******* start proceed file: 12.02.2025_11.25_Общие характеристики одним файлом.xlsx size: 206465
+2025-02-20T20:00:59.103+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-20T20:00:59.103+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 12.02.2025_11.25_Общие характеристики одним файлом.xlsx size: 206465
+2025-02-20T20:01:01.030+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0729549 сек.
+2025-02-20T20:01:01.031+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-20T20:01:01.054+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0206553 сек.
+2025-02-20T20:01:01.054+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-20T20:01:01.056+03:00 appender 17140 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Обработан файл-справочник 12.02.2025_11.25_Общие характеристики одним файлом.xlsx за 1.9526908 сек.
+2025-02-20T20:01:19.352+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : start POST request
+2025-02-20T20:01:19.352+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.******* start proceed file: 12.02.2025_11.25_Общие характеристики одним файлом.xlsx size: 206465
+2025-02-20T20:01:19.354+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-20T20:01:19.354+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 2.******* start Reference file proceed: 12.02.2025_11.25_Общие характеристики одним файлом.xlsx size: 206465
+2025-02-20T20:01:19.852+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0185575 сек.
+2025-02-20T20:01:19.853+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 3.******* barcodesHash was build:
+2025-02-20T20:01:19.862+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0085479 сек.
+2025-02-20T20:01:19.863+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 4.******* brandsHash was build:
+2025-02-20T20:01:19.864+03:00 appender 17140 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : Обработан файл-справочник 12.02.2025_11.25_Общие характеристики одним файлом.xlsx за 0.5117201 сек.
