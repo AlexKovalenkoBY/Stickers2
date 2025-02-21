@@ -52,8 +52,8 @@ try {
             Row row = rowIterator.next();
             Cell keyCell = row.getCell(keyColumn);
             Cell valueCell = row.getCell(valueColumn);
-            String keyValue = dataFormatter.formatCellValue(keyCell);
-            String cellValue = dataFormatter.formatCellValue(valueCell);
+            String keyValue = dataFormatter.formatCellValue(keyCell).trim();
+            String cellValue = dataFormatter.formatCellValue(valueCell).trim();
             data.put(keyValue, cellValue);
         }
     }

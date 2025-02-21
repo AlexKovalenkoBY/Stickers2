@@ -1,11 +1,10 @@
 package com.example.uploadingfiles;
+
 import java.util.Optional;
-import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
-import com.example.uploadingfiles.storage.StorageException;
 import com.example.uploadingfiles.storage.StorageProperties;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
@@ -16,22 +15,16 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
-
-import java.io.BufferedReader;
-import java.io.File;
+import com.itextpdf.tool.xml.exceptions.RuntimeWorkerException;
 import java.io.FileOutputStream;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,11 +32,6 @@ import java.awt.image.BufferedImage;
 import java.awt.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
-import com.itextpdf.io.image.ImageData;
-import com.itextpdf.io.image.ImageDataFactory;
-
-import com.itextpdf.layout.element.Image;
 
 @Service
 @Slf4j
@@ -57,10 +45,11 @@ public class StickersService implements StickersServiceInterface {
     public static List<String> pdfsList = new ArrayList<String>();
     public static Boolean RefereneceReady = false;
     public static final List<Integer> orderColls = new ArrayList<>();
-    private com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
+    private com.itextpdf.text.Rectangle stickerPageSizeRectangle =
+            new com.itextpdf.text.Rectangle(164, 113);
 
-    public void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
-            MultipartFile filename)
+    public void buildPdfFile2(ReferenceFileSingleton referenceInstance,
+            ArrayList<ArrayList<String>> orderList, MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
         // this.getEACFile();
@@ -73,19 +62,28 @@ public class StickersService implements StickersServiceInterface {
         com.itextpdf.text.Font stickerFont = new com.itextpdf.text.Font();
         stickerFont.setSize(4f);
 
-        String newFileName = ".\\" + storeProps.getLocation() + "\\"
-                + filename.getOriginalFilename().substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
+        String newFileName =
+                ".\\" + storeProps.getLocation() + "\\" + filename.getOriginalFilename()
+                        .substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
         PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream(newFileName));
         document.open();
 
         document.setPageSize(stickerPageSizeRectangle);
         document.setMargins(5, 5, 5, 5);
-        String fontHeaderStr = "<p style=\"font-family:arial; font-size:10; align-content:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
-        String fontHeaderStrHalf = "<p style=\"font-family:arial; font-size:4; align-content:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
+        String fontHeaderStr =
+                "<p style=\"font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
+        String fontHeaderStrHalf =
+                "<p style=\"font-family:arial; font-size:4px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
+        String paragraphEnd = "</p>";
         final Pattern pattern = Pattern.compile("[0-9]+", Pattern.CASE_INSENSITIVE);
         // Match regex against input
-        orderList.forEach(order -> {
-            Optional<String> hashResultOpt = Optional.ofNullable(refFile.get(order.get(2)));
+        int stickerColumn = 2;
+        // String stickerValue = "";
+        log.info("******************начало обработки списка на " + orderList.size()
+                + " элементов*****************");
+        for (ArrayList<String> order : orderList) {
+            String stickerValue = order.get(stickerColumn);
+            Optional<String> hashResultOpt = Optional.ofNullable(refFile.get(stickerValue));
             String hashResult = hashResultOpt.map(hash -> {
                 if (hash.contains(";")) {
                     return hash.split(";")[1]; // если есть ; срежи баркодов, то тогда берем второй
@@ -93,44 +91,52 @@ public class StickersService implements StickersServiceInterface {
                     return hash;
                 }
             }).orElse("");
-            String brandhashResult = brandHash.get(order.get(2));
+            // Optional<String> brandHashOpt = Optional.ofNullable(brandHash.get(stickerValue));
+            String brandhashResult = brandHash.get(stickerValue);
+            if (brandhashResult==null) 
+            {
+                brandhashResult="";
+            }
             if (hashResult != null) {
-
                 Matcher matcher = pattern.matcher(hashResult);
-
                 if ((hashResult != null) && (matcher.find())) {
-
                     try {
-                        BufferedImage image = StickersService.generateCode128BarcodeImage(hashResult);
+                        BufferedImage image =
+                                StickersService.generateCode128BarcodeImage(hashResult);
                         document.newPage();
                         document.setPageSize(stickerPageSizeRectangle);
                         // добавляем картинку
-                        com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image,
-                                null);
-                        // com.itextpdf.text.Image eacImage = com.itextpdf.text.Image.getInstance(eac,
-                        // null);
-
+                        com.itextpdf.text.Image pdfImage =
+                                com.itextpdf.text.Image.getInstance(image, null);
                         document.add(pdfImage);
                         document.add(eac);
-
                         XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
                         String htmlString = "<html><head>"
                                 + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
                                 + "</head><body style=\"text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;\">"
                                 + fontHeaderStr // начало тега
-                                + hashResult + "</p>"// бар-код
+                                + hashResult + paragraphEnd// бар-код
                                 + fontHeaderStr // начало тега
-                                + order.get(0) + "</p>"// ООО кама маркет
+                                + order.get(0) + paragraphEnd// ООО кама маркет
                                 + fontHeaderStr // начало тега
-                                + order.get(1) + "</p>";// наименование
+                                + order.get(1) + paragraphEnd;// наименование
                         htmlString = htmlString + fontHeaderStrHalf // начало тега
-                                + "Артикул: " + order.get(2) + "</p>";// артикул
+                                + "Артикул: " + stickerValue + paragraphEnd;// артикул
                         htmlString = htmlString + fontHeaderStr // начало тега
-                                + "Бренд: " + brandhashResult + "</p>"// бренд
+                                + "Бренд: " + brandhashResult + paragraphEnd // бренд
                                 + "</body></html>";
+                        try {
+                            worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
+                        } catch (RuntimeWorkerException e) {
+                            log.info("htmlString: " + htmlString);
+                            log.warn(String.join(" - ", order));
 
-                        worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
+
+                            log.error("Ошибка при обработке HTML: " + e.getMessage());
+                            throw new RuntimeException("Некорректный HTML-код", e);
+                        }
                     } catch (Exception e) {
+
                         e.printStackTrace();
                     }
                 }
@@ -138,13 +144,15 @@ public class StickersService implements StickersServiceInterface {
                 log.info("error for order: " + order.toString());
             }
 
-        });
+        } ;
 
-        document.close();
-        pdfWriter.close();
 
         Long estimatedTime = System.nanoTime() - startTime;
-        log.info("Сформирован PDF файл " + newFileName + " за " + estimatedTime / 1_000_000_000. + " сек.");
+        log.info("Сформирован PDF файл " + newFileName + " за " + estimatedTime / 1_000_000_000.
+                + " сек.");
+        log.info("********** Current PAGE: " + document.getPageNumber());
+        document.close();
+        pdfWriter.close();
     }
 
     public static BufferedImage make(String[] textrows) {
@@ -166,12 +174,16 @@ public class StickersService implements StickersServiceInterface {
         BufferedImage finalImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         g2d = finalImg.createGraphics();
         g2d.fillRect(0, 0, width, height);
-        g2d.setRenderingHint(RenderingHints.KEY_ALPHA_INTERPOLATION, RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
+        g2d.setRenderingHint(RenderingHints.KEY_ALPHA_INTERPOLATION,
+                RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setRenderingHint(RenderingHints.KEY_COLOR_RENDERING, RenderingHints.VALUE_COLOR_RENDER_QUALITY);
+        g2d.setRenderingHint(RenderingHints.KEY_COLOR_RENDERING,
+                RenderingHints.VALUE_COLOR_RENDER_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_DITHERING, RenderingHints.VALUE_DITHER_ENABLE);
-        g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
-        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS,
+                RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
+                RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
 
@@ -199,13 +211,11 @@ public class StickersService implements StickersServiceInterface {
         return finalImg;
     }
 
-    public static BufferedImage joinBufferedImage(BufferedImage img1,
-            BufferedImage img2) {
+    public static BufferedImage joinBufferedImage(BufferedImage img1, BufferedImage img2) {
         int offset = 1;
         int width = Math.max(img1.getWidth(), img2.getWidth());// + offset;
         int height = img1.getHeight() + img2.getHeight() + offset;
-        BufferedImage newImage = new BufferedImage(width, height,
-                BufferedImage.TYPE_INT_ARGB);
+        BufferedImage newImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2 = newImage.createGraphics();
         Color oldColor = g2.getColor();
         g2.fillRect(0, 0, width, height);
@@ -246,13 +256,13 @@ public class StickersService implements StickersServiceInterface {
             // image2.scaleAbsolute(20f, 20f);
             float scalePercent = 95f;
             image2.scalePercent(100f - scalePercent);
-            float newX = stickerPageSizeRectangle.getRight() - image2.getWidth() * ((100f - scalePercent) / 100f)
-                    - 5;
+            float newX = stickerPageSizeRectangle.getRight()
+                    - image2.getWidth() * ((100f - scalePercent) / 100f) - 5;
             float newY = image2.getHeight() / scalePercent;
             image2.setAbsolutePosition(newX, newY);
             this.eac = image2;
         } catch (IOException e) {
-         
+
             e.printStackTrace();
         }
         // private static void drawRectangle(BufferedImage image) {// рисует рамку
@@ -261,7 +271,7 @@ public class StickersService implements StickersServiceInterface {
         // g.setColor(Color.yellow);
         // g.drawRect(0, 0, image.getWidth(), image.getHeight());
         catch (BadElementException e) {
-  
+
             e.printStackTrace();
         }
     }
@@ -275,13 +285,13 @@ public class StickersService implements StickersServiceInterface {
                 java.io.File f;
                 try {
                     f = Paths.get(this.getClass().getResource("/static/eac.png").toURI()).toFile();
-                    com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
+                    com.itextpdf.text.Image image2 =
+                            com.itextpdf.text.Image.getInstance(f.toString());
                     // image2.scaleAbsolute(20f, 20f);
                     float scalePercent = 95f;
                     image2.scalePercent(100f - scalePercent);
                     float newX = stickerPageSizeRectangle.getRight()
-                            - image2.getWidth() * ((100f - scalePercent) / 100f)
-                            - 5;
+                            - image2.getWidth() * ((100f - scalePercent) / 100f) - 5;
                     float newY = image2.getHeight() / scalePercent;
                     image2.setAbsolutePosition(newX, newY);
                     // Creating an ImageData object

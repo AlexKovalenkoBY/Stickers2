@@ -2,6 +2,7 @@ package com.example.uploadingfiles;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,8 +11,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map; // Добавлен импорт для Map
+import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
@@ -94,7 +97,7 @@ public class FileUploadRestController {
     @GetMapping("/referenceFileStatus")
     public ResponseEntity<Map<String, Boolean>> referenceFileStatus() {
         Boolean status = referenceFileSingleton.getReferenceFile();
-        Map<String, Boolean> response = new HashMap<>(); // Явное указание типов для HashMap
+        Map<String, Boolean> response = new HashMap<>();
         response.put("status", status);
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, "application/json").body(response);
     }
@@ -179,57 +182,60 @@ public class FileUploadRestController {
         this.startTime = System.nanoTime();
 
         String downloadsPath = System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
-        String regex = "^(?!~).*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом\\.xlsx";
-        File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
-    
+        String regex = "^(?!~).*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом[_ ]\\d+\\.zip$";
+ File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
+
         if (bigFileName == null) {
-            log.error("Файл-справочник не найден в папке Downloads");
+            log.error("ZIP-архив с файлами-справочниками не найден в папке Downloads");
             return;
         }
-        try {
-            Long startTime = System.nanoTime();
-            log.info("1.******* start proceed file: " + bigFileName.getName() + " size: "
-                    + bigFileName.getTotalSpace());
-            ExcelReadService ers = new ExcelReadService();
-            log.info("1.1.******* Service created");
+        String regexXlsx = "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
 
-            if ((bigFileName.getName().indexOf("_Общие характеристики одним файлом") > -1)
-                    || (bigFileName.getName()
-                            .indexOf("_Общие_характеристики_одним_файлом") > -1)) {
-                log.info("2.******* start Reference file proceed: " + bigFileName.getName()
-                        + " size: " + bigFileName.getTotalSpace());
+        try (ZipFile zipFile = new ZipFile(bigFileName)) {
+            var entries = zipFile.entries();
+            ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+            while (entries.hasMoreElements()) {
+                ZipEntry entry = entries.nextElement();
+                if (!entry.isDirectory() && entry.getName().matches(regexXlsx)) {
+                    log.info("Найден XLSX файл в архиве: " + entry.getName());
 
-                Workbook workbook = null;
-                try {
-                    workbook = WorkbookFactory.create(bigFileName);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    try (InputStream inputStream = zipFile.getInputStream(entry)) {
+                        Workbook workbook = WorkbookFactory.create(inputStream);
+                        ExcelReadService ers = new ExcelReadService();
+
+                        HashMap<String, String> refFileHashTable =
+                                ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
+                        log.info("Хэш-таблица штрихкодов построена");
+
+                        HashMap<String, String> brandHashTable =
+                                ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
+                        log.info("Хэш-таблица брендов построена");
+                        HashMap<String, String> tt = refFileObject.getbrandHash( );
+                        if (tt==null) {
+                             tt = new HashMap<>();
+                        }
+                        tt.putAll(brandHashTable);
+                        refFileObject.setbrandHash(tt);
+                        HashMap<String, String> tempRef = refFileObject.getBarCodeHashMap() ;
+                        if (tempRef==null) {
+                            tempRef = new HashMap<>();
+                       }
+                        tempRef.putAll(refFileHashTable);
+                        refFileObject.setBarCodeHashMap(tempRef);
+                        
+                        log.info("Обработан файл-справочник " + entry.getName() + " из архива " + bigFileName.getName());
+                    }
                 }
-
-                HashMap<String, String> refFileHashTable =
-                        ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
-                log.info("3.******* barcodesHash was build:");
-
-                HashMap<String, String> brandHashTable =
-                        ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
-                log.info("4.******* brandsHash was build:");
-
-                ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-                refFileObject.referenceBuild();
-                refFileObject.setbrandHash(brandHashTable);
-                refFileObject.setBarCodeHashMap(refFileHashTable);
-                StickersService.RefereneceReady = true;
-
-                Long estimatedTime = System.nanoTime() - startTime;
-                log.info("Обработан файл-справочник " + bigFileName.getName() + " за "
-                        + estimatedTime / 1_000_000_000. + " сек.");
-                refFileObject.setreferenceFileName(bigFileName.getName());
             }
+            
+            refFileObject.referenceBuild();
+            StickersService.RefereneceReady = true;
+
         } catch (Exception e) {
-            log.info(e.getLocalizedMessage());
+            log.error("Ошибка при обработке ZIP-архива: " + e.getLocalizedMessage());
         }
+
         this.estimatedTime = System.nanoTime() - startTime;
         System.out.println("Общий файл сформирован.");
     }
-
 }
