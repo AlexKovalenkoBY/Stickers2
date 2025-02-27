@@ -16,7 +16,14 @@
               <label class="btn btn-primary custom-file-upload">
                 <input type="file" name="file" accept=".xlsx" @change="onFileChange" /> Выбрать файл
               </label>
-              <span v-if="selectedFile" class="file-name">{{ selectedFile.name }}</span>
+              <span v-if="selectedFile" class="file-name">
+                {{ selectedFile.name }}
+                <span v-if="isLoading" class="pulsating-dots">
+                  <span class="dot">.</span>
+                  <span class="dot">.</span>
+                  <span class="dot">.</span>
+                </span>
+              </span>
               <span v-else class="file-name">Файл не выбран</span>
             </div>
             <div class="form-cell-right">
@@ -88,6 +95,7 @@ export default {
           console.error('Ошибка при загрузке файла:', error);
         } finally {
           this.isLoading = false;
+          this.selectedFile = null; // Очищаем выбранный файл после обработки
         }
       }
     },
@@ -220,5 +228,37 @@ h1 {
 .spinner-border {
   vertical-align: middle;
   margin-right: 5px;
+}
+
+/* Анимация пульсирующих точек */
+.pulsating-dots {
+  display: inline-block;
+}
+
+.pulsating-dots .dot {
+  display: inline-block;
+  animation: pulse 1.4s infinite;
+  opacity: 0;
+  font-size: 24px; /* Увеличиваем размер точек */
+}
+
+.pulsating-dots .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.pulsating-dots .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>
