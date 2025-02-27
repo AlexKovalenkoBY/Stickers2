@@ -35,7 +35,7 @@
     </div>
     <div class="container text-left">
       <div v-if="referenceFile">
-        <h2 :style="{ color: 'green' }">{{ referenceFileName }}</h2>
+        <h2 :style="{ color: 'green' }">{{ referenceFileName }}.  Загружено {{ referenceFileRecordsCount }} товаров </h2>
       </div>
       <div v-else>
         <h2 :style="{ color: 'red' }">Не загружен файл - справочник</h2>
@@ -59,6 +59,7 @@ export default {
     return {
       referenceFile: false,
       referenceFileName: '',
+      referenceFileRecordsCount: 0,
       files: [],
       selectedFile: null,
       processSecondBarcode: true,
@@ -93,19 +94,23 @@ export default {
     async fetchFiles() {
       try {
         const response = await axios.get('http://127.0.0.1:8081/api/files');
-        this.files = response.data.files;
+        this.files = response.data.files; // Список файлов уже отсортирован на бэкенде
         this.referenceFile = response.data.referenceFile;
         this.referenceFileName = response.data.referenceFileName;
+        this.referenceFileRecordsCount = response.data.count;
+
+        console.log("referenceFileName - ", this.referenceFileName);
       } catch (error) {
         console.error('Ошибка при получении списка файлов:', error);
       }
     },
     fetchReferenceFileStatus() {
-      axios.get('http://127.0.0.1:8081/api/referenceFileStatus')
+      axios.get('http://127.0.0.1:8081/api/getReferenceFileRecordsCount')
         .then(response => {
           this.referenceFile = response.data.status;
           if (this.referenceFile) {
             this.referenceFileName = response.data.referenceFileName;
+            this.referenceFileRecordsCount = response.data.referenceFileRecordsCount;
           }
         })
         .catch(error => {
@@ -115,6 +120,7 @@ export default {
   },
   mounted() {
     this.fetchFiles();
+   // this.fetchReferenceFileStatus();
   }
 };
 </script>

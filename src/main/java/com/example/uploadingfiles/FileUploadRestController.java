@@ -3,10 +3,13 @@ package com.example.uploadingfiles;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.nio.file.attribute.FileTime;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -50,19 +53,11 @@ public class FileUploadRestController {
     public Long estimatedTime;
     public Long startTime;
 
-    public FileUploadRestController(StorageService storageService, ReferenceFileSingleton referenceFileSingleton) {
+    public FileUploadRestController(StorageService storageService,
+            ReferenceFileSingleton referenceFileSingleton) {
         this.storageService = storageService;
         this.referenceFileSingleton = referenceFileSingleton;
     }
-
-    Comparator<File> comparator = Comparator.comparing(file -> {
-        try {
-            return Files.readAttributes(Paths.get(file.toURI()), BasicFileAttributes.class)
-                    .creationTime();
-        } catch (IOException e) {
-            return null;
-        }
-    });
 
     @GetMapping("/files")
     public ResponseEntity<?> listUploadedFiles() {
@@ -70,13 +65,48 @@ public class FileUploadRestController {
         HashMap<String, Object> response = new HashMap<>();
         response.put("referenceFileName", refFileObject.getreferenceFileName());
         response.put("referenceFile", StickersService.RefereneceReady);
-
+    
+        // Получаем список файлов и сортируем их по дате создания (от новых к старым)
         List<String> files = storageService.loadAll()
-                .map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadRestController.class,
-                        "serveFile", path.getFileName().toString()).build().toUri().toString())
+               // .filter(Files::exists) // Фильтруем только существующие файлы
+               .map(path -> {
+                    // Преобразуем путь в URL для скачивания файла
+                    String url = MvcUriComponentsBuilder.fromMethodName(FileUploadRestController.class,
+                            "serveFile", path.getFileName().toString()).build().toUri().toString();
+                    log.info("Mapped file {} to URL: {}", path, url);
+                    return url;
+                })
                 .collect(Collectors.toList());
-
+    
+        log.info("Total files found: {}", files.size());
+    
         response.put("files", files);
+        response.put("count", Math.max(refFileObject.getbrandHash().keySet().size(),
+                refFileObject.getBarCodeHashMap().keySet().size()));
+    
+        return ResponseEntity.ok(response);
+    }
+
+
+    private FileTime getCreationTimeSafe(Path path) {
+        try {
+            return Files.readAttributes(path, BasicFileAttributes.class).creationTime();
+        } catch (IOException e) {
+            log.warn("Failed to read creation time for file: {}", path, e); // Логирование ошибки
+            return FileTime.from(Instant.EPOCH); // Возвращаем минимальное время в случае ошибки
+        }
+    }
+
+
+    @GetMapping("/getReferenceFileRecordsCount")
+    public ResponseEntity<?> getReferenceFileRecordsCount() {
+        ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+        HashMap<String, Object> response = new HashMap<>();
+        response.put("referenceFileName", refFileObject.getreferenceFileName());
+        response.put("referenceFile", StickersService.RefereneceReady);
+        response.put("referenceFileRecordsCount",
+                Math.max(refFileObject.getbrandHash().keySet().size(),
+                        refFileObject.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
@@ -85,8 +115,10 @@ public class FileUploadRestController {
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
         Resource file = storageService.loadAsResource(filename);
 
-        if (file == null)
+        if (file == null) {
+            log.warn("File not found: {}", filename); // Логирование ошибки
             return ResponseEntity.notFound().build();
+        }
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION,
@@ -99,7 +131,8 @@ public class FileUploadRestController {
         Boolean status = referenceFileSingleton.getReferenceFile();
         Map<String, Boolean> response = new HashMap<>();
         response.put("status", status);
-        return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, "application/json").body(response);
+        return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, "application/json")
+                .body(response);
     }
 
     @PostMapping("/upload")
@@ -117,7 +150,7 @@ public class FileUploadRestController {
 
                 if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1)
                         || (file.getOriginalFilename()
-                        .indexOf("_Общие_характеристики_одним_файлом") > -1)) {
+                                .indexOf("_Общие_характеристики_одним_файлом") > -1)) {
                     log.info("2.******* start Reference file proceed: " + file.getOriginalFilename()
                             + " size: " + file.getSize());
 
@@ -126,7 +159,8 @@ public class FileUploadRestController {
                         workbook = WorkbookFactory.create(file.getInputStream());
                     } catch (IOException e) {
                         e.printStackTrace();
-                        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error reading file");
+                        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                                .body("Error reading file");
                     }
 
                     HashMap<String, String> refFile =
@@ -158,12 +192,14 @@ public class FileUploadRestController {
 
                         return ResponseEntity.ok().body("Order file processed successfully");
                     } else {
-                        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Reference file not loaded");
+                        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                                .body("Reference file not loaded");
                     }
                 }
             } catch (Exception e) {
                 log.info(e.getLocalizedMessage());
-                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error processing file");
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                        .body("Error processing file");
             }
         }
 
@@ -181,15 +217,19 @@ public class FileUploadRestController {
     public void applicationStarted(ApplicationStartedEvent event) {
         this.startTime = System.nanoTime();
 
-        String downloadsPath = System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
-        String regex = "^(?!~).*(\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}_)Общие[_ ]характеристики[_ ]одним[_ ]файлом[_ ]\\d+\\.zip$";
- File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
+        String downloadsPath =
+                System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
+        String regex =
+                "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом( \\(\\d+\\))?\\.zip$";
+
+        File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
 
         if (bigFileName == null) {
             log.error("ZIP-архив с файлами-справочниками не найден в папке Downloads");
             return;
         }
-        String regexXlsx = "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
+        String regexXlsx =
+                "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
 
         try (ZipFile zipFile = new ZipFile(bigFileName)) {
             var entries = zipFile.entries();
@@ -210,25 +250,28 @@ public class FileUploadRestController {
                         HashMap<String, String> brandHashTable =
                                 ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
                         log.info("Хэш-таблица брендов построена");
-                        HashMap<String, String> tt = refFileObject.getbrandHash( );
-                        if (tt==null) {
-                             tt = new HashMap<>();
+                        HashMap<String, String> tt = refFileObject.getbrandHash();
+                        if (tt == null) {
+                            tt = new HashMap<>();
                         }
                         tt.putAll(brandHashTable);
                         refFileObject.setbrandHash(tt);
-                        HashMap<String, String> tempRef = refFileObject.getBarCodeHashMap() ;
-                        if (tempRef==null) {
+                        HashMap<String, String> tempRef = refFileObject.getBarCodeHashMap();
+                        if (tempRef == null) {
                             tempRef = new HashMap<>();
-                       }
+                        }
                         tempRef.putAll(refFileHashTable);
                         refFileObject.setBarCodeHashMap(tempRef);
-                        
-                        log.info("Обработан файл-справочник " + entry.getName() + " из архива " + bigFileName.getName());
+
+                        log.info("Обработан файл-справочник " + entry.getName() + " из архива "
+                                + bigFileName.getName());
                     }
                 }
             }
-            
+
             refFileObject.referenceBuild();
+            refFileObject.setreferenceFileName(bigFileName.getName());;
+
             StickersService.RefereneceReady = true;
 
         } catch (Exception e) {

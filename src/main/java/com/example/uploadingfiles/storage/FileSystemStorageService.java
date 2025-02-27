@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.nio.file.attribute.FileTime;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.stream.Stream;
@@ -61,18 +62,27 @@ public class FileSystemStorageService implements StorageService {
 	}
 
 	
-	@Override
-	public Stream<Path> loadAll() {
-		try {
-			return Files.walk(this.rootLocation, 1)
-				.filter(path -> !path.equals(this.rootLocation))
-				.map(this.rootLocation::relativize);
-		}
-		catch (IOException e) {
-			throw new StorageException("Failed to read stored files", e);
-		}
-
-	}
+@Override
+public Stream<Path> loadAll() {
+    try {
+        return Files.walk(this.rootLocation, 1)
+                .filter(path -> !path.equals(this.rootLocation)) // Исключаем корневую директорию
+                .sorted((path1, path2) -> {
+                    try {
+                        // Получаем время создания для каждого файла
+                        FileTime time1 = Files.readAttributes(path1, BasicFileAttributes.class).creationTime();
+                        FileTime time2 = Files.readAttributes(path2, BasicFileAttributes.class).creationTime();
+                        // Сортируем от новых к старым (по убыванию)
+                        return time2.compareTo(time1);
+                    } catch (IOException e) {
+                        throw new StorageException("Failed to read file attributes", e);
+                    }
+                })
+                .map(this.rootLocation::relativize); // Преобразуем в относительные пути
+    } catch (IOException e) {
+        throw new StorageException("Failed to read stored files", e);
+    }
+}
 
 	@Override
 	public Path load(String filename) {
