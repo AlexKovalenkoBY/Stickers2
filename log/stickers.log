@@ -10690,3 +10690,587 @@ java.nio.file.NoSuchFileException: wb-gi-130335099_one.pdf
 2025-02-27T13:52:36.700+03:00 appender 14432 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241566.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241566.pdf
 2025-02-27T13:52:36.706+03:00 appender 14432 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
 2025-02-27T13:52:36.706+03:00 appender 14432 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 2
+2025-02-28T12:42:02.611+03:00 appender 24824 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 24824 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T12:42:02.631+03:00 appender 24824 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T12:42:06.587+03:00 appender 24824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T12:42:06.614+03:00 appender 24824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T12:42:06.615+03:00 appender 24824 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T12:42:06.779+03:00 appender 24824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T12:42:06.780+03:00 appender 24824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3790 ms
+2025-02-28T12:42:08.388+03:00 appender 24824 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T12:42:08.563+03:00 appender 24824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T12:42:08.598+03:00 appender 24824 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 7.084 seconds (process running for 10.147)
+2025-02-28T12:42:08.674+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T12:42:13.660+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1643654 сек.
+2025-02-28T12:42:13.660+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:13.771+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1086185 сек.
+2025-02-28T12:42:13.772+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:13.777+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:13.782+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T12:42:16.012+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0805675 сек.
+2025-02-28T12:42:16.014+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:16.089+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0740618 сек.
+2025-02-28T12:42:16.091+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:16.098+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:16.100+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T12:42:17.666+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1018338 сек.
+2025-02-28T12:42:17.666+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:17.767+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0982357 сек.
+2025-02-28T12:42:17.771+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:17.785+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:17.788+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T12:42:19.032+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0360959 сек.
+2025-02-28T12:42:19.034+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:19.090+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0523001 сек.
+2025-02-28T12:42:19.092+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:19.097+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:19.101+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T12:42:20.250+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0980173 сек.
+2025-02-28T12:42:20.251+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:20.284+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0329825 сек.
+2025-02-28T12:42:20.286+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:20.296+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:20.300+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T12:42:21.297+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0278284 сек.
+2025-02-28T12:42:21.299+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:21.342+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0434522 сек.
+2025-02-28T12:42:21.344+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:21.352+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:21.354+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T12:42:22.364+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.040249 сек.
+2025-02-28T12:42:22.364+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:22.385+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0201134 сек.
+2025-02-28T12:42:22.387+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:22.389+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:22.389+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T12:42:22.568+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0075447 сек.
+2025-02-28T12:42:22.568+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T12:42:22.572+03:00 appender 24824 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0035225 сек.
+2025-02-28T12:42:22.572+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T12:42:22.579+03:00 appender 24824 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T12:42:33.255+03:00 appender 24824 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T12:42:33.278+03:00 appender 24824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T12:42:33.316+03:00 appender 24824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-02-28T12:42:33.499+03:00 appender 24824 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T14:01:55.800+03:00 appender 24824 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T14:02:16.470+03:00 appender 24824 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T14:19:50.295+03:00 appender 24824 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:02:47.438+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:02:47.514+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099.xlsx size: 22513
+2025-02-28T15:02:47.515+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:02:47.794+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099.xlsx за 0.2615804 сек.
+2025-02-28T15:02:48.055+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 112 элементов*****************
+2025-02-28T15:03:11.717+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : htmlString: <html><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" /></head><body style="text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;"><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">2042698351277</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Смоленск</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Регулятор холостого хода 84045</p><p style="font-family:arial; font-size:4px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Артикул: 84045</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Бренд: MEAT&DORIA</p></body></html>
+2025-02-28T15:03:11.719+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Смоленск - Регулятор холостого хода 84045 - 84045
+2025-02-28T15:03:11.720+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Ошибка при обработке HTML: Invalid nested tag body found, expected closing tag p.
+2025-02-28T15:03:11.938+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : htmlString: <html><head><meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" /></head><body style="text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;"><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">2042698353509</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Смоленск</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Регулятор холостого хода 84060</p><p style="font-family:arial; font-size:4px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Артикул: 84060</p><p style="font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em">Бренд: MEAT&DORIA</p></body></html>
+2025-02-28T15:03:11.941+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Смоленск - Регулятор холостого хода 84060 - 84060
+2025-02-28T15:03:11.941+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Ошибка при обработке HTML: Invalid nested tag body found, expected closing tag p.
+2025-02-28T15:03:13.406+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099.pdf за 25.6068173 сек.
+2025-02-28T15:03:13.407+03:00 appender 24824 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:03:13.560+03:00 appender 24824 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099.pdf
+2025-02-28T15:03:13.561+03:00 appender 24824 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:03:46.245+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:03:46.247+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241588.xlsx size: 15715
+2025-02-28T15:03:46.247+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:03:46.302+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241588.xlsx за 0.0541617 сек.
+2025-02-28T15:03:46.305+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
+2025-02-28T15:03:57.094+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-108241588.pdf за 10.7902412 сек.
+2025-02-28T15:03:57.103+03:00 appender 24824 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:03:57.208+03:00 appender 24824 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-02-28T15:03:57.216+03:00 appender 24824 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099.pdf
+2025-02-28T15:03:57.217+03:00 appender 24824 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 2
+2025-02-28T15:04:20.343+03:00 appender 19648 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 19648 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:04:20.349+03:00 appender 19648 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:04:23.726+03:00 appender 19648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:04:23.753+03:00 appender 19648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:04:23.755+03:00 appender 19648 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:04:23.911+03:00 appender 19648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:04:23.912+03:00 appender 19648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3406 ms
+2025-02-28T15:04:25.480+03:00 appender 19648 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:04:25.662+03:00 appender 19648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:04:25.686+03:00 appender 19648 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.498 seconds (process running for 10.879)
+2025-02-28T15:04:25.765+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:04:29.824+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1577995 сек.
+2025-02-28T15:04:29.826+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:29.907+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.078532 сек.
+2025-02-28T15:04:29.917+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:29.921+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:29.923+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:04:31.884+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.2884535 сек.
+2025-02-28T15:04:31.884+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:31.950+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0647934 сек.
+2025-02-28T15:04:31.956+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:31.968+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:31.974+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:04:33.306+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0679291 сек.
+2025-02-28T15:04:33.306+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:33.354+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.047106 сек.
+2025-02-28T15:04:33.356+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:33.364+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:33.366+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:04:34.199+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0550435 сек.
+2025-02-28T15:04:34.211+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:34.270+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0507316 сек.
+2025-02-28T15:04:34.272+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:34.282+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:34.286+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:04:35.050+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0374812 сек.
+2025-02-28T15:04:35.050+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:35.091+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0392475 сек.
+2025-02-28T15:04:35.091+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:35.104+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:35.119+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:04:35.862+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0471763 сек.
+2025-02-28T15:04:35.869+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:35.904+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0317129 сек.
+2025-02-28T15:04:35.906+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:35.921+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:35.937+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:04:37.130+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0397897 сек.
+2025-02-28T15:04:37.132+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:37.173+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0388646 сек.
+2025-02-28T15:04:37.178+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:37.184+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:37.189+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:04:37.467+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0059917 сек.
+2025-02-28T15:04:37.467+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:04:37.472+03:00 appender 19648 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0036906 сек.
+2025-02-28T15:04:37.472+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:04:37.474+03:00 appender 19648 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:04:52.032+03:00 appender 19648 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:04:52.048+03:00 appender 19648 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:04:52.054+03:00 appender 19648 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-28T15:04:52.217+03:00 appender 19648 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:04:57.866+03:00 appender 19648 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:04:57.869+03:00 appender 19648 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241588.xlsx size: 15715
+2025-02-28T15:04:57.870+03:00 appender 19648 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:04:57.956+03:00 appender 19648 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241588.xlsx за 0.0832719 сек.
+2025-02-28T15:08:21.003+03:00 appender 19648 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
+2025-02-28T15:10:32.284+03:00 appender 4792 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 4792 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:10:32.288+03:00 appender 4792 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:10:35.188+03:00 appender 4792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:10:35.213+03:00 appender 4792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:10:35.214+03:00 appender 4792 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:10:35.368+03:00 appender 4792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:10:35.369+03:00 appender 4792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2961 ms
+2025-02-28T15:10:36.719+03:00 appender 4792 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:10:36.925+03:00 appender 4792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:10:36.952+03:00 appender 4792 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.571 seconds (process running for 7.52)
+2025-02-28T15:10:37.156+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:10:40.869+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0990934 сек.
+2025-02-28T15:10:40.870+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:41.048+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1765997 сек.
+2025-02-28T15:10:41.049+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:41.052+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:41.053+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:10:42.353+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0739392 сек.
+2025-02-28T15:10:42.355+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:42.403+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0468831 сек.
+2025-02-28T15:10:42.403+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:42.412+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:42.414+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:10:43.494+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.041127 сек.
+2025-02-28T15:10:43.494+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:43.527+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0300463 сек.
+2025-02-28T15:10:43.529+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:43.533+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:43.536+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:10:44.367+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0459961 сек.
+2025-02-28T15:10:44.367+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:44.408+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0389812 сек.
+2025-02-28T15:10:44.410+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:44.415+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:44.419+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:10:45.197+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0261144 сек.
+2025-02-28T15:10:45.197+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:45.230+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0235226 сек.
+2025-02-28T15:10:45.230+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:45.237+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:45.237+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:10:45.788+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0531035 сек.
+2025-02-28T15:10:45.790+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:45.842+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0502384 сек.
+2025-02-28T15:10:45.854+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:45.871+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:45.873+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:10:46.818+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0635451 сек.
+2025-02-28T15:10:46.842+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:46.919+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0671004 сек.
+2025-02-28T15:10:46.923+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:46.928+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:10:46.930+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:10:47.087+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0049744 сек.
+2025-02-28T15:10:47.087+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:10:47.093+03:00 appender 4792 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0042299 сек.
+2025-02-28T15:10:47.095+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:10:47.097+03:00 appender 4792 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:11:34.155+03:00 appender 4792 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:11:34.157+03:00 appender 4792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:11:34.160+03:00 appender 4792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-02-28T15:11:34.323+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:11:34.331+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9217
+2025-02-28T15:11:34.333+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:11:34.392+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.0545926 сек.
+2025-02-28T15:11:44.270+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:11:45.695+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 1.5604534 сек.
+2025-02-28T15:11:45.699+03:00 appender 4792 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:11:45.899+03:00 appender 4792 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:11:45.903+03:00 appender 4792 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:11:49.318+03:00 appender 4792 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-02-28T15:11:49.322+03:00 appender 4792 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-02-28T15:13:38.813+03:00 appender 27172 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 27172 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:13:38.819+03:00 appender 27172 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:13:41.865+03:00 appender 27172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:13:41.923+03:00 appender 27172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:13:41.930+03:00 appender 27172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:13:42.208+03:00 appender 27172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:13:42.210+03:00 appender 27172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3178 ms
+2025-02-28T15:13:43.836+03:00 appender 27172 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:13:43.991+03:00 appender 27172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:13:44.014+03:00 appender 27172 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.195 seconds (process running for 8.185)
+2025-02-28T15:13:44.097+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:13:47.295+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1355962 сек.
+2025-02-28T15:13:47.297+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:47.376+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0762343 сек.
+2025-02-28T15:13:47.380+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:47.384+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:47.386+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:13:48.963+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0759232 сек.
+2025-02-28T15:13:48.963+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:49.034+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0701357 сек.
+2025-02-28T15:13:49.037+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:49.042+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:49.043+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:13:49.856+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.101843 сек.
+2025-02-28T15:13:49.856+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:49.896+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0415559 сек.
+2025-02-28T15:13:49.896+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:49.896+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:49.896+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:13:50.571+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0497217 сек.
+2025-02-28T15:13:50.571+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:50.619+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0457296 сек.
+2025-02-28T15:13:50.622+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:50.626+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:50.633+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:13:51.479+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0545121 сек.
+2025-02-28T15:13:51.482+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:51.515+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0322069 сек.
+2025-02-28T15:13:51.517+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:51.526+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:51.528+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:13:52.252+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0447553 сек.
+2025-02-28T15:13:52.254+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:52.276+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0200891 сек.
+2025-02-28T15:13:52.276+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:52.281+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:52.282+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:13:52.963+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0389442 сек.
+2025-02-28T15:13:52.965+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:52.996+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0286546 сек.
+2025-02-28T15:13:53.004+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:53.013+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:13:53.025+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:13:53.271+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0067403 сек.
+2025-02-28T15:13:53.273+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:13:53.284+03:00 appender 27172 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0113029 сек.
+2025-02-28T15:13:53.286+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:13:53.288+03:00 appender 27172 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:16:26.208+03:00 appender 27172 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:16:26.219+03:00 appender 27172 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:16:26.223+03:00 appender 27172 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-28T15:16:26.414+03:00 appender 27172 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:16:29.816+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:16:29.822+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9217
+2025-02-28T15:16:29.822+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:16:37.269+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.0664759 сек.
+2025-02-28T15:16:37.436+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:16:38.663+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 1.3894902 сек.
+2025-02-28T15:16:38.665+03:00 appender 27172 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:16:38.799+03:00 appender 27172 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:16:38.803+03:00 appender 27172 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:18:29.293+03:00 appender 27172 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:18:29.300+03:00 appender 27172 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:18:34.541+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:18:34.542+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9247
+2025-02-28T15:18:34.542+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:18:37.809+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.1047717 сек.
+2025-02-28T15:18:37.838+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:18:37.856+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 0.0223649 сек.
+2025-02-28T15:18:37.875+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:18:37.952+03:00 appender 27172 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:19:07.471+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:19:07.471+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one_!.xlsx size: 9247
+2025-02-28T15:19:07.471+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:19:09.956+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one_!.xlsx за 0.0533246 сек.
+2025-02-28T15:19:09.980+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:19:10.003+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one_!.pdf за 0.0256692 сек.
+2025-02-28T15:19:10.021+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:19:10.033+03:00 appender 27172 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:19:31.768+03:00 appender 27172 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one_!.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one_!.pdf
+2025-02-28T15:19:31.817+03:00 appender 27172 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:19:31.824+03:00 appender 27172 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : Total files found: 2
+2025-02-28T15:19:34.189+03:00 appender 27172 --- [http-nio-8081-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-02-28T15:19:34.199+03:00 appender 27172 --- [http-nio-8081-exec-10] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-02-28T15:20:00.456+03:00 appender 27352 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 27352 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:20:00.460+03:00 appender 27352 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:20:04.739+03:00 appender 27352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:20:04.826+03:00 appender 27352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:20:04.839+03:00 appender 27352 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:20:05.508+03:00 appender 27352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:20:05.537+03:00 appender 27352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4846 ms
+2025-02-28T15:20:08.665+03:00 appender 27352 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:20:08.819+03:00 appender 27352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:20:08.857+03:00 appender 27352 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 10.075 seconds (process running for 12.928)
+2025-02-28T15:20:09.048+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:20:12.774+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1635689 сек.
+2025-02-28T15:20:12.776+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:12.935+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1486238 сек.
+2025-02-28T15:20:12.939+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:12.947+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:12.974+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:20:14.756+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0673804 сек.
+2025-02-28T15:20:14.757+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:14.839+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0811275 сек.
+2025-02-28T15:20:14.841+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:14.858+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:14.873+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:20:16.147+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1031342 сек.
+2025-02-28T15:20:16.148+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:16.199+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0520827 сек.
+2025-02-28T15:20:16.201+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:16.205+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:16.207+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:20:17.290+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1018422 сек.
+2025-02-28T15:20:17.290+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:17.331+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.039317 сек.
+2025-02-28T15:20:17.339+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:17.343+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:17.348+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:20:18.618+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.2179477 сек.
+2025-02-28T15:20:18.622+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:18.675+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0502992 сек.
+2025-02-28T15:20:18.685+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:18.693+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:18.709+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:20:19.773+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0504913 сек.
+2025-02-28T15:20:19.781+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:19.848+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.045879 сек.
+2025-02-28T15:20:19.853+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:19.873+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:19.883+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:20:21.339+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1845974 сек.
+2025-02-28T15:20:21.356+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:21.556+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1982618 сек.
+2025-02-28T15:20:21.559+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:21.571+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:21.582+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:20:22.175+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1247854 сек.
+2025-02-28T15:20:22.226+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:20:22.320+03:00 appender 27352 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0621842 сек.
+2025-02-28T15:20:22.338+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:20:22.369+03:00 appender 27352 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:20:22.482+03:00 appender 27352 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:20:22.484+03:00 appender 27352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:20:22.488+03:00 appender 27352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-28T15:20:22.710+03:00 appender 27352 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:20:27.140+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:20:27.150+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9244
+2025-02-28T15:20:27.159+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:20:32.296+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.0684039 сек.
+2025-02-28T15:20:32.477+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:20:32.488+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 0.189828 сек.
+2025-02-28T15:20:32.489+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:20:32.502+03:00 appender 27352 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:21:09.666+03:00 appender 27352 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:21:09.697+03:00 appender 27352 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:21:12.284+03:00 appender 27352 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-02-28T15:21:12.289+03:00 appender 27352 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-02-28T15:21:21.026+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:21:21.030+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9215
+2025-02-28T15:21:21.032+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:21:24.185+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.2329424 сек.
+2025-02-28T15:21:24.187+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:21:25.916+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 1.7313031 сек.
+2025-02-28T15:21:25.918+03:00 appender 27352 --- [http-nio-8081-exec-2] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:21:26.097+03:00 appender 27352 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:21:26.099+03:00 appender 27352 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:21:50.144+03:00 appender 27352 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:21:50.154+03:00 appender 27352 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:21:53.874+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:21:53.875+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9241
+2025-02-28T15:21:53.875+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:22:00.258+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.1141479 сек.
+2025-02-28T15:22:00.265+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:22:00.270+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 0.0041042 сек.
+2025-02-28T15:22:00.272+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:22:00.274+03:00 appender 27352 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:22:11.452+03:00 appender 25124 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 25124 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:22:11.457+03:00 appender 25124 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:22:14.616+03:00 appender 25124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:22:14.644+03:00 appender 25124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:22:14.648+03:00 appender 25124 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:22:14.821+03:00 appender 25124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:22:14.825+03:00 appender 25124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3265 ms
+2025-02-28T15:22:16.294+03:00 appender 25124 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:22:16.450+03:00 appender 25124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:22:16.474+03:00 appender 25124 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.832 seconds (process running for 8.073)
+2025-02-28T15:22:16.576+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:22:19.924+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1622816 сек.
+2025-02-28T15:22:19.932+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:20.049+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1150773 сек.
+2025-02-28T15:22:20.064+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:20.078+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:20.089+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:22:21.459+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0482862 сек.
+2025-02-28T15:22:21.462+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:21.517+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0527807 сек.
+2025-02-28T15:22:21.517+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:21.520+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:21.521+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:22:22.465+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0565399 сек.
+2025-02-28T15:22:22.466+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:22.491+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0241323 сек.
+2025-02-28T15:22:22.491+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:22.494+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:22.494+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:22:23.645+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0653584 сек.
+2025-02-28T15:22:23.657+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:23.720+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0591648 сек.
+2025-02-28T15:22:23.723+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:23.729+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:23.733+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:22:24.491+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0367397 сек.
+2025-02-28T15:22:24.493+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:24.532+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0380436 сек.
+2025-02-28T15:22:24.534+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:24.540+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:24.542+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:22:25.435+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0308628 сек.
+2025-02-28T15:22:25.437+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:25.481+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0430366 сек.
+2025-02-28T15:22:25.482+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:25.485+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:25.488+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:22:26.483+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0337367 сек.
+2025-02-28T15:22:26.486+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:26.511+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0224364 сек.
+2025-02-28T15:22:26.515+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:26.525+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:26.529+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:22:26.688+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0052754 сек.
+2025-02-28T15:22:26.691+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:22:26.699+03:00 appender 25124 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0061512 сек.
+2025-02-28T15:22:26.702+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:22:26.706+03:00 appender 25124 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:22:30.827+03:00 appender 25124 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:22:30.831+03:00 appender 25124 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:22:30.836+03:00 appender 25124 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-02-28T15:22:31.015+03:00 appender 25124 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:22:34.295+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:22:34.298+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9241
+2025-02-28T15:22:34.299+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:22:34.326+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.0251954 сек.
+2025-02-28T15:22:34.591+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:22:34.594+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one.pdf за 0.2623551 сек.
+2025-02-28T15:22:34.600+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:22:34.608+03:00 appender 25124 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:22:58.202+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:22:58.204+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one_!.xlsx size: 9241
+2025-02-28T15:22:58.204+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:22:58.235+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one_!.xlsx за 0.0298603 сек.
+2025-02-28T15:22:58.242+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:22:58.256+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : Сформирован PDF файл .\upload-dir\wb-gi-130335099_one_!.pdf за 0.0183006 сек.
+2025-02-28T15:22:58.258+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.uploadingfiles.StickersService       : ********** Current PAGE: 0
+2025-02-28T15:22:58.260+03:00 appender 25124 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : The document has no pages.
+2025-02-28T15:23:06.100+03:00 appender 25124 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one_!.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one_!.pdf
+2025-02-28T15:23:06.372+03:00 appender 25124 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:23:06.399+03:00 appender 25124 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : Total files found: 2
+2025-02-28T15:23:08.688+03:00 appender 25124 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-02-28T15:23:08.703+03:00 appender 25124 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-02-28T15:27:16.290+03:00 appender 24760 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 24760 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-02-28T15:27:16.294+03:00 appender 24760 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-02-28T15:27:20.027+03:00 appender 24760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-02-28T15:27:20.055+03:00 appender 24760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-28T15:27:20.060+03:00 appender 24760 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-02-28T15:27:20.310+03:00 appender 24760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-28T15:27:20.316+03:00 appender 24760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3860 ms
+2025-02-28T15:27:21.580+03:00 appender 24760 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-28T15:27:21.674+03:00 appender 24760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-02-28T15:27:21.694+03:00 appender 24760 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.096 seconds (process running for 8.168)
+2025-02-28T15:27:21.753+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
+2025-02-28T15:27:26.874+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.3851766 сек.
+2025-02-28T15:27:26.876+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:26.953+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0734935 сек.
+2025-02-28T15:27:26.955+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:26.957+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:26.959+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
+2025-02-28T15:27:28.464+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0674395 сек.
+2025-02-28T15:27:28.466+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:28.550+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0828847 сек.
+2025-02-28T15:27:28.552+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:28.557+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:28.567+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
+2025-02-28T15:27:30.209+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1130145 сек.
+2025-02-28T15:27:30.215+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:30.335+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1103276 сек.
+2025-02-28T15:27:30.337+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:30.346+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:30.352+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
+2025-02-28T15:27:31.519+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0415775 сек.
+2025-02-28T15:27:31.521+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:31.559+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0365934 сек.
+2025-02-28T15:27:31.560+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:31.566+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:31.568+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
+2025-02-28T15:27:32.210+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.032586 сек.
+2025-02-28T15:27:32.210+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:32.248+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0375701 сек.
+2025-02-28T15:27:32.249+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:32.256+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:32.257+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
+2025-02-28T15:27:33.028+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0298434 сек.
+2025-02-28T15:27:33.028+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:33.056+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0270294 сек.
+2025-02-28T15:27:33.058+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:33.062+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:33.068+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
+2025-02-28T15:27:33.698+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.036752 сек.
+2025-02-28T15:27:33.698+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:33.722+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0213723 сек.
+2025-02-28T15:27:33.722+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:33.728+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:27:33.736+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
+2025-02-28T15:27:34.028+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0057228 сек.
+2025-02-28T15:27:34.028+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
+2025-02-28T15:27:34.033+03:00 appender 24760 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0028654 сек.
+2025-02-28T15:27:34.033+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
+2025-02-28T15:27:34.033+03:00 appender 24760 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
+2025-02-28T15:28:06.428+03:00 appender 24760 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28T15:28:06.431+03:00 appender 24760 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-28T15:28:06.434+03:00 appender 24760 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-28T15:28:06.675+03:00 appender 24760 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 0
+2025-02-28T15:28:11.681+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:28:11.684+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099_one.xlsx size: 9241
+2025-02-28T15:28:11.685+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:28:11.723+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099_one.xlsx за 0.0343334 сек.
+2025-02-28T15:28:11.844+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
+2025-02-28T15:28:11.844+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: Баркод
+2025-02-28T15:28:11.844+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-02-28T15:28:11.844+03:00 appender 24760 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : Документ не содержит страниц. Добавление пустой страницы.
+2025-02-28T15:28:12.076+03:00 appender 24760 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:28:12.077+03:00 appender 24760 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 1
+2025-02-28T15:28:28.770+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : start POST request
+2025-02-28T15:28:28.770+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-130335099.xlsx size: 22513
+2025-02-28T15:28:28.771+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-02-28T15:28:28.802+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-130335099.xlsx за 0.0306978 сек.
+2025-02-28T15:28:28.804+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 112 элементов*****************
+2025-02-28T15:28:28.808+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: Баркод
+2025-02-28T15:28:28.810+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-02-28T15:28:52.034+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Ошибка при добавлении страницы: Invalid nested tag body found, expected closing tag p.
+2025-02-28T15:28:52.217+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Ошибка при добавлении страницы: Invalid nested tag body found, expected closing tag p.
+2025-02-28T15:28:53.745+03:00 appender 24760 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : Документ не содержит страниц. Добавление пустой страницы.
+2025-02-28T15:28:53.867+03:00 appender 24760 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099.pdf
+2025-02-28T15:28:53.871+03:00 appender 24760 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-130335099_one.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-130335099_one.pdf
+2025-02-28T15:28:53.871+03:00 appender 24760 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 2

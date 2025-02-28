@@ -34,3 +34,4 @@ build/
 log/stickers.log*
 
 log/stickers.log**
+log/stickers.log

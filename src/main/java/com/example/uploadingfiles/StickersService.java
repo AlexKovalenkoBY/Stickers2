@@ -91,66 +91,66 @@ public class StickersService implements StickersServiceInterface {
                     return hash;
                 }
             }).orElse("");
-            // Optional<String> brandHashOpt = Optional.ofNullable(brandHash.get(stickerValue));
+
             String brandhashResult = brandHash.get(stickerValue);
-            if (brandhashResult==null) 
-            {
-                brandhashResult="";
+            if (brandhashResult == null) {
+                brandhashResult = "";
             }
+
             if (hashResult != null) {
                 Matcher matcher = pattern.matcher(hashResult);
-                if ((hashResult != null) && (matcher.find())) {
+                if (matcher.find()) {
                     try {
                         BufferedImage image =
                                 StickersService.generateCode128BarcodeImage(hashResult);
                         document.newPage();
                         document.setPageSize(stickerPageSizeRectangle);
+
                         // добавляем картинку
                         com.itextpdf.text.Image pdfImage =
                                 com.itextpdf.text.Image.getInstance(image, null);
                         document.add(pdfImage);
                         document.add(eac);
+
                         XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
                         String htmlString = "<html><head>"
                                 + "<meta http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=UTF-8\" />"
                                 + "</head><body style=\"text-align: center;line-height: 0.7em;margin-top:0.5em; margin-bottom:0.5em;\">"
                                 + fontHeaderStr // начало тега
-                                + hashResult + paragraphEnd// бар-код
+                                + hashResult + paragraphEnd // бар-код
                                 + fontHeaderStr // начало тега
-                                + order.get(0) + paragraphEnd// ООО кама маркет
+                                + order.get(0) + paragraphEnd // ООО кама маркет
                                 + fontHeaderStr // начало тега
-                                + order.get(1) + paragraphEnd;// наименование
-                        htmlString = htmlString + fontHeaderStrHalf // начало тега
-                                + "Артикул: " + stickerValue + paragraphEnd;// артикул
+                                + order.get(1) + paragraphEnd; // наименование
                         htmlString = htmlString + fontHeaderStr // начало тега
+                                + "Артикул: " + stickerValue + paragraphEnd // артикул
+                                + fontHeaderStr // начало тега
                                 + "Бренд: " + brandhashResult + paragraphEnd // бренд
                                 + "</body></html>";
-                        try {
-                            worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
-                        } catch (RuntimeWorkerException e) {
-                            log.info("htmlString: " + htmlString);
-                            log.warn(String.join(" - ", order));
 
-
-                            log.error("Ошибка при обработке HTML: " + e.getMessage());
-                            throw new RuntimeException("Некорректный HTML-код", e);
-                        }
+                        worker.parseXHtml(pdfWriter, document, new StringReader(htmlString));
                     } catch (Exception e) {
-
-                        e.printStackTrace();
+                        log.error("Ошибка при добавлении страницы: " + e.getMessage());
+                        // Добавляем страницу с сообщением об ошибке
+                        document.newPage();
+                        document.add(new com.itextpdf.text.Paragraph(
+                                "Ошибка при обработке данных: " + e.getMessage()));
                     }
+                } else {
+                    log.warn("hashResult не соответствует регулярному выражению: " + hashResult);
                 }
             } else {
-                log.info("error for order: " + order.toString());
+                log.warn("hashResult равен null для заказа: " + order.toString());
             }
+        }
 
-        } ;
+        // Проверка, что документ содержит хотя бы одну страницу
+        if (document.getPageNumber() == 0) {
+            log.warn("Документ не содержит страниц. Добавление пустой страницы.");
+            document.newPage();
+            document.add(new com.itextpdf.text.Paragraph("Документ не содержит данных."));
+        }
 
-
-        Long estimatedTime = System.nanoTime() - startTime;
-        log.info("Сформирован PDF файл " + newFileName + " за " + estimatedTime / 1_000_000_000.
-                + " сек.");
-        log.info("********** Current PAGE: " + document.getPageNumber());
         document.close();
         pdfWriter.close();
     }
@@ -229,7 +229,7 @@ public class StickersService implements StickersServiceInterface {
 
     public static BufferedImage generateCode128BarcodeImage(String barcodeText) throws Exception {
         Code128Writer barcodeWriter = new Code128Writer();
-        BitMatrix bitMatrix = barcodeWriter.encode(barcodeText, BarcodeFormat.CODE_128, 150, 45);
+        BitMatrix bitMatrix = barcodeWriter.encode(barcodeText, BarcodeFormat.CODE_128, 150, 22);
         return MatrixToImageWriter.toBufferedImage(bitMatrix);
     }
 
