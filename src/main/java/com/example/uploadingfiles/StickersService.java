@@ -245,7 +245,7 @@ public class StickersService implements StickersServiceInterface {
         // String path = this.getClass().getResource("/static").getFile();
 
         // java.io.File f = new java.io.File("eac.png");
-        InputStream inputStream = this.getClass().getResourceAsStream("/static/EAC.png");
+        InputStream inputStream = this.getClass().getResourceAsStream("/static/eac.png");
         // Use resource
         byte[] bytes;
 

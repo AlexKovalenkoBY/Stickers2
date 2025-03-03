@@ -19,18 +19,22 @@ public class WebConfig extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/META-INF/resources/webjars/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
-    
+
         // Обработка статических ресурсов
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
-    
+
         // Добавляем обработчик для assets
         registry.addResourceHandler("/assets/**")
                 .addResourceLocations("classpath:/static/assets/")
                 .resourceChain(true)
                 .addResolver(new EncodedResourceResolver());
+
+        // Добавляем обработчик для favicon.ico
+        registry.addResourceHandler("/favicon.ico")
+                .addResourceLocations("classpath:/static/");
     }
 
     @Override
