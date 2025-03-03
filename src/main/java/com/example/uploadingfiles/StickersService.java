@@ -82,6 +82,9 @@ public class StickersService implements StickersServiceInterface {
         log.info("******************начало обработки списка на " + orderList.size()
                 + " элементов*****************");
         for (ArrayList<String> order : orderList) {
+            if ((order.get(0).indexOf("Склад продавца")>-1
+            ) && (order.get(1).indexOf("Наименование")>-1) && (order.get(2).indexOf("Артикул продавца")>-1)) continue;
+            
             String stickerValue = order.get(stickerColumn);
             Optional<String> hashResultOpt = Optional.ofNullable(refFile.get(stickerValue));
             String hashResult = hashResultOpt.map(hash -> {
@@ -145,11 +148,11 @@ public class StickersService implements StickersServiceInterface {
         }
 
         // Проверка, что документ содержит хотя бы одну страницу
-        if (document.getPageNumber() == 0) {
-            log.warn("Документ не содержит страниц. Добавление пустой страницы.");
-            document.newPage();
-            document.add(new com.itextpdf.text.Paragraph("Документ не содержит данных."));
-        }
+        // if (document.getPageNumber() == 0) {
+        //     log.warn("Документ не содержит страниц. Добавление пустой страницы.");
+        //     document.newPage();
+        //     document.add(new com.itextpdf.text.Paragraph("Документ не содержит данных."));
+        // }
 
         document.close();
         pdfWriter.close();
