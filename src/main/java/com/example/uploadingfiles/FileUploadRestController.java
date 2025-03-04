@@ -24,6 +24,7 @@ import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -44,6 +45,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 @Slf4j
 @RestController
+@DependsOn("referenceFileSingleton")
 @RequestMapping("/api")
 public class FileUploadRestController {
     @Autowired
@@ -229,7 +231,7 @@ public class FileUploadRestController {
             return;
         }
         String regexXlsx =
-                "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
+               "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
 
         try (ZipFile zipFile = new ZipFile(bigFileName)) {
             var entries = zipFile.entries();

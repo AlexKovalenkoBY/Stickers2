@@ -7,12 +7,14 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Comparator;
 
+
+
 public class LatestFileFinder {
 
     public static void main(String[] args) {
         String directoryPath = System.getProperty("user.home")+"\\Downloads\\"; 
         // String fileMask = "_Общие_характеристики_одним_файлом.xlsx"; // например, маска для текстовых файлов
-         String fileMask = ".*\\_Общие_характеристики_одним_файлом.xlsx"; // например, маска для текстовых файлов
+         String fileMask =  "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом( \\(\\d+\\))?\\.zip$"; // например, маска для текстовых файлов
 
         File latestFile = findLatestFile(directoryPath, fileMask);
         if (latestFile != null) {

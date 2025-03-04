@@ -2,8 +2,10 @@ package com.example.uploadingfiles;
 
 import java.util.HashMap;
 
+import org.springframework.context.annotation.DependsOn;
 
 
+@DependsOn("referenceFileSingleton")
 public class ReferenceHash {
     static HashMap<String, String> hashPrices = new HashMap<>();
     
