@@ -45,8 +45,7 @@ public class StickersService implements StickersServiceInterface {
     public static List<String> pdfsList = new ArrayList<String>();
     public static Boolean RefereneceReady = false;
     public static final List<Integer> orderColls = new ArrayList<>();
-    private com.itextpdf.text.Rectangle stickerPageSizeRectangle =
-            new com.itextpdf.text.Rectangle(164, 113);
+    private com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
 
     public void buildPdfFile2(ReferenceFileSingleton referenceInstance,
             ArrayList<ArrayList<String>> orderList, MultipartFile filename)
@@ -54,7 +53,7 @@ public class StickersService implements StickersServiceInterface {
         long startTime = System.nanoTime();
         // this.getEACFile();
         HashMap<String, String> refFile = referenceInstance.getBarCodeHashMap();
-        HashMap<String, String> brandHash = referenceInstance.getbrandHash();
+        HashMap<String, String> brandHash = referenceInstance.getBrandHash();
         StorageProperties storeProps = new StorageProperties();
         storeProps.getLocation();
 
@@ -62,18 +61,15 @@ public class StickersService implements StickersServiceInterface {
         com.itextpdf.text.Font stickerFont = new com.itextpdf.text.Font();
         stickerFont.setSize(4f);
 
-        String newFileName =
-                ".\\" + storeProps.getLocation() + "\\" + filename.getOriginalFilename()
-                        .substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
+        String newFileName = ".\\" + storeProps.getLocation() + "\\" + filename.getOriginalFilename()
+                .substring(0, filename.getOriginalFilename().indexOf(".xls")) + ".pdf";
         PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream(newFileName));
         document.open();
 
         document.setPageSize(stickerPageSizeRectangle);
         document.setMargins(5, 5, 5, 5);
-        String fontHeaderStr =
-                "<p style=\"font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
-        String fontHeaderStrHalf =
-                "<p style=\"font-family:arial; font-size:4px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
+        String fontHeaderStr = "<p style=\"font-family:arial; font-size:10px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
+        String fontHeaderStrHalf = "<p style=\"font-family:arial; font-size:4px; text-align:center;  line-height: 0.8em; margin-top:0.5em; margin-bottom:0.5em\">";
         String paragraphEnd = "</p>";
         final Pattern pattern = Pattern.compile("[0-9]+", Pattern.CASE_INSENSITIVE);
         // Match regex against input
@@ -82,9 +78,10 @@ public class StickersService implements StickersServiceInterface {
         log.info("******************начало обработки списка на " + orderList.size()
                 + " элементов*****************");
         for (ArrayList<String> order : orderList) {
-            if ((order.get(0).indexOf("Склад продавца")>-1
-            ) && (order.get(1).indexOf("Наименование")>-1) && (order.get(2).indexOf("Артикул продавца")>-1)) continue;
-            
+            if ((order.get(0).indexOf("Склад продавца") > -1) && (order.get(1).indexOf("Наименование") > -1)
+                    && (order.get(2).indexOf("Артикул продавца") > -1))
+                continue;
+
             String stickerValue = order.get(stickerColumn);
             Optional<String> hashResultOpt = Optional.ofNullable(refFile.get(stickerValue));
             String hashResult = hashResultOpt.map(hash -> {
@@ -104,14 +101,12 @@ public class StickersService implements StickersServiceInterface {
                 Matcher matcher = pattern.matcher(hashResult);
                 if (matcher.find()) {
                     try {
-                        BufferedImage image =
-                                StickersService.generateCode128BarcodeImage(hashResult);
+                        BufferedImage image = StickersService.generateCode128BarcodeImage(hashResult);
                         document.newPage();
                         document.setPageSize(stickerPageSizeRectangle);
 
                         // добавляем картинку
-                        com.itextpdf.text.Image pdfImage =
-                                com.itextpdf.text.Image.getInstance(image, null);
+                        com.itextpdf.text.Image pdfImage = com.itextpdf.text.Image.getInstance(image, null);
                         document.add(pdfImage);
                         document.add(eac);
 
@@ -146,14 +141,6 @@ public class StickersService implements StickersServiceInterface {
                 log.warn("hashResult равен null для заказа: " + order.toString());
             }
         }
-
-        // Проверка, что документ содержит хотя бы одну страницу
-        // if (document.getPageNumber() == 0) {
-        //     log.warn("Документ не содержит страниц. Добавление пустой страницы.");
-        //     document.newPage();
-        //     document.add(new com.itextpdf.text.Paragraph("Документ не содержит данных."));
-        // }
-
         document.close();
         pdfWriter.close();
     }
@@ -288,8 +275,7 @@ public class StickersService implements StickersServiceInterface {
                 java.io.File f;
                 try {
                     f = Paths.get(this.getClass().getResource("/static/eac.png").toURI()).toFile();
-                    com.itextpdf.text.Image image2 =
-                            com.itextpdf.text.Image.getInstance(f.toString());
+                    com.itextpdf.text.Image image2 = com.itextpdf.text.Image.getInstance(f.toString());
                     // image2.scaleAbsolute(20f, 20f);
                     float scalePercent = 95f;
                     image2.scalePercent(100f - scalePercent);

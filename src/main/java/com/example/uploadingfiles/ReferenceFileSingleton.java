@@ -2,8 +2,10 @@ package com.example.uploadingfiles;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+import lombok.*;
 import org.springframework.stereotype.Component;
+@Getter
+@Setter
 @Component
 public final class ReferenceFileSingleton {
 
@@ -13,7 +15,6 @@ public final class ReferenceFileSingleton {
     private Boolean referenceBuild = false;
     private HashMap<String, String> barCodeHashMap;
     private HashMap<String, String> brandHash;
-
     private String referenceFileName;
 
     private ReferenceFileSingleton() {
@@ -26,9 +27,7 @@ public final class ReferenceFileSingleton {
 
         return INSTANCE;
     }
-    public Boolean getReferenceFile (){
-        return referenceBuild;
-    }
+  
     public void referenceBuild() {
         this.referenceBuild = true;
     }
@@ -37,30 +36,10 @@ public final class ReferenceFileSingleton {
         this.referenceBuild = false;
     }
 
-    public void setReferenceFile(ArrayList<ArrayList<String>> referenceFile) {
-        this.referenceFile = referenceFile;
+   
+    public boolean isInitialized() {
+        return barCodeHashMap != null && brandHash != null;
     }
-
-    public void setBarCodeHashMap(HashMap<String, String> barCodeHashMap) {
-        this.barCodeHashMap = barCodeHashMap;
-    }
-    public HashMap<String, String> getBarCodeHashMap( ) {
-       return  this.barCodeHashMap ;
-    }
-
-    public void setbrandHash(HashMap<String, String> brandHash) {
-        this.brandHash = brandHash;
-    }
-    public HashMap<String, String> getbrandHash( ) {
-        return this.brandHash ;
-    }
-    public void setreferenceFileName(String name) {
-        this.referenceFileName = name;
-    }
-    public String getreferenceFileName( ) {
-        return this.referenceFileName ;
-    }
-
     // getters and setters
 
 }

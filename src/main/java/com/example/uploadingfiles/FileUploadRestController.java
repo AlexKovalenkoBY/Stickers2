@@ -23,14 +23,18 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.event.EventListener;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.xml.sax.SAXException;
@@ -65,13 +69,13 @@ public class FileUploadRestController {
     public ResponseEntity<?> listUploadedFiles() {
         ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        response.put("referenceFileName", refFileObject.getreferenceFileName());
+        // response.put("referenceFileName", refFileObject.getreferenceFileName());
         response.put("referenceFile", StickersService.RefereneceReady);
-    
+
         // Получаем список файлов и сортируем их по дате создания (от новых к старым)
         List<String> files = storageService.loadAll()
-               // .filter(Files::exists) // Фильтруем только существующие файлы
-               .map(path -> {
+                // .filter(Files::exists) // Фильтруем только существующие файлы
+                .map(path -> {
                     // Преобразуем путь в URL для скачивания файла
                     String url = MvcUriComponentsBuilder.fromMethodName(FileUploadRestController.class,
                             "serveFile", path.getFileName().toString()).build().toUri().toString();
@@ -79,16 +83,15 @@ public class FileUploadRestController {
                     return url;
                 })
                 .collect(Collectors.toList());
-    
+
         log.info("Total files found: {}", files.size());
-    
+
         response.put("files", files);
-        response.put("count", Math.max(refFileObject.getbrandHash().keySet().size(),
+        response.put("count", Math.max(refFileObject.getBrandHash().keySet().size(),
                 refFileObject.getBarCodeHashMap().keySet().size()));
-    
+
         return ResponseEntity.ok(response);
     }
-
 
     private FileTime getCreationTimeSafe(Path path) {
         try {
@@ -99,15 +102,14 @@ public class FileUploadRestController {
         }
     }
 
-
     @GetMapping("/getReferenceFileRecordsCount")
     public ResponseEntity<?> getReferenceFileRecordsCount() {
         ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        response.put("referenceFileName", refFileObject.getreferenceFileName());
+        // response.put("referenceFileName", refFileObject.getreferenceFileName());
         response.put("referenceFile", StickersService.RefereneceReady);
         response.put("referenceFileRecordsCount",
-                Math.max(refFileObject.getbrandHash().keySet().size(),
+                Math.max(refFileObject.getBrandHash().keySet().size(),
                         refFileObject.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
@@ -130,9 +132,9 @@ public class FileUploadRestController {
 
     @GetMapping("/referenceFileStatus")
     public ResponseEntity<Map<String, Boolean>> referenceFileStatus() {
-        Boolean status = referenceFileSingleton.getReferenceFile();
+        // Boolean status = referenceFileSingleton.getReferenceFile();
         Map<String, Boolean> response = new HashMap<>();
-        response.put("status", status);
+        // response.put("status", status);
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_TYPE, "application/json")
                 .body(response);
     }
@@ -165,30 +167,27 @@ public class FileUploadRestController {
                                 .body("Error reading file");
                     }
 
-                    HashMap<String, String> refFile =
-                            ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
+                    HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
                     log.info("3.******* barcodesHash was build:");
 
-                    HashMap<String, String> brandHash =
-                            ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
+                    HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
                     log.info("4.******* brandsHash was build:");
 
                     ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-                    refFileObject.setbrandHash(brandHash);
+                    refFileObject.setBrandHash(brandHash);
                     refFileObject.setBarCodeHashMap(refFile);
                     StickersService.RefereneceReady = true;
 
                     Long estimatedTime = System.nanoTime() - startTime;
                     log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за "
                             + estimatedTime / 1_000_000_000. + " сек.");
-                    refFileObject.setreferenceFileName(file.getOriginalFilename());
+                    // refFileObject.setreferenceFileName(file.getOriginalFilename());
 
                     return ResponseEntity.ok().body("Reference file processed successfully");
                 } else {
                     if (StickersService.RefereneceReady) {
-                        ArrayList<ArrayList<String>> orderContent =
-                                ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
-                                        ReferenceFileColumnsSingleton.colls);
+                        ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+                                ReferenceFileColumnsSingleton.colls);
                         stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent,
                                 file);
 
@@ -214,73 +213,48 @@ public class FileUploadRestController {
         return ResponseEntity.notFound().build();
     }
 
+    @GetMapping("/reference-data")
+    public ResponseEntity<Map<String, Object>> getReferenceData() {
+        ReferenceFileSingleton refFile = ReferenceFileSingleton.getInstance();
+        Map<String, Object> response = new HashMap<>();
+
+        response.put("brandHash", refFile.getBrandHash());
+        response.put("barCodeHashMap", refFile.getBarCodeHashMap());
+        // response.put("referenceFileName", refFile.getreferenceFileName());
+        response.put("referenceReady", StickersService.RefereneceReady);
+
+        return ResponseEntity.ok(response);
+    }
+
     @EventListener(ApplicationStartedEvent.class)
     @SneakyThrows
-    public void applicationStarted(ApplicationStartedEvent event) {
-        this.startTime = System.nanoTime();
+    public void onApplicationReady(ApplicationReadyEvent event) {
+        RestTemplate restTemplate = new RestTemplate();
+        String apiUrl = "http://localhost:8080/api/reference-data";
 
-        String downloadsPath =
-                System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
-        String regex =
-                "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом( \\(\\d+\\))?\\.zip$";
+        try {
+            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+                    apiUrl,
+                    HttpMethod.GET,
+                    null,
+                    new ParameterizedTypeReference<Map<String, Object>>() {
+                    });
 
-        File bigFileName = ExcelReadService.findLatestFile(downloadsPath, regex);
+            if (response.getStatusCode() == HttpStatus.OK) {
+                Map<String, Object> refData = response.getBody();
 
-        if (bigFileName == null) {
-            log.error("ZIP-архив с файлами-справочниками не найден в папке Downloads");
-            return;
-        }
-        String regexXlsx =
-               "^(?!~).*\\d{2}[._]\\d{2}[._]\\d{4}[_ ]\\d{2}[._]\\d{2}[_ ]Общие[_ ]характеристики[_ ]одним[_ ]файлом(_\\d+)?\\.xlsx$";
+                ReferenceFileSingleton refFile = ReferenceFileSingleton.getInstance();
+                refFile.setBrandHash((HashMap<String, String>) refData.get("brandHash"));
+                refFile.setBarCodeHashMap((HashMap<String, String>) refData.get("barCodeHashMap"));
+                // refFile.setreferenceFileName((String) refData.get("referenceFileName"));
 
-        try (ZipFile zipFile = new ZipFile(bigFileName)) {
-            var entries = zipFile.entries();
-            ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-            while (entries.hasMoreElements()) {
-                ZipEntry entry = entries.nextElement();
-                if (!entry.isDirectory() && entry.getName().matches(regexXlsx)) {
-                    log.info("Найден XLSX файл в архиве: " + entry.getName());
+                StickersService.RefereneceReady = (Boolean) refData.get("referenceReady");
 
-                    try (InputStream inputStream = zipFile.getInputStream(entry)) {
-                        Workbook workbook = WorkbookFactory.create(inputStream);
-                        ExcelReadService ers = new ExcelReadService();
-
-                        HashMap<String, String> refFileHashTable =
-                                ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
-                        log.info("Хэш-таблица штрихкодов построена");
-
-                        HashMap<String, String> brandHashTable =
-                                ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
-                        log.info("Хэш-таблица брендов построена");
-                        HashMap<String, String> tt = refFileObject.getbrandHash();
-                        if (tt == null) {
-                            tt = new HashMap<>();
-                        }
-                        tt.putAll(brandHashTable);
-                        refFileObject.setbrandHash(tt);
-                        HashMap<String, String> tempRef = refFileObject.getBarCodeHashMap();
-                        if (tempRef == null) {
-                            tempRef = new HashMap<>();
-                        }
-                        tempRef.putAll(refFileHashTable);
-                        refFileObject.setBarCodeHashMap(tempRef);
-
-                        log.info("Обработан файл-справочник " + entry.getName() + " из архива "
-                                + bigFileName.getName());
-                    }
-                }
+                log.info("Данные успешно загружены через API");
             }
-
-            refFileObject.referenceBuild();
-            refFileObject.setreferenceFileName(bigFileName.getName());;
-
-            StickersService.RefereneceReady = true;
-
         } catch (Exception e) {
-            log.error("Ошибка при обработке ZIP-архива: " + e.getLocalizedMessage());
+            log.error("Ошибка при загрузке данных через API: " + e.getMessage());
+            // Fallback на локальный файл (опционально)
         }
-
-        this.estimatedTime = System.nanoTime() - startTime;
-        System.out.println("Общий файл сформирован.");
     }
 }
