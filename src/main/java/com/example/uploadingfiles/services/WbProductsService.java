@@ -34,6 +34,7 @@ public class WbProductsService {
     private final String backupFileName = "wb_products_backup.json";
     private HashMap<String, String> barCodeHashMap;
     private HashMap<String, String> brandHashMap;
+    private Boolean isOnlieData  = true; 
 
     public WbProductsService(RestTemplate restTemplate,
             ObjectMapper objectMapper,
@@ -110,6 +111,7 @@ public class WbProductsService {
             ProductFromWBShort[] products =
                     objectMapper.readValue(new File(backupFileName), ProductFromWBShort[].class);
             log.info("Loaded {} products from backup file", products.length);
+            isOnlieData = false; 
             return Arrays.asList(products);
         } catch (IOException e) {
             log.error("Failed to load products from backup file: {}", e.getMessage());

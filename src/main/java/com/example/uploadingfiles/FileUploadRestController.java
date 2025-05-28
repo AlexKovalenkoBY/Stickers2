@@ -70,10 +70,12 @@ public class FileUploadRestController {
         // ReferenceFileSingleton wbProductsServiceObject =
         // ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        // response.put("referenceFileName",
-        // wbProductsServiceObject.getreferenceFileName());
-        // response.put("referenceFile", StickersService.RefereneceReady);
+        String statuString = ""; 
+        if (wbProductsService.getIsOnlieData()) {statuString  = "Получена номенклатура на ";}
+        else {statuString  = "Получена номенклатура из файла ";}
 
+        response.put("referenceFileName", statuString);
+        response.put("referenceFile", wbProductsService.getIsOnlieData());
         // Получаем список файлов и сортируем их по дате создания (от новых к старым)
         List<String> files = storageService.loadAll()
                 // .filter(Files::exists) // Фильтруем только существующие файлы
@@ -104,21 +106,24 @@ public class FileUploadRestController {
         }
     }
 
-    @GetMapping("/getReferenceFileRecordsCount")
+  /*  @GetMapping("/getReferenceFileRecordsCount")
     public ResponseEntity<?> getReferenceFileRecordsCount() {
         // ReferenceFileSingleton wbProductsServiceObject =
         // ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        // response.put("referenceFileName",
-        // wbProductsServiceObject.getreferenceFileName());
-        response.put("referenceFile", StickersService.RefereneceReady);
+        String statuString = ""; 
+        if (wbProductsService.getIsOnlieData()) {statuString  = "Получена номенклатура на ";}
+        else {statuString  = "Получена номенклатура из файла на ";}
+
+        response.put("referenceFileName", statuString);
+        // response.put("referenceFile", StickersService.RefereneceReady);
         response.put("referenceFileRecordsCount",
                 Math.max(wbProductsService.getBrandHashMap().keySet().size(),
                         wbProductsService.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
-
+*/
     @GetMapping("/files/{filename:.+}")
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
         Resource file = storageService.loadAsResource(filename);

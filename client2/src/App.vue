@@ -4,9 +4,9 @@
       <h3>Сервиc формирования стикеров на основании XLSx файлов</h3>
       <div>
         <span>Краткая инструкция:</span> <br>
-        <span>1. загрузить справочник (большой файл)</span><br>
-        <span>2. загрузить файл заказа. После выбора файла обработка начнется автоматически.</span><br>
-        <span>3. посмотреть/распечатать файл из списка </span><br>
+        <span>1. Убедиться, что номенклатура загружена</span><br>
+        <span>2. Загрузить файл заказа. После выбора файла обработка начнется автоматически.</span><br>
+        <span>3. Посмотреть/распечатать файл из списка </span><br>
       </div>
       <div>
         <form @submit.prevent="handleFileUpload" enctype="multipart/form-data">
@@ -27,6 +27,17 @@
               <span v-else class="file-name">Файл не выбран</span>
             </div>
             <div class="form-cell-right">
+              <!-- <button @click="validateAndCreatePDF" class="btn btn-primary" :disabled="isLoading" >
+                <span v-if="isLoading">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Обработка...
+                </span>
+                <span v-else>
+                    <i class="bi bi-file-earmark-pdf me-2"></i>
+                    Сохранить PDF для дальнейшей печати
+                </span>
+            </button> -->
+
               <button type="submit" class="btn btn-primary" :disabled="isLoading">
                 <span v-if="!isLoading">Обработать файл</span>
                 <span v-else>
@@ -42,7 +53,7 @@
     </div>
     <div class="container text-left">
       <div v-if="referenceFile">
-        <h2 :style="{ color: 'green' }">{{ referenceFileName }}.  Загружено {{ referenceFileRecordsCount }} товаров </h2>
+        <h2 :style="{ color: 'green' }">{{ referenceFileName }} {{ referenceFileRecordsCount }} товаров </h2>
       </div>
       <div v-else>
         <h2 :style="{ color: 'red' }">Не загружен файл - справочник</h2>
@@ -118,7 +129,7 @@ export default {
           this.referenceFile = response.data.status;
           if (this.referenceFile) {
             this.referenceFileName = response.data.referenceFileName;
-            this.referenceFileRecordsCount = response.data.referenceFileRecordsCount;
+            // this.referenceFileRecordsCount = response.data.referenceFileRecordsCount;
           }
         })
         .catch(error => {
@@ -218,7 +229,7 @@ h1 {
 }
 
 .custom-file-upload:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
 }
 
 .custom-file-upload input[type="file"] {
