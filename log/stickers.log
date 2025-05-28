@@ -882,3 +882,231 @@ Consider defining a bean named 'referenceFileSingleton' in your configuration.
 2025-05-28T15:56:57.388+03:00 appender 17168 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 2 элементов*****************
 2025-05-28T15:56:57.389+03:00 appender 17168 --- [http-nio-8081-exec-5] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
 2025-05-28T15:56:57.399+03:00 appender 17168 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : The document has no pages.
+2025-05-28T15:57:54.122+03:00 appender 18872 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 18872 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T15:57:54.127+03:00 appender 18872 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T15:57:57.106+03:00 appender 18872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T15:57:57.131+03:00 appender 18872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T15:57:57.131+03:00 appender 18872 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T15:57:57.268+03:00 appender 18872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T15:57:57.268+03:00 appender 18872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3005 ms
+2025-05-28T15:57:58.232+03:00 appender 18872 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T15:57:58.329+03:00 appender 18872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T15:57:58.354+03:00 appender 18872 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 5.07 seconds (process running for 7.886)
+2025-05-28T15:57:58.361+03:00 appender 18872 --- [main] c.e.u.services.WbProductsService         : Trying to fetch products from API: http://localhost:8080/api/wb/all-cards-mapped-short
+2025-05-28T15:58:01.184+03:00 appender 18872 --- [main] c.e.u.services.WbProductsService         : Products data saved to wb_products_backup.json
+2025-05-28T15:58:01.378+03:00 appender 18872 --- [main] c.e.u.services.WbProductsService         : HashMaps populated: 88413 barcodes and 88413 brands stored
+2025-05-28T15:58:01.385+03:00 appender 18872 --- [main] c.e.u.services.WbProductsService         : Successfully fetched 88413 products from API
+2025-05-28T15:58:01.389+03:00 appender 18872 --- [main] c.e.u.FileUploadRestController           : Successfully loaded 88413 products on startup
+2025-05-28T15:58:03.820+03:00 appender 18872 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-28T15:58:03.825+03:00 appender 18872 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-28T15:58:03.831+03:00 appender 18872 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-28T15:58:03.923+03:00 appender 18872 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T15:58:14.235+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : start POST request
+2025-05-28T15:58:14.239+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241588.xlsx size: 15715
+2025-05-28T15:58:14.239+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-05-28T15:58:15.862+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241588.xlsx за 1.620045301 сек.
+2025-05-28T15:58:15.989+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
+2025-05-28T15:58:15.992+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.993+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.993+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.995+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.996+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.998+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:15.998+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.000+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.004+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.004+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.012+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.016+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.018+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.020+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.020+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.024+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.024+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.027+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.030+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.033+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.035+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.037+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.037+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.037+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.041+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.049+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.051+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.053+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.053+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.053+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.055+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.055+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.055+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.055+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.057+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.986+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.986+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.988+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.988+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:16.988+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:17.000+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:17.000+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:17.002+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:17.486+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.489+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.489+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.489+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.491+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.493+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:20.493+03:00 appender 18872 --- [http-nio-8081-exec-3] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T15:58:21.062+03:00 appender 18872 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-05-28T15:58:21.062+03:00 appender 18872 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 1
+2025-05-28T16:00:35.670+03:00 appender 23220 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 23220 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T16:00:35.677+03:00 appender 23220 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T16:00:40.014+03:00 appender 23220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T16:00:40.278+03:00 appender 23220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T16:00:40.304+03:00 appender 23220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T16:00:40.669+03:00 appender 23220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T16:00:40.669+03:00 appender 23220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4725 ms
+2025-05-28T16:00:44.027+03:00 appender 23220 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T16:00:45.066+03:00 appender 23220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T16:00:45.652+03:00 appender 23220 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 10.909 seconds (process running for 12.616)
+2025-05-28T16:00:45.678+03:00 appender 23220 --- [main] c.e.u.services.WbProductsService         : Trying to fetch products from API: http://localhost:8080/api/wb/all-cards-mapped-short
+2025-05-28T16:00:46.352+03:00 appender 23220 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-28T16:00:46.370+03:00 appender 23220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-28T16:00:46.405+03:00 appender 23220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2025-05-28T16:00:46.955+03:00 appender 23220 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:00:46.966+03:00 appender 23220 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:00:47.682+03:00 appender 23220 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-05-28T16:00:47.687+03:00 appender 23220 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 1
+2025-05-28T16:00:48.656+03:00 appender 23220 --- [main] c.e.u.services.WbProductsService         : Products data saved to wb_products_backup.json
+2025-05-28T16:00:48.798+03:00 appender 23220 --- [main] c.e.u.services.WbProductsService         : HashMaps populated: 88413 barcodes and 88413 brands stored
+2025-05-28T16:00:48.802+03:00 appender 23220 --- [main] c.e.u.services.WbProductsService         : Successfully fetched 88413 products from API
+2025-05-28T16:00:48.806+03:00 appender 23220 --- [main] c.e.u.FileUploadRestController           : Successfully loaded 88413 products on startup
+2025-05-28T16:00:53.956+03:00 appender 23220 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:00:53.958+03:00 appender 23220 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:00:54.145+03:00 appender 23220 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T16:00:55.505+03:00 appender 23220 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:00:55.508+03:00 appender 23220 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:00:55.704+03:00 appender 23220 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T16:00:56.688+03:00 appender 23220 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:00:56.691+03:00 appender 23220 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:00:56.870+03:00 appender 23220 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T16:01:11.179+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : start POST request
+2025-05-28T16:01:11.179+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241588.xlsx size: 15715
+2025-05-28T16:01:11.179+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-05-28T16:01:13.381+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241588.xlsx за 2.1890054 сек.
+2025-05-28T16:01:13.542+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
+2025-05-28T16:01:13.546+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.547+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.548+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.549+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.551+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.555+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.580+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.591+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.602+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.602+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.604+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.604+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.608+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.608+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.631+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.639+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.639+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.641+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.641+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.643+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.652+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.654+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.654+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.656+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.656+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.656+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.658+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.658+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.667+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.671+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.671+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.673+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.673+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.673+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:13.675+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.417+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.417+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.418+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.419+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.419+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.420+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.420+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:15.420+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:16.130+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.611+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.612+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.613+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.613+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.613+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:18.614+03:00 appender 23220 --- [http-nio-8081-exec-9] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:01:19.112+03:00 appender 23220 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-05-28T16:01:19.114+03:00 appender 23220 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 1
+2025-05-28T16:02:08.644+03:00 appender 23220 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:02:08.645+03:00 appender 23220 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:02:12.664+03:00 appender 23220 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-28T16:02:12.667+03:00 appender 23220 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No endpoint GET /.well-known/appspecific/com.chrome.devtools.json.
+2025-05-28T16:02:12.766+03:00 appender 23220 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-05-28T16:02:12.774+03:00 appender 23220 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 1
+2025-05-28T16:05:20.521+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : start POST request
+2025-05-28T16:05:20.521+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241566.xlsx size: 15715
+2025-05-28T16:05:20.521+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-05-28T16:05:20.631+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241566.xlsx за 0.1086296 сек.
+2025-05-28T16:05:20.643+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
+2025-05-28T16:05:20.647+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.648+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.649+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.649+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.650+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.651+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.651+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.652+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.654+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.655+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.655+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.656+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.656+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.657+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.657+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.658+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.658+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.658+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.659+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.660+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.664+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.666+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.668+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.670+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.672+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.674+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.674+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.681+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.684+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.686+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.687+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.687+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.687+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.687+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:20.689+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.767+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.767+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.767+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.769+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.769+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.769+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.771+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:21.771+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:22.225+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.145+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.145+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.145+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.147+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.147+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.147+03:00 appender 23220 --- [http-nio-8081-exec-7] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
+2025-05-28T16:05:24.575+03:00 appender 23220 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241566.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241566.pdf
+2025-05-28T16:05:24.577+03:00 appender 23220 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241588.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241588.pdf
+2025-05-28T16:05:24.578+03:00 appender 23220 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 2
