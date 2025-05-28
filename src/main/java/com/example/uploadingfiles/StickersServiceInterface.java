@@ -17,7 +17,7 @@ public interface StickersServiceInterface {
 	void getEACFile() throws URISyntaxException;
 	void init() throws BadElementException;
 
-	void buildPdfFile2(ReferenceFileSingleton referenceInstance, ArrayList<ArrayList<String>> orderList,
+	void buildPdfFile2( ArrayList<ArrayList<String>> orderList,
             MultipartFile filename) throws DocumentException, IOException;
 
 }

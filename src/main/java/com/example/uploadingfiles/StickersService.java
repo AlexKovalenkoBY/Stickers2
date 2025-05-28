@@ -1,10 +1,13 @@
 package com.example.uploadingfiles;
 
 import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
+import com.example.uploadingfiles.services.WbProductsService;
 import com.example.uploadingfiles.storage.StorageProperties;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
@@ -37,7 +40,8 @@ import java.util.regex.Matcher;
 @Slf4j
 
 public class StickersService implements StickersServiceInterface {
-
+    @Autowired
+private WbProductsService wbProductsService;
     private com.itextpdf.text.Image eac;
 
     static final Integer ImageWidth = 0;
@@ -47,13 +51,13 @@ public class StickersService implements StickersServiceInterface {
     public static final List<Integer> orderColls = new ArrayList<>();
     private com.itextpdf.text.Rectangle stickerPageSizeRectangle = new com.itextpdf.text.Rectangle(164, 113);
 
-    public void buildPdfFile2(ReferenceFileSingleton referenceInstance,
+    public void buildPdfFile2(
             ArrayList<ArrayList<String>> orderList, MultipartFile filename)
             throws DocumentException, IOException {
         long startTime = System.nanoTime();
         // this.getEACFile();
-        HashMap<String, String> refFile = referenceInstance.getBarCodeHashMap();
-        HashMap<String, String> brandHash = referenceInstance.getBrandHash();
+        HashMap<String, String> refFile = wbProductsService.getBarCodeHashMap();
+        HashMap<String, String> brandHash = wbProductsService.getBrandHashMap();
         StorageProperties storeProps = new StorageProperties();
         storeProps.getLocation();
 

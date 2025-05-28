@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.annotation.DependsOn;
@@ -33,44 +32,46 @@ import com.example.uploadingfiles.storage.StorageService;
 import com.itextpdf.text.DocumentException;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.ss.usermodel.Workbook;
 
 @Slf4j
 @RestController
-@DependsOn("referenceFileSingleton")
+@DependsOn("wbProductsService")
 @RequestMapping("/api")
 public class FileUploadRestController {
     @Autowired
     StickersService stService;
     @Autowired
-private WbProductsService wbProductsService;
-    ReferenceFileSingleton referenceFileSingleton;
+    private WbProductsService wbProductsService;
+
     private final StorageService storageService;
     public Long estimatedTime;
     public Long startTime;
 
-    public FileUploadRestController(StorageService storageService,
-            ReferenceFileSingleton referenceFileSingleton) {
+    public FileUploadRestController(StorageService storageService) {
         this.storageService = storageService;
-        this.referenceFileSingleton = referenceFileSingleton;
+
     }
-@EventListener(ApplicationStartedEvent.class)
-public void onApplicationStarted(ApplicationStartedEvent event) {
-    try {
-        List<ProductFromWBShort> products = wbProductsService.getProducts();
-        log.info("Successfully loaded {} products on startup", products.size());
-        
-        // Здесь можно добавить обработку полученных продуктов
-        // Например, сохранение в ReferenceFileSingleton
-    } catch (Exception e) {
-        log.error("Failed to load products on startup: {}", e.getMessage());
+
+    @EventListener(ApplicationStartedEvent.class)
+    public void onApplicationStarted(ApplicationStartedEvent event) {
+        try {
+            List<ProductFromWBShort> products = wbProductsService.getProducts();
+            log.info("Successfully loaded {} products on startup", products.size());
+
+            // Здесь можно добавить обработку полученных продуктов
+            // Например, сохранение в ReferenceFileSingleton
+        } catch (Exception e) {
+            log.error("Failed to load products on startup: {}", e.getMessage());
+        }
     }
-}
+
     @GetMapping("/files")
     public ResponseEntity<?> listUploadedFiles() {
-        // ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+        // ReferenceFileSingleton wbProductsServiceObject =
+        // ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        // response.put("referenceFileName", refFileObject.getreferenceFileName());
+        // response.put("referenceFileName",
+        // wbProductsServiceObject.getreferenceFileName());
         // response.put("referenceFile", StickersService.RefereneceReady);
 
         // Получаем список файлов и сортируем их по дате создания (от новых к старым)
@@ -89,7 +90,7 @@ public void onApplicationStarted(ApplicationStartedEvent event) {
 
         response.put("files", files);
         response.put("count", Math.max(wbProductsService.getBrandHashMap().keySet().size(),
-        wbProductsService.getBarCodeHashMap().keySet().size()));
+                wbProductsService.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
@@ -105,13 +106,15 @@ public void onApplicationStarted(ApplicationStartedEvent event) {
 
     @GetMapping("/getReferenceFileRecordsCount")
     public ResponseEntity<?> getReferenceFileRecordsCount() {
-        // ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+        // ReferenceFileSingleton wbProductsServiceObject =
+        // ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        // response.put("referenceFileName", refFileObject.getreferenceFileName());
+        // response.put("referenceFileName",
+        // wbProductsServiceObject.getreferenceFileName());
         response.put("referenceFile", StickersService.RefereneceReady);
         response.put("referenceFileRecordsCount",
                 Math.max(wbProductsService.getBrandHashMap().keySet().size(),
-                wbProductsService.getBarCodeHashMap().keySet().size()));
+                        wbProductsService.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
@@ -153,51 +156,16 @@ public void onApplicationStarted(ApplicationStartedEvent event) {
                 ExcelReadService ers = new ExcelReadService();
                 log.info("1.1.******* Service created");
 
-                if ((file.getOriginalFilename().indexOf("_Общие характеристики одним файлом") > -1)
-                        || (file.getOriginalFilename()
-                                .indexOf("_Общие_характеристики_одним_файлом") > -1)) {
-                    log.info("2.******* start Reference file proceed: " + file.getOriginalFilename()
-                            + " size: " + file.getSize());
+                ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+                        ReferenceFileColumnsSingleton.colls);
+                stService.buildPdfFile2(orderContent, file);
 
-                    Workbook workbook = null;
-                    try {
-                        workbook = WorkbookFactory.create(file.getInputStream());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                                .body("Error reading file");
-                    }
+                return ResponseEntity.ok().body("Order file processed successfully");
+                // } else {
+                // return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                // .body("Reference file not loaded");
+                // }
 
-                    HashMap<String, String> refFile = ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 11);
-                    log.info("3.******* barcodesHash was build:");
-
-                    HashMap<String, String> brandHash = ers.uploadSelectedCellsAndBuidHasTable(workbook, 1, 1, 5);
-                    log.info("4.******* brandsHash was build:");
-
-                    ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
-                    refFileObject.setBrandHash(brandHash);
-                    refFileObject.setBarCodeHashMap(refFile);
-                    StickersService.RefereneceReady = true;
-
-                    Long estimatedTime = System.nanoTime() - startTime;
-                    log.info("Обработан файл-справочник " + file.getOriginalFilename() + " за "
-                            + estimatedTime / 1_000_000_000. + " сек.");
-                    // refFileObject.setreferenceFileName(file.getOriginalFilename());
-
-                    return ResponseEntity.ok().body("Reference file processed successfully");
-                } else {
-                    if (StickersService.RefereneceReady) {
-                        ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
-                                ReferenceFileColumnsSingleton.colls);
-                        stService.buildPdfFile2(ReferenceFileSingleton.getInstance(), orderContent,
-                                file);
-
-                        return ResponseEntity.ok().body("Order file processed successfully");
-                    } else {
-                        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                                .body("Reference file not loaded");
-                    }
-                }
             } catch (Exception e) {
                 log.info(e.getLocalizedMessage());
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -216,46 +184,53 @@ public void onApplicationStarted(ApplicationStartedEvent event) {
 
     @GetMapping("/reference-data")
     public ResponseEntity<Map<String, Object>> getReferenceData() {
-        ReferenceFileSingleton refFile = ReferenceFileSingleton.getInstance();
+
         Map<String, Object> response = new HashMap<>();
 
-        response.put("brandHash", refFile.getBrandHash());
-        response.put("barCodeHashMap", refFile.getBarCodeHashMap());
-        // response.put("referenceFileName", refFile.getreferenceFileName());
+        response.put("brandHash", wbProductsService.getBrandHashMap());
+        response.put("barCodeHashMap", wbProductsService.getBarCodeHashMap());
+        // response.put("referenceFileName", wbProductsService.getreferenceFileName());
         response.put("referenceReady", StickersService.RefereneceReady);
 
         return ResponseEntity.ok(response);
     }
 
-  /*  @EventListener(ApplicationStartedEvent.class)
-    @SneakyThrows
-    public void onApplicationReady(ApplicationStartedEvent event) {
-        RestTemplate restTemplate = new RestTemplate();
-        String apiUrl = "http://localhost:8080/api/reference-data";
-
-        try {
-            ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
-                    apiUrl,
-                    HttpMethod.GET,
-                    null,
-                    new ParameterizedTypeReference<Map<String, Object>>() {
-                    });
-
-            if (response.getStatusCode() == HttpStatus.OK) {
-                Map<String, Object> refData = response.getBody();
-
-                ReferenceFileSingleton refFile = ReferenceFileSingleton.getInstance();
-                refFile.setBrandHash((HashMap<String, String>) refData.get("brandHash"));
-                refFile.setBarCodeHashMap((HashMap<String, String>) refData.get("barCodeHashMap"));
-                // refFile.setreferenceFileName((String) refData.get("referenceFileName"));
-
-                StickersService.RefereneceReady = (Boolean) refData.get("referenceReady");
-
-                log.info("Данные успешно загружены через API");
-            }
-        } catch (Exception e) {
-            log.error("Ошибка при загрузке данных через API: " + e.getMessage());
-            // Fallback на локальный файл (опционально)
-        }
-    } */
+    /*
+     * @EventListener(ApplicationStartedEvent.class)
+     * 
+     * @SneakyThrows
+     * public void onApplicationReady(ApplicationStartedEvent event) {
+     * RestTemplate restTemplate = new RestTemplate();
+     * String apiUrl = "http://localhost:8080/api/reference-data";
+     * 
+     * try {
+     * ResponseEntity<Map<String, Object>> response = restTemplate.exchange(
+     * apiUrl,
+     * HttpMethod.GET,
+     * null,
+     * new ParameterizedTypeReference<Map<String, Object>>() {
+     * });
+     * 
+     * if (response.getStatusCode() == HttpStatus.OK) {
+     * Map<String, Object> refData = response.getBody();
+     * 
+     * ReferenceFileSingleton wbProductsService =
+     * ReferenceFileSingleton.getInstance();
+     * wbProductsService.setBrandHash((HashMap<String, String>)
+     * refData.get("brandHash"));
+     * wbProductsService.setBarCodeHashMap((HashMap<String, String>)
+     * refData.get("barCodeHashMap"));
+     * // wbProductsService.setreferenceFileName((String)
+     * refData.get("referenceFileName"));
+     * 
+     * StickersService.RefereneceReady = (Boolean) refData.get("referenceReady");
+     * 
+     * log.info("Данные успешно загружены через API");
+     * }
+     * } catch (Exception e) {
+     * log.error("Ошибка при загрузке данных через API: " + e.getMessage());
+     * // Fallback на локальный файл (опционально)
+     * }
+     * }
+     */
 }
