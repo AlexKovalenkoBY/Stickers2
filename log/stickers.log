@@ -1,321 +1,91 @@
-2025-03-04T19:38:00.160+03:00 appender 16012 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 16012 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T19:38:00.177+03:00 appender 16012 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T19:38:02.267+03:00 appender 16012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T19:38:02.287+03:00 appender 16012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T19:38:02.288+03:00 appender 16012 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2025-03-04T19:38:02.392+03:00 appender 16012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T19:38:02.393+03:00 appender 16012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2120 ms
-2025-03-04T19:38:03.314+03:00 appender 16012 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T19:38:03.411+03:00 appender 16012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T19:38:03.430+03:00 appender 16012 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.989 seconds (process running for 5.287)
-2025-03-04T19:38:03.454+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
-2025-03-04T19:38:05.546+03:00 appender 16012 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T19:38:05.546+03:00 appender 16012 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T19:38:05.550+03:00 appender 16012 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-03-04T19:38:07.009+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.2129327 сек.
-2025-03-04T19:38:07.009+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:07.110+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1006152 сек.
-2025-03-04T19:38:07.111+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:07.113+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:07.114+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
-2025-03-04T19:38:08.496+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0765628 сек.
-2025-03-04T19:38:08.497+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:08.561+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0645631 сек.
-2025-03-04T19:38:08.562+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:08.566+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:08.567+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
-2025-03-04T19:38:09.398+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0718616 сек.
-2025-03-04T19:38:09.399+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:09.466+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.066378 сек.
-2025-03-04T19:38:09.467+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:09.470+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:09.471+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
-2025-03-04T19:38:10.187+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0619157 сек.
-2025-03-04T19:38:10.187+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:10.230+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0419899 сек.
-2025-03-04T19:38:10.230+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:10.233+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:10.234+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
-2025-03-04T19:38:10.798+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0396199 сек.
-2025-03-04T19:38:10.798+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:10.833+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0338405 сек.
-2025-03-04T19:38:10.833+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:10.837+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:10.838+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
-2025-03-04T19:38:11.370+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.039095 сек.
-2025-03-04T19:38:11.370+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:11.400+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0286662 сек.
-2025-03-04T19:38:11.400+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:11.403+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:11.404+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
-2025-03-04T19:38:11.861+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0266373 сек.
-2025-03-04T19:38:11.862+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:11.881+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.018988 сек.
-2025-03-04T19:38:11.882+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:11.884+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:38:11.885+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
-2025-03-04T19:38:12.010+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0080756 сек.
-2025-03-04T19:38:12.010+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:38:12.015+03:00 appender 16012 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0040485 сек.
-2025-03-04T19:38:12.015+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:38:12.016+03:00 appender 16012 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:39:01.165+03:00 appender 16012 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T19:45:19.167+03:00 appender 15464 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 15464 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T19:45:19.170+03:00 appender 15464 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T19:45:20.881+03:00 appender 15464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T19:45:20.904+03:00 appender 15464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T19:45:20.904+03:00 appender 15464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T19:45:21.067+03:00 appender 15464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T19:45:21.068+03:00 appender 15464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1819 ms
-2025-03-04T19:45:22.021+03:00 appender 15464 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T19:45:22.119+03:00 appender 15464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T19:45:22.140+03:00 appender 15464 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.576 seconds (process running for 4.957)
-2025-03-04T19:45:22.169+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
-2025-03-04T19:45:24.418+03:00 appender 15464 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T19:45:24.419+03:00 appender 15464 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T19:45:24.423+03:00 appender 15464 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-03-04T19:45:25.778+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.2043571 сек.
-2025-03-04T19:45:25.779+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:25.884+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1044492 сек.
-2025-03-04T19:45:25.885+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:25.888+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:25.889+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
-2025-03-04T19:45:27.350+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1135035 сек.
-2025-03-04T19:45:27.351+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:27.414+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0627449 сек.
-2025-03-04T19:45:27.415+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:27.417+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:27.418+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
-2025-03-04T19:45:28.130+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0716841 сек.
-2025-03-04T19:45:28.131+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:28.183+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.052357 сек.
-2025-03-04T19:45:28.184+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:28.186+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:28.187+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
-2025-03-04T19:45:28.906+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0688611 сек.
-2025-03-04T19:45:28.907+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:28.971+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0631309 сек.
-2025-03-04T19:45:28.972+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:28.977+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:28.978+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
-2025-03-04T19:45:29.558+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.039987 сек.
-2025-03-04T19:45:29.559+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:29.586+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0264219 сек.
-2025-03-04T19:45:29.586+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:29.592+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:29.593+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
-2025-03-04T19:45:30.129+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0305566 сек.
-2025-03-04T19:45:30.130+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:30.152+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0222096 сек.
-2025-03-04T19:45:30.153+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:30.155+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:30.156+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
-2025-03-04T19:45:30.718+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0331655 сек.
-2025-03-04T19:45:30.718+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:30.742+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0230156 сек.
-2025-03-04T19:45:30.743+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:30.746+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:30.746+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
-2025-03-04T19:45:30.916+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0058472 сек.
-2025-03-04T19:45:30.917+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:45:30.923+03:00 appender 15464 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0057418 сек.
-2025-03-04T19:45:30.923+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:45:30.924+03:00 appender 15464 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:45:39.206+03:00 appender 15464 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T19:45:43.853+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : start POST request
-2025-03-04T19:45:43.854+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
-2025-03-04T19:45:43.855+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : 1.1.******* Service created
-2025-03-04T19:45:43.896+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241511.xlsx за 0.0373121 сек.
-2025-03-04T19:45:43.983+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
-2025-03-04T19:45:43.984+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:43.985+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:43.986+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:43.987+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:43.987+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:43.988+03:00 appender 15464 --- [http-nio-8081-exec-6] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T19:45:54.589+03:00 appender 15464 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241511.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241511.pdf
-2025-03-04T19:45:54.590+03:00 appender 15464 --- [http-nio-8081-exec-7] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T19:56:25.396+03:00 appender 15924 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 15924 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T19:56:25.399+03:00 appender 15924 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T19:56:27.181+03:00 appender 15924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T19:56:27.210+03:00 appender 15924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T19:56:27.211+03:00 appender 15924 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T19:56:27.335+03:00 appender 15924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T19:56:27.336+03:00 appender 15924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
-2025-03-04T19:56:28.285+03:00 appender 15924 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T19:56:28.387+03:00 appender 15924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T19:56:28.408+03:00 appender 15924 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.63 seconds (process running for 5.047)
-2025-03-04T19:56:28.439+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом.xlsx
-2025-03-04T19:56:30.588+03:00 appender 15924 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T19:56:30.588+03:00 appender 15924 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T19:56:30.592+03:00 appender 15924 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-03-04T19:56:31.921+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.163391 сек.
-2025-03-04T19:56:31.922+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:32.011+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0870009 сек.
-2025-03-04T19:56:32.011+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:32.014+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:32.014+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx
-2025-03-04T19:56:33.445+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.1019059 сек.
-2025-03-04T19:56:33.446+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:33.511+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0635204 сек.
-2025-03-04T19:56:33.512+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:33.515+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_1.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:33.517+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx
-2025-03-04T19:56:34.434+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0854312 сек.
-2025-03-04T19:56:34.435+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:34.490+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0538764 сек.
-2025-03-04T19:56:34.490+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:34.493+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_2.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:34.494+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx
-2025-03-04T19:56:35.563+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0939312 сек.
-2025-03-04T19:56:35.563+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:35.610+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0460487 сек.
-2025-03-04T19:56:35.611+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:35.614+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_3.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:35.615+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx
-2025-03-04T19:56:36.363+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0647715 сек.
-2025-03-04T19:56:36.363+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:36.407+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0426044 сек.
-2025-03-04T19:56:36.407+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:36.412+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_4.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:36.414+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx
-2025-03-04T19:56:37.029+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0331052 сек.
-2025-03-04T19:56:37.029+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:37.054+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0241731 сек.
-2025-03-04T19:56:37.055+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:37.057+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_5.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:37.058+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx
-2025-03-04T19:56:37.525+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0295458 сек.
-2025-03-04T19:56:37.525+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:37.545+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0197857 сек.
-2025-03-04T19:56:37.546+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:37.549+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_6.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:37.550+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx
-2025-03-04T19:56:37.665+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0052512 сек.
-2025-03-04T19:56:37.665+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:56:37.670+03:00 appender 15924 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0043908 сек.
-2025-03-04T19:56:37.671+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:56:37.671+03:00 appender 15924 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 27.02.2025_20.05_Общие характеристики одним файлом_7.xlsx из архива 27_02_2025_20_05_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:56:44.473+03:00 appender 15924 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T19:57:12.345+03:00 appender 9832 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 9832 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T19:57:12.349+03:00 appender 9832 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T19:57:14.291+03:00 appender 9832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T19:57:14.308+03:00 appender 9832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T19:57:14.309+03:00 appender 9832 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T19:57:14.407+03:00 appender 9832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T19:57:14.408+03:00 appender 9832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1973 ms
-2025-03-04T19:57:15.429+03:00 appender 9832 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T19:57:15.533+03:00 appender 9832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T19:57:15.559+03:00 appender 9832 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.797 seconds (process running for 4.797)
-2025-03-04T19:57:15.587+03:00 appender 9832 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 03.03.2025_13.36_Общие характеристики одним файлом.xlsx
-2025-03-04T19:57:17.431+03:00 appender 9832 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0726693 сек.
-2025-03-04T19:57:17.432+03:00 appender 9832 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T19:57:17.463+03:00 appender 9832 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0307763 сек.
-2025-03-04T19:57:17.465+03:00 appender 9832 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T19:57:17.466+03:00 appender 9832 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 03.03.2025_13.36_Общие характеристики одним файлом.xlsx из архива 03_03_2025_13_36_Общие_характеристики_одним_файлом.zip
-2025-03-04T19:57:17.867+03:00 appender 9832 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T19:57:17.867+03:00 appender 9832 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T19:57:17.871+03:00 appender 9832 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-03-04T20:00:16.653+03:00 appender 17136 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 17136 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T20:00:16.657+03:00 appender 17136 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T20:00:18.454+03:00 appender 17136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T20:00:18.474+03:00 appender 17136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T20:00:18.475+03:00 appender 17136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T20:00:18.602+03:00 appender 17136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T20:00:18.603+03:00 appender 17136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
-2025-03-04T20:00:19.571+03:00 appender 17136 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T20:00:19.681+03:00 appender 17136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T20:00:19.708+03:00 appender 17136 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.631 seconds (process running for 4.854)
-2025-03-04T20:00:19.733+03:00 appender 17136 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 03.03.2025_13.36_Общие характеристики одним файлом.xlsx
-2025-03-04T20:00:21.642+03:00 appender 17136 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0747988 сек.
-2025-03-04T20:00:21.643+03:00 appender 17136 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T20:00:21.676+03:00 appender 17136 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0317696 сек.
-2025-03-04T20:00:21.677+03:00 appender 17136 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T20:00:21.679+03:00 appender 17136 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 03.03.2025_13.36_Общие характеристики одним файлом.xlsx из архива 03_03_2025_13_36_Общие_характеристики_одним_файлом.zip
-2025-03-04T20:00:21.973+03:00 appender 17136 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T20:00:21.974+03:00 appender 17136 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T20:00:21.977+03:00 appender 17136 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-03-04T20:00:38.110+03:00 appender 17136 --- [http-nio-8081-exec-2] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T20:00:42.581+03:00 appender 17136 --- [http-nio-8081-exec-9] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T20:00:47.144+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : start POST request
-2025-03-04T20:00:47.145+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241577.xlsx size: 15715
-2025-03-04T20:00:47.146+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : 1.1.******* Service created
-2025-03-04T20:00:47.250+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.ExcelReadService      : Обработан файл заказа wb-gi-108241577.xlsx за 0.1014231 сек.
-2025-03-04T20:00:47.363+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : ******************начало обработки списка на 69 элементов*****************
-2025-03-04T20:00:47.364+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.364+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.365+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.365+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.365+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.366+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.366+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.367+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.367+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.369+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.371+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.372+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.373+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.373+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.374+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.374+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.375+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.375+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.376+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.376+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.377+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.377+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.378+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.378+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.378+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.379+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.379+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.380+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.380+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.381+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.381+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.381+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.382+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.382+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.383+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.383+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.383+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.383+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.384+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.385+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.385+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.385+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.386+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.386+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:47.387+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:48.234+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.315+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.316+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.317+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.317+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.317+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.318+03:00 appender 17136 --- [http-nio-8081-exec-1] c.e.uploadingfiles.StickersService       : hashResult не соответствует регулярному выражению: 
-2025-03-04T20:00:50.666+03:00 appender 17136 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:00:50.667+03:00 appender 17136 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:07.530+03:00 appender 10420 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 10420 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T20:03:07.534+03:00 appender 10420 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T20:03:09.392+03:00 appender 10420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T20:03:09.415+03:00 appender 10420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T20:03:09.416+03:00 appender 10420 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T20:03:09.535+03:00 appender 10420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T20:03:09.536+03:00 appender 10420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1920 ms
-2025-03-04T20:03:10.530+03:00 appender 10420 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T20:03:10.647+03:00 appender 10420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T20:03:10.673+03:00 appender 10420 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.731 seconds (process running for 5.09)
-2025-03-04T20:03:12.692+03:00 appender 10420 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T20:03:12.692+03:00 appender 10420 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T20:03:12.696+03:00 appender 10420 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-03-04T20:03:17.596+03:00 appender 10420 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 03.03.2025_13.36_Общие характеристики одним файлом.xlsx
-2025-03-04T20:03:34.478+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:03:34.481+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:34.488+03:00 appender 10420 --- [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null] with root cause
+2025-05-28T14:06:47.278+03:00 appender 21184 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 21184 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:06:47.310+03:00 appender 21184 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:06:50.853+03:00 appender 21184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:06:50.881+03:00 appender 21184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:06:50.886+03:00 appender 21184 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:06:51.036+03:00 appender 21184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:06:51.036+03:00 appender 21184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3464 ms
+2025-05-28T14:06:52.351+03:00 appender 21184 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:06:52.615+03:00 appender 21184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:06:52.712+03:00 appender 21184 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 6.596 seconds (process running for 8.619)
+2025-05-28T14:06:52.756+03:00 appender 21184 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
-java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null
-	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:86) ~[classes/:na]
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-28T14:06:52.825+03:00 appender 21184 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: argument type mismatch
+HandlerMethod details: 
+Bean [com.example.uploadingfiles.FileUploadRestController]
+Method [public void com.example.uploadingfiles.FileUploadRestController.onApplicationReady(org.springframework.boot.context.event.ApplicationReadyEvent)]
+Resolved arguments: 
+[0] [type=org.springframework.boot.context.event.ApplicationStartedEvent] [value=org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@681de87f]]
+
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:369) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:237) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:168) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.context.event.EventPublishingRunListener.started(EventPublishingRunListener.java:103) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$started$5(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplicationRunListeners.started(SpringApplicationRunListeners.java:76) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.5.jar:3.3.5]
+	at com.example.uploadingfiles.StickersCreateApplication.main(StickersCreateApplication.java:17) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:107) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:365) ~[spring-context-6.1.14.jar:6.1.14]
+	... 17 common frames omitted
+
+2025-05-28T14:11:16.278+03:00 appender 19788 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 19788 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:11:16.289+03:00 appender 19788 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:11:19.120+03:00 appender 19788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:11:19.140+03:00 appender 19788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:11:19.142+03:00 appender 19788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:11:19.244+03:00 appender 19788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:11:19.244+03:00 appender 19788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2804 ms
+2025-05-28T14:11:20.408+03:00 appender 19788 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:11:20.549+03:00 appender 19788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:11:20.572+03:00 appender 19788 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.906 seconds (process running for 6.852)
+2025-05-28T14:12:48.870+03:00 appender 21268 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 21268 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:12:48.875+03:00 appender 21268 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:12:50.872+03:00 appender 21268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:12:50.893+03:00 appender 21268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:12:50.894+03:00 appender 21268 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:12:51.010+03:00 appender 21268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:12:51.010+03:00 appender 21268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2025-05-28T14:13:03.175+03:00 appender 21268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:13:03.358+03:00 appender 21268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:13:03.397+03:00 appender 21268 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 15.617 seconds (process running for 17.678)
+2025-05-28T14:26:54.820+03:00 appender 14100 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 14100 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:26:54.878+03:00 appender 14100 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:27:00.838+03:00 appender 14100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:27:00.958+03:00 appender 14100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:27:00.960+03:00 appender 14100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:27:01.248+03:00 appender 14100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:27:01.250+03:00 appender 14100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5952 ms
+2025-05-28T14:27:10.903+03:00 appender 14100 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:27:11.076+03:00 appender 14100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:27:11.200+03:00 appender 14100 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 17.951 seconds (process running for 21.767)
+2025-05-28T14:27:11.256+03:00 appender 14100 --- [main] c.e.u.services.WbProductsService         : Trying to fetch products from API: http://localhost:8080/api/wb/all-cards-mapped-short
+2025-05-28T14:27:14.047+03:00 appender 14100 --- [main] c.e.u.services.WbProductsService         : Products data saved to wb_products_backup.json
+2025-05-28T14:27:14.048+03:00 appender 14100 --- [main] c.e.u.services.WbProductsService         : Successfully fetched 88413 products from API
+2025-05-28T14:27:14.048+03:00 appender 14100 --- [main] c.e.u.FileUploadRestController           : Successfully loaded 88413 products on startup
+2025-05-28T14:27:42.561+03:00 appender 14100 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-28T14:27:42.567+03:00 appender 14100 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-28T14:27:42.594+03:00 appender 14100 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-05-28T14:27:43.198+03:00 appender 14100 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T14:27:43.210+03:00 appender 14100 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getBrandHash()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getBrandHash()" is null
+	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:91) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
@@ -361,12 +131,34 @@ java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" becau
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-03-04T20:03:37.040+03:00 appender 10420 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:03:37.041+03:00 appender 10420 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:37.042+03:00 appender 10420 --- [http-nio-8081-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null] with root cause
+2025-05-28T14:28:01.979+03:00 appender 14100 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : start POST request
+2025-05-28T14:28:01.983+03:00 appender 14100 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241511.xlsx size: 15715
+2025-05-28T14:28:01.986+03:00 appender 14100 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-05-28T14:28:12.869+03:00 appender 14100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : start POST request
+2025-05-28T14:28:12.869+03:00 appender 14100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.******* start proceed file: wb-gi-108241588.xlsx size: 15715
+2025-05-28T14:28:12.869+03:00 appender 14100 --- [http-nio-8081-exec-5] c.e.u.FileUploadRestController           : 1.1.******* Service created
+2025-05-28T14:31:20.930+03:00 appender 20136 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 20136 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:31:20.934+03:00 appender 20136 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:31:23.320+03:00 appender 20136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:31:23.358+03:00 appender 20136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:31:23.361+03:00 appender 20136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:31:23.776+03:00 appender 20136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:31:23.778+03:00 appender 20136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2716 ms
+2025-05-28T14:31:29.389+03:00 appender 20136 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:31:29.508+03:00 appender 20136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:31:29.529+03:00 appender 20136 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 9.627 seconds (process running for 11.254)
+2025-05-28T14:31:29.537+03:00 appender 20136 --- [main] c.e.u.services.WbProductsService         : Trying to fetch products from API: http://localhost:8080/api/wb/all-cards-mapped-short
+2025-05-28T14:31:31.240+03:00 appender 20136 --- [main] c.e.u.services.WbProductsService         : Products data saved to wb_products_backup.json
+2025-05-28T14:31:31.250+03:00 appender 20136 --- [main] c.e.u.services.WbProductsService         : Successfully fetched 88413 products from API
+2025-05-28T14:31:31.255+03:00 appender 20136 --- [main] c.e.u.FileUploadRestController           : Successfully loaded 88413 products on startup
+2025-05-28T14:32:25.507+03:00 appender 20136 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-28T14:32:25.530+03:00 appender 20136 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-28T14:32:25.543+03:00 appender 20136 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-05-28T14:32:25.827+03:00 appender 20136 --- [http-nio-8081-exec-1] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T14:32:25.839+03:00 appender 20136 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getBrandHash()" is null] with root cause
 
-java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null
-	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:86) ~[classes/:na]
+java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getBrandHash()" is null
+	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:91) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
@@ -412,202 +204,18 @@ java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" becau
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-03-04T20:03:38.139+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:03:38.140+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:38.144+03:00 appender 10420 --- [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null] with root cause
-
-java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null
-	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:86) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2025-03-04T20:03:38.898+03:00 appender 10420 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:03:38.899+03:00 appender 10420 --- [http-nio-8081-exec-10] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:38.902+03:00 appender 10420 --- [http-nio-8081-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null] with root cause
-
-java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null
-	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:86) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2025-03-04T20:03:39.518+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Mapped file wb-gi-108241577.pdf to URL: http://127.0.0.1:8081/api/files/wb-gi-108241577.pdf
-2025-03-04T20:03:39.519+03:00 appender 10420 --- [http-nio-8081-exec-6] c.e.u.FileUploadRestController           : Total files found: 1
-2025-03-04T20:03:39.521+03:00 appender 10420 --- [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null] with root cause
-
-java.lang.NullPointerException: Cannot invoke "java.util.HashMap.keySet()" because the return value of "com.example.uploadingfiles.ReferenceFileSingleton.getbrandHash()" is null
-	at com.example.uploadingfiles.FileUploadRestController.listUploadedFiles(FileUploadRestController.java:86) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2025-03-04T20:03:45.851+03:00 appender 10420 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.8496539 сек.
-2025-03-04T20:03:45.852+03:00 appender 10420 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T20:03:46.322+03:00 appender 10420 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.468941 сек.
-2025-03-04T20:03:46.323+03:00 appender 10420 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T20:03:46.335+03:00 appender 10420 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 03.03.2025_13.36_Общие характеристики одним файлом.xlsx из архива 03_03_2025_13_36_Общие_характеристики_одним_файлом.zip
-2025-03-04T20:04:49.483+03:00 appender 16188 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 16188 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T20:04:49.487+03:00 appender 16188 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T20:04:51.349+03:00 appender 16188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T20:04:51.377+03:00 appender 16188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T20:04:51.378+03:00 appender 16188 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T20:04:51.493+03:00 appender 16188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T20:04:51.494+03:00 appender 16188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1923 ms
-2025-03-04T20:04:52.492+03:00 appender 16188 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T20:04:52.601+03:00 appender 16188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T20:04:52.625+03:00 appender 16188 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.734 seconds (process running for 5.005)
-2025-03-04T20:04:52.652+03:00 appender 16188 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 03.03.2025_13.36_Общие характеристики одним файлом.xlsx
-2025-03-04T20:04:54.796+03:00 appender 16188 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T20:04:54.797+03:00 appender 16188 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T20:04:54.797+03:00 appender 16188 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.094175 сек.
-2025-03-04T20:04:54.798+03:00 appender 16188 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T20:04:54.800+03:00 appender 16188 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-03-04T20:04:54.848+03:00 appender 16188 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0494086 сек.
-2025-03-04T20:04:54.850+03:00 appender 16188 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T20:04:54.851+03:00 appender 16188 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 03.03.2025_13.36_Общие характеристики одним файлом.xlsx из архива 03_03_2025_13_36_Общие_характеристики_одним_файлом.zip
-2025-03-04T20:05:15.767+03:00 appender 16188 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T20:13:17.579+03:00 appender 2908 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 2908 (G:\java\Stickers2\target\classes started by user in G:\java\Stickers2)
-2025-03-04T20:13:17.583+03:00 appender 2908 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T20:13:19.330+03:00 appender 2908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T20:13:19.350+03:00 appender 2908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T20:13:19.351+03:00 appender 2908 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-03-04T20:13:19.482+03:00 appender 2908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T20:13:19.483+03:00 appender 2908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1815 ms
-2025-03-04T20:13:20.480+03:00 appender 2908 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-04T20:13:20.582+03:00 appender 2908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T20:13:20.601+03:00 appender 2908 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 3.624 seconds (process running for 4.951)
-2025-03-04T20:13:20.628+03:00 appender 2908 --- [main] c.e.u.FileUploadRestController           : Найден XLSX файл в архиве: 03.03.2025_13.36_Общие характеристики одним файлом.xlsx
-2025-03-04T20:13:22.659+03:00 appender 2908 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0737313 сек.
-2025-03-04T20:13:22.660+03:00 appender 2908 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица штрихкодов построена
-2025-03-04T20:13:22.695+03:00 appender 2908 --- [main] c.e.uploadingfiles.ExcelReadService      : Обработан файл-справочник за 0.0334413 сек.
-2025-03-04T20:13:22.696+03:00 appender 2908 --- [main] c.e.u.FileUploadRestController           : Хэш-таблица брендов построена
-2025-03-04T20:13:22.698+03:00 appender 2908 --- [main] c.e.u.FileUploadRestController           : Обработан файл-справочник 03.03.2025_13.36_Общие характеристики одним файлом.xlsx из архива 03_03_2025_13_36_Общие характеристики одним файлом.zip
-2025-03-04T20:13:22.964+03:00 appender 2908 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T20:13:22.964+03:00 appender 2908 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T20:13:22.967+03:00 appender 2908 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-03-04T20:13:33.891+03:00 appender 2908 --- [http-nio-8081-exec-4] c.e.u.FileUploadRestController           : Total files found: 0
-2025-03-04T20:13:36.138+03:00 appender 2908 --- [http-nio-8081-exec-8] c.e.u.FileUploadRestController           : Total files found: 0
+2025-05-28T14:51:04.181+03:00 appender 15996 --- [main] c.e.u.StickersCreateApplication          : Starting StickersCreateApplication using Java 21.0.2 with PID 15996 (D:\rpo\java\Stickers2\target\classes started by 8_kovalenko_351 in D:\rpo\java\Stickers2)
+2025-05-28T14:51:04.187+03:00 appender 15996 --- [main] c.e.u.StickersCreateApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T14:51:06.594+03:00 appender 15996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-28T14:51:06.639+03:00 appender 15996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T14:51:06.653+03:00 appender 15996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-28T14:51:06.990+03:00 appender 15996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T14:51:06.990+03:00 appender 15996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2630 ms
+2025-05-28T14:51:08.267+03:00 appender 15996 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-28T14:51:08.387+03:00 appender 15996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-28T14:51:08.423+03:00 appender 15996 --- [main] c.e.u.StickersCreateApplication          : Started StickersCreateApplication in 4.863 seconds (process running for 6.57)
+2025-05-28T14:51:08.437+03:00 appender 15996 --- [main] c.e.u.services.WbProductsService         : Trying to fetch products from API: http://localhost:8080/api/wb/all-cards-mapped-short
+2025-05-28T14:51:10.300+03:00 appender 15996 --- [main] c.e.u.services.WbProductsService         : Products data saved to wb_products_backup.json
+2025-05-28T14:51:16.462+03:00 appender 15996 --- [main] c.e.u.services.WbProductsService         : HashMaps populated: 88413 barcodes and 88413 brands stored
+2025-05-28T14:51:16.469+03:00 appender 15996 --- [main] c.e.u.services.WbProductsService         : Successfully fetched 88413 products from API
+2025-05-28T14:51:16.471+03:00 appender 15996 --- [main] c.e.u.FileUploadRestController           : Successfully loaded 88413 products on startup

@@ -1,49 +1,37 @@
 package com.example.uploadingfiles;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.event.EventListener;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.xml.sax.SAXException;
-
+import com.example.uploadingfiles.services.WbProductsService;
 import com.example.uploadingfiles.storage.StorageFileNotFoundException;
 import com.example.uploadingfiles.storage.StorageService;
 import com.itextpdf.text.DocumentException;
 
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Workbook;
 
@@ -54,6 +42,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 public class FileUploadRestController {
     @Autowired
     StickersService stService;
+    @Autowired
+private WbProductsService wbProductsService;
     ReferenceFileSingleton referenceFileSingleton;
     private final StorageService storageService;
     public Long estimatedTime;
@@ -64,13 +54,24 @@ public class FileUploadRestController {
         this.storageService = storageService;
         this.referenceFileSingleton = referenceFileSingleton;
     }
-
+@EventListener(ApplicationStartedEvent.class)
+public void onApplicationStarted(ApplicationStartedEvent event) {
+    try {
+        List<ProductFromWBShort> products = wbProductsService.getProducts();
+        log.info("Successfully loaded {} products on startup", products.size());
+        
+        // Здесь можно добавить обработку полученных продуктов
+        // Например, сохранение в ReferenceFileSingleton
+    } catch (Exception e) {
+        log.error("Failed to load products on startup: {}", e.getMessage());
+    }
+}
     @GetMapping("/files")
     public ResponseEntity<?> listUploadedFiles() {
-        ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+        // ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
         // response.put("referenceFileName", refFileObject.getreferenceFileName());
-        response.put("referenceFile", StickersService.RefereneceReady);
+        // response.put("referenceFile", StickersService.RefereneceReady);
 
         // Получаем список файлов и сортируем их по дате создания (от новых к старым)
         List<String> files = storageService.loadAll()
@@ -87,8 +88,8 @@ public class FileUploadRestController {
         log.info("Total files found: {}", files.size());
 
         response.put("files", files);
-        response.put("count", Math.max(refFileObject.getBrandHash().keySet().size(),
-                refFileObject.getBarCodeHashMap().keySet().size()));
+        response.put("count", Math.max(wbProductsService.getBrandHashMap().keySet().size(),
+        wbProductsService.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
@@ -104,13 +105,13 @@ public class FileUploadRestController {
 
     @GetMapping("/getReferenceFileRecordsCount")
     public ResponseEntity<?> getReferenceFileRecordsCount() {
-        ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
+        // ReferenceFileSingleton refFileObject = ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
         // response.put("referenceFileName", refFileObject.getreferenceFileName());
         response.put("referenceFile", StickersService.RefereneceReady);
         response.put("referenceFileRecordsCount",
-                Math.max(refFileObject.getBrandHash().keySet().size(),
-                        refFileObject.getBarCodeHashMap().keySet().size()));
+                Math.max(wbProductsService.getBrandHashMap().keySet().size(),
+                wbProductsService.getBarCodeHashMap().keySet().size()));
 
         return ResponseEntity.ok(response);
     }
@@ -226,9 +227,9 @@ public class FileUploadRestController {
         return ResponseEntity.ok(response);
     }
 
-    @EventListener(ApplicationStartedEvent.class)
+  /*  @EventListener(ApplicationStartedEvent.class)
     @SneakyThrows
-    public void onApplicationReady(ApplicationReadyEvent event) {
+    public void onApplicationReady(ApplicationStartedEvent event) {
         RestTemplate restTemplate = new RestTemplate();
         String apiUrl = "http://localhost:8080/api/reference-data";
 
@@ -256,5 +257,5 @@ public class FileUploadRestController {
             log.error("Ошибка при загрузке данных через API: " + e.getMessage());
             // Fallback на локальный файл (опционально)
         }
-    }
+    } */
 }
