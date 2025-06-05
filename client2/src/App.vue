@@ -98,7 +98,7 @@ export default {
         formData.append('file', this.selectedFile);
 
         try {
-          const response = await axios.post('http://127.0.0.1:8081/api/upload', formData);
+          const response = await axios.post('/api/upload', formData);
           this.referenceFile = true;
           this.referenceFileName = response.data.fileName;
           await this.fetchFiles(); // Обновляем список файлов после успешной загрузки
@@ -112,7 +112,7 @@ export default {
     },
     async fetchFiles() {
       try {
-        const response = await axios.get('http://127.0.0.1:8081/api/files');
+        const response = await axios.get('/api/files');
         this.files = response.data.files; // Список файлов уже отсортирован на бэкенде
         this.referenceFile = response.data.referenceFile;
         this.referenceFileName = response.data.referenceFileName;
@@ -124,7 +124,7 @@ export default {
       }
     },
     fetchReferenceFileStatus() {
-      axios.get('http://127.0.0.1:8081/api/getReferenceFileRecordsCount')
+      axios.get('/api/getReferenceFileRecordsCount')
         .then(response => {
           this.referenceFile = response.data.status;
           if (this.referenceFile) {
