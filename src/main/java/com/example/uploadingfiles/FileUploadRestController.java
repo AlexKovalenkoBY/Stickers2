@@ -10,12 +10,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
+import org.springframework.cache.CacheManager;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.io.Resource;
@@ -30,7 +38,8 @@ import com.example.uploadingfiles.services.WbProductsService;
 import com.example.uploadingfiles.storage.StorageFileNotFoundException;
 import com.example.uploadingfiles.storage.StorageService;
 import com.itextpdf.text.DocumentException;
-
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.Cache;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -42,13 +51,16 @@ public class FileUploadRestController {
     StickersService stService;
     @Autowired
     private WbProductsService wbProductsService;
-
+@Autowired
     private final StorageService storageService;
     public Long estimatedTime;
     public Long startTime;
+    private final ConfigurableApplicationContext context;
+    private final AtomicBoolean isRestarting = new AtomicBoolean(false);
 
-    public FileUploadRestController(StorageService storageService) {
+    public FileUploadRestController(StorageService storageService, ConfigurableApplicationContext context) {
         this.storageService = storageService;
+        this.context = context;
 
     }
 
@@ -239,3 +251,4 @@ public class FileUploadRestController {
      * }
      */
 }
+    
