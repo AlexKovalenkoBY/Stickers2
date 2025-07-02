@@ -10,23 +10,16 @@ import org.springframework.web.multipart.MultipartFile;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
-import java.util.regex.Pattern;
-import java.util.stream.StreamSupport;
 import org.apache.poi.ss.usermodel.Workbook;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.Arrays;
+import java.io.InputStream;
 @Slf4j
 @org.springframework.stereotype.Service
 public class ExcelReadService {
@@ -98,7 +91,24 @@ try {
                 + " сек.");
         return data;
     }
-   
+    public Boolean isAssembledDocument(MultipartFile xlsxDocument) {
+        try (InputStream inputStream = xlsxDocument.getInputStream();
+             Workbook workbook = new XSSFWorkbook(inputStream)) {
+            
+            // Проверяем все листы в документе
+            for (int i = 0; i < workbook.getNumberOfSheets(); i++) {
+                Sheet sheet = workbook.getSheetAt(i);
+                if ("Сборочные задания".equalsIgnoreCase(sheet.getSheetName())) {
+                    return true;
+                }
+            }
+            return false;
+            
+        } catch (IOException e) {
+            // Обработка ошибок чтения файла
+            throw new RuntimeException("Ошибка при чтении файла", e);
+        }
+    }
     public static File findLatestFile(String directoryPath, String fileMask) {
         File directory = new File(directoryPath);
         if (!directory.isDirectory()) {

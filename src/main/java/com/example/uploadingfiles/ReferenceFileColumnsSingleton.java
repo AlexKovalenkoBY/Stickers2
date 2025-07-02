@@ -13,6 +13,7 @@ public final class ReferenceFileColumnsSingleton {
 
     
    public static final List<Integer> colls = Collections.unmodifiableList(Arrays.asList(14,6,13));
+   public static final List<Integer> SelectionListColls = Collections.unmodifiableList(Arrays.asList(8,3,5));
 
     
 }

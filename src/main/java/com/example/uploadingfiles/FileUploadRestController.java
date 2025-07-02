@@ -1,6 +1,8 @@
 package com.example.uploadingfiles;
 
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -51,7 +53,7 @@ public class FileUploadRestController {
     StickersService stService;
     @Autowired
     private WbProductsService wbProductsService;
-@Autowired
+    @Autowired
     private final StorageService storageService;
     public Long estimatedTime;
     public Long startTime;
@@ -67,7 +69,7 @@ public class FileUploadRestController {
     @EventListener(ApplicationStartedEvent.class)
     public void onApplicationStarted(ApplicationStartedEvent event) {
         try {
-            List<ProductFromWBShort> products = wbProductsService.getProducts();
+            List<ProductFromWBShort> products = wbProductsService.getProducts(); // получаем общий список товаров с ВБ
             log.info("Successfully loaded {} products on startup", products.size());
 
             // Здесь можно добавить обработку полученных продуктов
@@ -82,9 +84,12 @@ public class FileUploadRestController {
         // ReferenceFileSingleton wbProductsServiceObject =
         // ReferenceFileSingleton.getInstance();
         HashMap<String, Object> response = new HashMap<>();
-        String statuString = ""; 
-        if (wbProductsService.getIsOnlieData()) {statuString  = "Получена номенклатура на ";}
-        else {statuString  = "Получена номенклатура из файла ";}
+        String statuString = "";
+        if (wbProductsService.getIsOnlieData()) {
+            statuString = "Получена номенклатура на ";
+        } else {
+            statuString = "Получена номенклатура из файла ";
+        }
 
         response.put("referenceFileName", statuString);
         response.put("referenceFile", wbProductsService.getIsOnlieData());
@@ -118,37 +123,42 @@ public class FileUploadRestController {
         }
     }
 
-  /*  @GetMapping("/getReferenceFileRecordsCount")
-    public ResponseEntity<?> getReferenceFileRecordsCount() {
-        // ReferenceFileSingleton wbProductsServiceObject =
-        // ReferenceFileSingleton.getInstance();
-        HashMap<String, Object> response = new HashMap<>();
-        String statuString = ""; 
-        if (wbProductsService.getIsOnlieData()) {statuString  = "Получена номенклатура на ";}
-        else {statuString  = "Получена номенклатура из файла на ";}
-
-        response.put("referenceFileName", statuString);
-        // response.put("referenceFile", StickersService.RefereneceReady);
-        response.put("referenceFileRecordsCount",
-                Math.max(wbProductsService.getBrandHashMap().keySet().size(),
-                        wbProductsService.getBarCodeHashMap().keySet().size()));
-
-        return ResponseEntity.ok(response);
-    }
-*/
+    /*
+     * @GetMapping("/getReferenceFileRecordsCount")
+     * public ResponseEntity<?> getReferenceFileRecordsCount() {
+     * // ReferenceFileSingleton wbProductsServiceObject =
+     * // ReferenceFileSingleton.getInstance();
+     * HashMap<String, Object> response = new HashMap<>();
+     * String statuString = "";
+     * if (wbProductsService.getIsOnlieData()) {statuString =
+     * "Получена номенклатура на ";}
+     * else {statuString = "Получена номенклатура из файла на ";}
+     * 
+     * response.put("referenceFileName", statuString);
+     * // response.put("referenceFile", StickersService.RefereneceReady);
+     * response.put("referenceFileRecordsCount",
+     * Math.max(wbProductsService.getBrandHashMap().keySet().size(),
+     * wbProductsService.getBarCodeHashMap().keySet().size()));
+     * 
+     * return ResponseEntity.ok(response);
+     * }
+     */
     @GetMapping("/files/{filename:.+}")
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
         Resource file = storageService.loadAsResource(filename);
 
         if (file == null) {
-            log.warn("File not found: {}", filename); // Логирование ошибки
             return ResponseEntity.notFound().build();
         }
 
+        String encodedFilename = URLEncoder.encode(file.getFilename(), StandardCharsets.UTF_8)
+                .replaceAll("\\+", "%20");
+
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION,
-                        "inline; filename=\"" + file.getFilename() + "\"")
-                .header(HttpHeaders.CONTENT_TYPE, "application/pdf").body(file);
+                        "inline; filename=\"" + encodedFilename + "\"")
+                .header(HttpHeaders.CONTENT_TYPE, "application/pdf")
+                .body(file);
     }
 
     @GetMapping("/referenceFileStatus")
@@ -173,15 +183,24 @@ public class FileUploadRestController {
                 ExcelReadService ers = new ExcelReadService();
                 log.info("1.1.******* Service created");
 
-                ArrayList<ArrayList<String>> orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
-                        ReferenceFileColumnsSingleton.colls);
+                // Объявляем переменную перед if-else
+                ArrayList<ArrayList<String>> orderContent;
+
+                if (ers.isAssembledDocument(file)) {
+                    orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+                            ReferenceFileColumnsSingleton.colls);
+                } else {
+                    orderContent = ers.uploadSelectedCellsAndBuidOrderHasTable(file, 1,
+                            ReferenceFileColumnsSingleton.SelectionListColls);
+                    orderContent.forEach(e -> {
+                        e.set(0, "ООО \" КАМА МАРКЕТ\"");//пишем вместо склада из сборки заглушку. 
+
+                    });
+                }
+
                 stService.buildPdfFile2(orderContent, file);
 
                 return ResponseEntity.ok().body("Order file processed successfully");
-                // } else {
-                // return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                // .body("Reference file not loaded");
-                // }
 
             } catch (Exception e) {
                 log.info(e.getLocalizedMessage());
@@ -251,4 +270,3 @@ public class FileUploadRestController {
      * }
      */
 }
-    
